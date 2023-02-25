@@ -36,9 +36,9 @@ class CarruselCalendario extends Component {
 
     return (
       <Container>
-      <Row>
+      <Row  className="justify-content-center">
         <Col>
-          <Carousel interval={null} indicators={true}>
+          <Carousel interval={null} indicators={false}>
             {events.reduce((groups, event, index) => {
               if (index % 3 === 0) {
                 groups.push(events.slice(index, index + 3));
