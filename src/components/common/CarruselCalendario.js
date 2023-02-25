@@ -38,19 +38,26 @@ class CarruselCalendario extends Component {
       <Container>
       <Row>
         <Col>
-          <Carousel interval={null} indicators={false} slide={3} wrap={false}>
-            {events.map(event => (
-              <Carousel.Item key={event.id}>
-                <div className="title-date-container">
-                  <h3>{event.summary}</h3>
-                  <p>{new Date(event.start.dateTime).toLocaleString()}</p>
+          <Carousel interval={null} indicators={true}>
+            {events.reduce((groups, event, index) => {
+              if (index % 3 === 0) {
+                groups.push(events.slice(index, index + 3));
+              }
+              return groups;
+            }, []).map((group, index) => (
+              <Carousel.Item key={index}>
+                <div className="d-flex justify-content-between w-100">
+                  {group.map(event => (
+                    <div key={event.id} className="mx-3 title-date-container" style={{ flex: 1 }}>
+                      <h3>{event.summary}</h3>
+                      <p>{new Date(event.start.dateTime).toLocaleString()}</p>
+                    </div>
+                  ))}
                 </div>
               </Carousel.Item>
             ))}
           </Carousel>
-          
         </Col>
-        
       </Row>
     </Container>
     );

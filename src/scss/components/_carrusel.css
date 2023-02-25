@@ -1,18 +1,5 @@
-.event-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% / 3);
-    transition: transform 0.5s;
-  }
-  
-  .event-item.active {
-    transform: scale(1.2);
-  }
-  
-  .title-date-container {
-    width: 33.33%;
-    margin: 10 10px;
-    height: 200px;
-    background-color: red;
-  }
+
+.carousel-item {
+  width: calc(33.33% - 10px);
+  margin-right: 10px;
+}
