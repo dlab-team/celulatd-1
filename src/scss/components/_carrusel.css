@@ -10,3 +10,9 @@
     transform: scale(1.2);
   }
   
+  .title-date-container {
+    width: 33.33%;
+    margin: 10 10px;
+    height: 200px;
+    background-color: red;
+  }

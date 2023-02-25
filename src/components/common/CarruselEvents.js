@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel, Container, Row, Col } from 'react-bootstrap';
 
+
+
 const CarouselEvents = ({ events }) => {
   return (
     <Container>

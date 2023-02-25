@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import CarouselEvents from './CarouselEvents';
-    
+import { Container, Row, Col, Carousel } from 'react-bootstrap';
 import '../../scss/components/_carrusel.css';
+   
 
 
 class CarruselCalendario extends Component {
@@ -23,6 +23,7 @@ class CarruselCalendario extends Component {
           return eventDate >= new Date();
         });
 
+        console.log("Número de eventos cargados:", events.length);
         this.setState({ events });
       })
       .catch(error => {
@@ -31,10 +32,27 @@ class CarruselCalendario extends Component {
   }
 
   render() {
+    const { events } = this.state;
+
     return (
-      <div>
-        <CarouselEvents events={this.state.events} />
-      </div>
+      <Container>
+      <Row>
+        <Col>
+          <Carousel interval={null} indicators={false} slide={3} wrap={false}>
+            {events.map(event => (
+              <Carousel.Item key={event.id}>
+                <div className="title-date-container">
+                  <h3>{event.summary}</h3>
+                  <p>{new Date(event.start.dateTime).toLocaleString()}</p>
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+          
+        </Col>
+        
+      </Row>
+    </Container>
     );
   }
 }

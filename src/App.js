@@ -3,7 +3,8 @@ import Login from './components/user/Login';
 import Register from './components/user/Register';
 import Counter  from './components/common/ContadorClisks';
 import { FaFacebookF,FaTwitter,FaInstagram  } from 'react-icons/fa';
-import CarruselCalendario from './components/calendario/CarruselCalendario';
+import CarruselCalendario from './components/common/CarruselCalendario';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -15,10 +16,10 @@ function App() {
        <Counter nombreContador = "FacebookF" icon ={FaFacebookF} link= 'https://www.facebook.com/'/>
        <Counter nombreContador = "Twitter" icon ={FaTwitter} link= 'https://twitter.com/?lang=es' />
        <Counter nombreContador = "Instagram" icon ={FaInstagram} link= 'https://www.instagram.com/' />
-     <CarruselCalendario/>
+       <CarruselCalendario/>
       </header>
-      <div className="App-intro">
-     
+      <div className="body">
+      
     </div>
     </div>
   );
