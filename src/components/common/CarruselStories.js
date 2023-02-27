@@ -20,7 +20,7 @@ class CarruselStories extends Component {
               <Carousel.Item key={index}>
                 <div className="d-flex justify-content-between w-100">
                   {group.map(usuario => (
-                    <div key={usuario.nombre} className="mx-3 title-date-container" style={{ flex: 1 }}>
+                    <div key={usuario.nombre} className="mx-3 title-date-container " style={{ flex: 1 }}>
                       <h3>{usuario.nombre}</h3>
                       <p>Edad: {usuario.edad}</p>
                       <p>{usuario.historia}</p>
