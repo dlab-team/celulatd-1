@@ -1,23 +1,28 @@
-@import '../mixin/mixins';
+@import '../../abstracts/mixins';
 
-.input-hero{
-    @include flexible(flex,row,nowrap,end,end);
+.input-nav{
+
+    
     
 
 
         #input{
-            border-radius: .5em;
+            border-radius: 12em;
             width: 80%;
             margin-top: .5rem;
-            margin-right: 1.875rem;
+            margin-left: auto;
             
-            
+
+            #form-input{
+                border-radius: 5em;
+            }
             
             #button-addon2{
                 background-color: white;
-                color: red;
-                width: 10%;
+                color: black;
+                width: auto;
                 border-radius: 0em 2em 2em 0em;
+                
                 
             }
         }

@@ -1,0 +1,98 @@
+.footer {
+    background: #073B3A;
+
+    h2 {
+        color: #ECECEC;
+        text-align: center;
+    }
+
+    .ico-imput {
+        display: flex;
+        justify-content: center;
+
+        .caja-icono {
+            background-color: white;
+            border-radius: 100px 100px 0em 100px;
+            transform: rotate(-45deg);
+            height: 2.275rem;
+            width: 2.275rem;
+            margin-top: 0.4375rem;
+
+            .icon {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .contactos {
+        color: #ECECEC;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        text-align: center;
+    }
+
+    .redes {
+        color: #ECECEC;
+        text-align: center;
+
+        .icon-redes {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+    }
+
+    .logo-and-title{
+        border-top: .0625rem solid white;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+        .titles{
+            margin-left: 0.3125rem;
+            h2{
+                color: #ECECEC;
+                
+            }
+            h3{
+                color:#ECECEC;
+            }
+            
+        }
+    }
+
+    .logo-footer {
+        border-radius: 1.875rem 1.875rem 0rem 1.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ECECEC;
+
+        color: white;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 50px;
+        line-height: 58.59px;
+        width: 100px;
+        height: 100px;
+
+        h1 {
+            color: #073B3A;
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 4.375rem;
+            line-height: 5.125rem;
+        }
+    }
+
+
+    
+}
+

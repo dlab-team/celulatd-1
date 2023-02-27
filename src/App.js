@@ -1,15 +1,27 @@
-import './App.css';
+import './scss/main.scss';
 import Login from './components/user/Login';
 import Register from './components/user/Register';
 import Counter  from './components/common/ContadorClisks';
 import { FaFacebookF,FaTwitter,FaInstagram  } from 'react-icons/fa';
 import CarruselCalendario from './components/common/CarruselCalendario';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Landing from './components/landing/Landing';
+import Button from './components/common/Button';
 
 
 function App() {
   return (
-    <div className="App">
+
+    <>
+
+    <Landing/>
+    
+    
+      
+    </>
+
+
+    /* <div className="App">
       <header className="App-header">
        <Login/>
        <Register/>
@@ -21,7 +33,7 @@ function App() {
       <div className="body">
       
     </div>
-    </div>
+    </div> */
   );
 }
 

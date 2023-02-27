@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Container, Row, Col, Carousel } from 'react-bootstrap';
-import '../../scss/components/_carrusel.css';
+import '../../scss/components/landing/_carrusel.css';
    
 
 
