@@ -1,12 +1,16 @@
+
+import './scss/main.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Landing from './components/landing/Landing';
 import './App.css';
+
 
 
 function App() {
   return (
-    <div className="App">
-    <h1>olaaaa</h1>
-   
-    </div>
+
+    <Landing/>
+    
   );
 }
 
