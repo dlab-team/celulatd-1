@@ -1,0 +1,36 @@
+.carousel1{
+    background-color:  #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+   
+}
+
+.title-date-container{
+    height: 100%;
+    padding: 0 9%;
+    
+} 
+
+.carousel-indicators li {
+    background-color: red;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    background-color: red;
+  }
+
+  .icon-prev, .icon-next {
+    color: blue;
+  }
+
+  h3, p{
+    font-family: Roboto;
+  }
+
+
+
+
+

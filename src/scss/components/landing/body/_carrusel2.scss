@@ -1,0 +1,47 @@
+// /* /* Estilos base */
+// .carousel2 {
+//   background-color: blue;
+//   display: flex;
+//   align-items: center;
+//   width: 100%;
+//   height: 400px;
+//   /* Altura fija */
+// }
+
+// .carousel-inner {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .carousel-item {
+//   width: 100%;
+//   height: 100%;
+
+// }
+
+// /* Media query para pantallas pequeñas */
+// @media (max-width: 768px) {
+//   .carousel {
+//     height: 300px;
+//   }
+// }
+
+.carousel2{
+  background-color:  #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title-date-container{
+  height: 100%;
+  padding: 0 9%;
+  width: 100%;
+  
+} 
+
+h3, p{
+  font-family: Roboto;
+  
+}
