@@ -1,0 +1,40 @@
+@import '../../../abstracts/variables';
+@import'../../../abstracts/mixins';
+
+
+
+.container-btn{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    height: 90%; 
+    
+    
+
+    .btn {
+        border-radius: .5em;
+        background: $primary;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2.5rem;
+        width: 4.6875rem;
+        margin-right: .3125rem;
+        
+        
+        
+    
+        p{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 500;
+            font-size: .875rem;
+            line-height: 1.0588rem;
+            color: #ECECEC;
+            margin:auto;
+            
+        }
+    }
+} 
+

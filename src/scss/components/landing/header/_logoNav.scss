@@ -1,0 +1,16 @@
+.logo-nav {
+    display: flex;
+    justify-content: end;
+    margin-right: .2rem;
+    
+}
+
+.imagen {
+    max-width: 6rem;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .logo-nav .imagen:hover {
+    transform: scale(0.5);
+  }
+

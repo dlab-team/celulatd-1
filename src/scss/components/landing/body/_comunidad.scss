@@ -1,0 +1,54 @@
+
+
+.comunidad{
+    height:auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    .titulos{
+        h2{
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.4375rem;
+            color: #073B3A;
+
+        }
+        h3{
+            border-top: #073B3A .0625rem solid;
+            font-family: Roboto;
+            font-style: italic;
+            font-weight: 500;
+            font-size: 1.25rem;
+            line-height: 1.4375rem;
+            color: #073B3A;
+        }
+    }
+
+    .logo{
+        color: white;
+        background-color: #073B3A;
+        border-radius: 6.25rem 6.25rem 0rem 6.25rem;
+        transform: matrix(0.71,0.71,-0.71,0.71,0,0);
+        width: 4.9875rem;
+        height: 4.9875rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: .9375rem;
+
+        img{
+            transform: rotate(-45deg);
+            width: 50%;
+            
+            margin-left: 0.1875rem;
+            filter: brightness(0) invert(1);
+        }
+    }
+   
+}
