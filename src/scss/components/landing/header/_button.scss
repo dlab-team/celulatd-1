@@ -1,7 +1,9 @@
 @import '../../../abstracts/variables';
 @import'../../../abstracts/mixins';
 
-
+.Link {
+    text-decoration: none;
+  }
 
 .container-btn{
     display: flex;

@@ -50,7 +50,8 @@ export default function Landing() {
 
                 <div class="bg-hero"><Background /></div>
                 <div class="imput-hero"><InputHero /></div>
-                <div  class="btn-hero"><Button/></div>
+                <div  class="btn-hero"><Button/>
+                </div>
                 <div class="titles-hero"><Titles/></div>
                 <div class="logo-hero"><Logo/></div>
                 <div class="menu-nav"><MenuNav/></div>
