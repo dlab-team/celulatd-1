@@ -2,7 +2,7 @@ import React from 'react'
 
 import mail1 from '../../../assets/img/mail1.svg';
 import calendar from '../../../assets/img/calendar.svg';
-import drafts from '../../../assets/img/drafts.svg';
+import drafts from '../../../assets/img/draftsBlanco.svg';
 import groups from '../../../assets/img/groups.svg';
 import communication from '../../../assets/img/communication.svg';
 
@@ -24,11 +24,11 @@ export default function MenuNav
 
         <div className='menu'>
             <ul className='menu-list'>
-                <li className="menu-item"><img src={groups} /></li>
-                <li className="menu-item"><img src={drafts} /></li>
-                <li className="menu-item"><img src={mail1} /></li>
-                <li className="menu-item"><img src={calendar} /></li>
-                <li className="menu-item"><img src={communication} /></li>
+                <li className="menu-item"><a className='anchor' href= '#comunidad'><img src={groups} /></a></li>
+                <li className="menu-item"><a className='anchor' href= '#'><img src={drafts} /></a></li>
+                <li className="menu-item"><a className='anchor' href= '#'><img src={mail1} /></a></li>
+                <li className="menu-item"><a className='anchor' href= '#calendario'><img src={calendar} /></a></li>
+                <li className="menu-item"><a className='anchor' href= '#experiencia'><img src={communication} /></a></li>
             </ul>
         </div>
     )

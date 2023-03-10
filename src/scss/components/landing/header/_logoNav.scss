@@ -1,16 +1,34 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
+
+
 .logo-nav {
-    display: flex;
-    justify-content: end;
-    margin-right: .2rem;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: .2rem;
+  width: 100%;
+  height: 100%;
+
 }
 
 .imagen {
-    max-width: 6rem;
-    transition: transform 0.3s ease-out;
-  }
-  
-  .logo-nav .imagen:hover {
-    transform: scale(0.5);
-  }
+  width: 95%;
+  height: 95%;
+  margin-left: 10%;
+}
 
+.logo-nav .imagen:hover {
+  transform: scale(0.5);
+}
+
+/*@include media(md) {
+  .logo-nav {
+    display: flex;
+    justify-content: left;
+    margin-right: .2rem;
+    margin-left: 3%;
+  
+  }
+}*/

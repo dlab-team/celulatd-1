@@ -8,7 +8,7 @@ import communication from '../../../assets/img/communication.svg';
 
 export default function Experiencia() {
   return (
-    <div className='experiencia'>
+    <div className='experiencia' id= 'experiencia'>
       <div className='titulos'>
         <h2>EXPERIENCIA</h2>
         <h3>ESTUDIANTIL</h3>

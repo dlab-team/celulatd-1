@@ -1,36 +1,42 @@
-.carousel1{
-    background-color:  #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+.carousel1 {
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 
-   
+
+
 }
 
-.title-date-container{
-    height: 100%;
-    padding: 0 9%;
-    
-} 
+.title-date-container {
+  height: 100%;
+  padding: 0 9%;
+
+}
 
 .carousel-indicators li {
-    background-color: red;
-  }
+  background-color: red;
+}
 
-  .carousel-control-prev, .carousel-control-next {
-    background-color: red;
-  }
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: red;
+}
 
-  .icon-prev, .icon-next {
-    color: blue;
-  }
+.icon-prev,
+.icon-next {
+  color: blue;
+}
 
-  h3, p{
-    font-family: Roboto;
-  }
+h3,
+p {
+  font-family: Roboto;
+}
 
 
-
-
-
+$carousel-control-color: black;
+$carousel-indicator-active-bg: black;
+$carousel-indicator-width: 10px;
+$carousel-indicator-height: 10px;
+@import "~bootstrap/scss/bootstrap";

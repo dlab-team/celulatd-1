@@ -1,6 +1,35 @@
-@mixin flexible ($dis, $direction, $corte, $just,$align){
-    display: $dis;
-    flex-flow: $direction $corte;
-    justify-content: $just;
-    align-items: $align;  
+//@mixin flexible ($dis, $direction, $corte, $just, $align) {
+//display: $dis;
+//flex-flow: $direction $corte;
+//justify-content: $just;
+//align-items: $align;
+//}
+
+$breakpoints: (
+    sm:375px,
+    md:768px,
+    md2:820px,
+    lg:1024px
+);
+
+@mixin media($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Breakpoint `#{$breakpoint}` no encontrado en `$breakpoints` map.";
+    }
 }
+
+//ejemplo de uso breakpoint responsive
+
+//section {
+   // background: blue;
+
+   // @include media1(lg) {
+        //background: pink;
+   // }
+//}

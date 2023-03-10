@@ -4,7 +4,8 @@ import InputHero from '../header/Input';
 
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
-import drafts from '../../../assets/img/drafts.svg';
+
+import drafts from '../../../assets/img/draftsVerde.svg';
 import logo3 from '../../../assets/img/logo3.svg';
 
 import '../../../scss/components/landing/footer/_footer.scss';
@@ -15,7 +16,7 @@ export default function Footer() {
             <h2>SUSCRÍBETE Y RECIBE
                 NUESTRO BOLETÍN QUINCENAL </h2>
             <div className='ico-imput'>
-                <button className='caja-icono'><img src={drafts}/></button>
+                <button className='caja-icono'><img className='iconofotter' src={drafts}/></button>
                 <InputHero />
             </div>
             <div className='contactos'>

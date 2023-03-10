@@ -1,4 +1,5 @@
-
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
 
 .titulos-nav{
     color: white;
@@ -19,5 +20,13 @@
         font-style: italic;
         font-size: 2.5rem;
         line-height: .90rem;
+    }
+}
+
+@include media(md) {
+    .titulos-nav{
+        color: white;
+        margin-left: -7.375rem;
+    
     }
 }
