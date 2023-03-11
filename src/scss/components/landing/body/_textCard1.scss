@@ -1,3 +1,6 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
 .text-card1 {
     p {
         font-family: Inter;
@@ -13,5 +16,17 @@
         text-align: justify;
         overflow: hidden;
         height: 100%;
+        @include media(lg) {
+        padding-top: 0rem;
+        padding-right: 0rem;
+        padding-bottom: 0rem;
+        padding-left: 0rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20%;
+        color: black;
+            
     }
+}
 }

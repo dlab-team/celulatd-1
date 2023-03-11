@@ -46,12 +46,29 @@ height: 1fr;}
 .bg-card1 { grid-area: 6 / 1 / 8 / 4;
 height: 2fr; }
 
-.svg-card1 { grid-area: 6 / 1 / 7 / 2; }
+.svg-card1 { grid-area: 6 / 1 / 7 / 2; 
+  @include media(lg) {
+    grid-area: 6 / 1 / 8 / 1;  
+  } 
 
-.img-card1 { grid-area: 6 / 2 / 7 / 3; }
+}
 
-.text-card1 { grid-area: 7 / 1 / 8 / 4; 
-height: 1fr; }
+.img-card1 { grid-area: 6 / 2 / 7 / 3;
+  @include media(lg) {
+    grid-area: 6 / 3 / 8 / 3;  
+  } 
+  
+}
+
+.text-card1 {
+  grid-area: 7 / 1 / 8 / 4;height: 1fr;
+  @include media(lg) {
+    grid-area: 6 / 2/ 8 / 2; 
+  height: 1fr  
+  }
+
+
+}
 
 .bg-card2 { grid-area: 8 / 1 / 10 / 4;
   height: 2fr; }

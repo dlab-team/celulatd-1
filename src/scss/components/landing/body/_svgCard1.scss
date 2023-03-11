@@ -1,13 +1,19 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
+
 .svg-card1{
-    flex: 0;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 6.25rem;
-    line-height: 7.5625rem;
-    color: #ECECEC;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
     
+    height: 4rem;
+    width: 4rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    @include media(lg) {
+        height: 10rem;
+        width: 10rem;
+        margin-left: 10%;
+        opacity: 70%;
+          
+      } 
 }
