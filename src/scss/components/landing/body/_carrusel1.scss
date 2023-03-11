@@ -5,38 +5,55 @@
   justify-content: center;
   height: 100%;
 
-
-
 }
 
 .title-date-container {
   height: 100%;
   padding: 0 9%;
-
-}
-
-.carousel-indicators li {
-  background-color: red;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: red;
-}
-
-.icon-prev,
-.icon-next {
-  color: blue;
+  width: 100%;
 }
 
 h3,
 p {
   font-family: Roboto;
 }
+.title-date-container {
+  position: relative;
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
 
+.title-date-container::before,
+.title-date-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  margin: 15px;
+  background-color: black;
+}
+
+.title-date-container::before {
+  left: -1rem;
+}
+
+.title-date-container::after {
+  right: -1rem;
+}
+
+.title-date-container.active {
+  transform: scale(1.2);
+}
 
 $carousel-control-color: black;
 $carousel-indicator-active-bg: black;
 $carousel-indicator-width: 10px;
 $carousel-indicator-height: 10px;
 @import "~bootstrap/scss/bootstrap";
+
+.title-date-container p {
+  width: 100%;
+  word-wrap: break-word;
+}
