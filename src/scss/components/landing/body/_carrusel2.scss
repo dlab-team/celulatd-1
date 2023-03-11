@@ -32,11 +32,13 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  text-align: center;
+  
 }
 
 .title-date-container{
   height: 100%;
-  padding: 0 9%;
+  padding: 0 13%;
   width: 100%;
   
 } 
@@ -44,4 +46,7 @@
 h3, p{
   font-family: Roboto;
   
+}
+.slide{
+  width: 100vw;
 }

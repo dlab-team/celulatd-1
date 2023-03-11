@@ -2,7 +2,7 @@ const HistoriaUsuarios = [
     {
       "nombre": "Laptop",
       "edad": "3 años",
-      "historia": "Esta laptop ha sido mi compañera fiel durante mi carrera en IT. La compré cuando comencé a estudiar programación y desde entonces ha estado conmigo en todas mis clases y proyectos. A pesar de que ha sido utilizada intensivamente, todavía funciona de maravilla y espero poder seguir usándola por muchos años más."
+      "historia": "Esta laptop ha sido mi compañera fiel durante mi carrera en IT."
     },
     {
       "nombre": "Libro de programación",

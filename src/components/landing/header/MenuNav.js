@@ -24,7 +24,7 @@ export default function MenuNav
 
         <div className='menu'>
             <ul className='menu-list'>
-                <li className="menu-item"><a className='anchor' href= '#comunidad'><img src={groups} /></a></li>
+                <li className="menu-item"><a className='anchor' href= '#card1'><img src={groups} /></a></li>
                 <li className="menu-item"><a className='anchor' href= '#'><img src={drafts} /></a></li>
                 <li className="menu-item"><a className='anchor' href= '#'><img src={mail1} /></a></li>
                 <li className="menu-item"><a className='anchor' href= '#calendario'><img src={calendar} /></a></li>
