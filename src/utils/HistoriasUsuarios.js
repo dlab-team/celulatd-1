@@ -2,11 +2,7 @@ const HistoriaUsuarios = [
     {
       "nombre": "Laptop",
       "edad": "3 años",
-<<<<<<< HEAD
       "historia": "Esta laptop ha sido mi compañera fiel durante mi carrera en IT."
-=======
-      "historia": "Esta laptop ha sido mi compañera fiel durante mi carrera en IT. La compré cuando comencé a estudiar programación y desde entonces ha estado conmigo en todas mis clases y proyectos. "
->>>>>>> refs/remotes/origin/style
     },
     {
       "nombre": "Libro de programación",

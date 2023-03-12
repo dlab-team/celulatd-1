@@ -5,30 +5,6 @@ import { useMediaQuery } from 'react-responsive';
 
 import '../../../scss/components/landing/body/_carrusel1.scss'; 
 
-<<<<<<< HEAD
-class CarruselStories extends Component {
-  render() {
-    const { items } = this.props; // obtener los datos como propiedades del componente
-    return (
-      <Container className="justify-content-center carousel1">
-      
-          <Carousel interval={null} indicators={false} >
-            {HistoriaUsuarios.reduce((groups, usuario, index) => {
-              if (index < 3 ) {
-                groups.push(HistoriaUsuarios.slice(index, index + 1));
-              }
-              return groups;
-            }, []).map((group, index) => (
-              <Carousel.Item key={index}>
-                <div className="d-flex justify-content-between w-100">
-                  {group.map(usuario => (
-                    <div key={usuario.nombre} className="mx-3 title-date-container" style={{ flex: 1 }}>
-                      <h3>{usuario.nombre}</h3>
-                      <p>Edad: {usuario.edad}</p>
-                      <p>{usuario.historia}</p>
-                    </div>
-                  ))}
-=======
 function CarruselStories() {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-device-width: 1224px)'
@@ -52,7 +28,6 @@ function CarruselStories() {
                   <h3>{usuario.nombre}</h3>
                   <p>Edad: {usuario.edad}</p>
                   <p>{usuario.historia}</p>
->>>>>>> refs/remotes/origin/style
                 </div>
               ))}
             </div>
