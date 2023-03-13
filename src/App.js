@@ -3,8 +3,8 @@ import './scss/main.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Landing from './components/landing/Landing'
-import Login from './components/user/Login';
-import Register from './components/user/Register';
+import Login from './components/user/login/Login';
+import Register from './components/user/register/Register';
 
 
 function App() {
