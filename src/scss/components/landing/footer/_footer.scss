@@ -1,4 +1,4 @@
-
+@import '../../../abstracts/mixins';
 
 .footer {
     background: #073B3A;
@@ -76,6 +76,8 @@
         padding-top: 2rem;
         margin-bottom: 2rem;
 
+        
+
         .titles {
             display: flex;
             align-items: end;
@@ -112,15 +114,27 @@
         }
     }
 
-    .logo-footer {
+   /*  .logo-footer {
     
         height: 102px;
         width: 102px;
         left: 93px;
-        top: 3265px;
+        top: 3265px;    
+
+        
+
+    } */
+
+
+    .logo-footer {
+        display: grid;
+        height: 102px;
+        width: 102px;
+        left: 93px;
+        top: 3265px;    
+
         
 
     }
-
 }
 
