@@ -14,7 +14,7 @@ function CarruselStories() {
 
   return (
     <Container className="justify-content-center carousel1">
-      <Carousel interval={null} indicators={true} >
+      <Carousel interval={null} indicators={false} >
         {HistoriaUsuarios.reduce((groups, usuario, index) => {
           if (index % itemsToShow === 0) {
             groups.push(HistoriaUsuarios.slice(index, index + itemsToShow));

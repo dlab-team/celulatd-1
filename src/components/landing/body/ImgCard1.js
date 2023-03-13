@@ -6,7 +6,7 @@ import '../../../scss/components/landing/body/_imgCard1.scss';
 
 export default function ImgCard1() {
   return (
-    <div className='img-card1'>
+    <div className='img-card-1'>
       <img src={card1}/>
     </div>
   )
