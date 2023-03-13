@@ -12,6 +12,17 @@ export default function TextCard3() {
                 Condimentum egestas dignissim venenatis magna
 
                 ut at a id placerat. Donec gravida elit velit quisque.
+                Lorem ipsum dolor sit amet consectetur. Sed odio
+
+                egestas tincidunt mauris mollis senectus tellus
+
+                
+
+                
+                
+
+                
+
                 
             </p>
 

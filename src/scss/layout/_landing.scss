@@ -16,6 +16,10 @@
   @include media (md) {
     grid-template-rows: .1fr .3fr .2fr 1fr .5fr .5fr .3fr .5fr .3fr .5fr .3fr .5fr .5fr .5fr .5fr .5fr .5fr 1fr 1fr;
   }
+
+  @include media (lg) {
+    grid-template-rows: .1fr .3fr .2fr 1fr .5fr .5fr .01fr  .5fr  .01fr  .5fr  .01fr  .5fr .5fr .5fr .5fr .5fr .5fr 1fr 1fr;
+  }
 }
 
 .header {
@@ -96,6 +100,7 @@
   grid-area: 6 / 1 / 7 / 2;
 
   @include media(lg) {}
+  grid-area: 6 / 1 / 7 / 2;
 
 }
 
@@ -103,7 +108,7 @@
   grid-area: 6 / 2 / 7 / 3;
 
   @include media(lg) {
-    grid-area: 6/3;
+    grid-area: 6/3 ;
   }
 
 }
@@ -113,7 +118,7 @@
   height: 1fr;
 
   @include media(lg) {
-    grid-area: 6/2;
+    grid-area: 6/2 ;
   }
 
 
@@ -126,13 +131,17 @@
 
 .svg-card2 {
   grid-area: 8 / 1 / 9 / 2;
+  @include media(lg) {
+    grid-area: 8/1  9/2;
+  }
+
 }
 
 .img-card2 {
   grid-area: 8 / 2 / 9 / 3;
 
   @include media(lg) {
-    grid-area: 8/3;
+    grid-area: 8/3 ;
   }
 }
 
@@ -155,9 +164,15 @@
 .img-card3 {
   grid-area: 10 / 2 / 11 / 3;
 
-  @include media(lg) {
-    grid-area: 10/1;
-  }
+   @include media(lg) {
+    display: grid;
+    
+    grid-template-areas: "imagen";
+    grid-area:  imagen;
+    grid-area: 10/01 ;
+    
+    
+  } 
 }
 
 .text-card3 {
@@ -237,4 +252,7 @@
 
 .svg-card3 {
   grid-area: 10 / 3 / 11 / 4;
+  @include media(lg){
+    grid-area:10/3/11/4 ;
+  }
 }
