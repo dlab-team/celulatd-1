@@ -1,6 +1,6 @@
-/*.container {
+.container-user {
 
-    background-image: url('../../../../assets//img/BkgdTransp.jpg');
+    background-image: url('../../../assets//img/BkgdTransp.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -14,7 +14,7 @@
 
 }
 
-.container {
+.container-user {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,12 +46,12 @@
 
         button {
             padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #E2A30B;
-            color: #073B3A;
+            border:solid 2px #E2A30B;
+            border-radius: 5px ;
+            background-color:#073B3A;
+            color: #fff;
             cursor: pointer;
-            border-radius: 20px;
+            border-radius: 4px;
 
             &:hover {
                 background-color: #E2A30B;
@@ -168,4 +168,4 @@ input[type="checkbox"]:focus+.checkbox-custom {
 
 input[type="checkbox"]:checked+.checkbox-custom {
     background-color: #0f9d58;
-}*/
+}
