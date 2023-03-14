@@ -1,10 +1,20 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
+
+
+
 .carousel1 {
   background-color: #F5F5F5;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+  .testimonio{
+    width: 70%;
+  }
 
+  
 }
 
 
@@ -57,4 +67,14 @@ $carousel-indicator-height: 10px;
 .title-date-container p {
   width: 100%;
   word-wrap: break-word;
+}
+
+
+
+@include media(lg) {
+  .carousel-inner{
+    padding: 0 8%;
+  }
+  
+
 }

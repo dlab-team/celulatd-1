@@ -1,7 +1,15 @@
 @import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
 
 .footer {
     background: #073B3A;
+    @include media(lg) {
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    }
 
     h2 {
         color: #ECECEC;
@@ -61,8 +69,12 @@
             gap: 1.5rem;
             font-size: 35px;
             margin-top: 1.5rem;
-
+            @include media(lg) {
+                flex-direction: row;
+            }
         }
+
+
 
     }
 
@@ -75,6 +87,9 @@
         margin-top: 2rem;
         padding-top: 2rem;
         margin-bottom: 2rem;
+        @include media (lg){
+            border-top: 0rem;
+        }
 
         
 
@@ -132,9 +147,6 @@
         width: 102px;
         left: 93px;
         top: 3265px;    
-
-        
-
     }
 }
 

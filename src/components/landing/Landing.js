@@ -85,9 +85,8 @@ export default function Landing() {
                 <div class="carousel2"><CarruselCalendario/></div>
                 
                 
-                <div class="footer"></div>
-                <div class="bg-footer"></div>
-                <div class="footer-content"><Footer/></div>
+                
+                <div class="footer"><Footer/></div>
             </div>
 
 

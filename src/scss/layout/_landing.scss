@@ -108,6 +108,7 @@
   grid-area: 6 / 2 / 7 / 3;
 
   @include media(lg) {
+    display: grid;
     grid-area: 6/3 ;
   }
 
@@ -141,9 +142,18 @@
   grid-area: 8 / 2 / 9 / 3;
 
   @include media(lg) {
+    display: grid;
     grid-area: 8/3 ;
+   
+    
+      
+      
+      
+      
+      
+    } 
   }
-}
+
 
 
 .text-card2 {
@@ -224,11 +234,15 @@
 }
 
 .footer {
-  grid-area: 18 / 1 / 20 / 4;
+  grid-area: 18 / 1 / 19 / 4;
   height: 1fr;
 
+  
+  //height: 1fr;
+}
 
-  .logo-and-title {
+
+  /*.logo-and-title {
 
     .logo-footer {
       img {
@@ -248,7 +262,7 @@
 .footer-content {
   grid-area: 18 / 1 / 20 / 4;
   height: 1fr;
-}
+}*/
 
 .svg-card3 {
   grid-area: 10 / 3 / 11 / 4;

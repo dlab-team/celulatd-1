@@ -1,20 +1,21 @@
 @import '../../../abstracts/mixins';
 @import '../../../abstracts/variables';
 
+.img-card{
+    margin-top: 25%;
+}
 
-.img-card-1{
-    padding-top: 40px;
-   
-
-    @include media(lg) {
-     
-        width: 20rem;
-        height: 20rem;
-        margin-right: 3%;
-        margin-left: auto;
-    
-        
+@include media(lg) {
+    .img-card{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-top: 0%;
+    img{
+        max-width: 70%;
     }
-
+    }
+    
 
 }
+

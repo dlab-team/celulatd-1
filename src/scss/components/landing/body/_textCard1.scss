@@ -1,7 +1,7 @@
 @import '../../../abstracts/mixins';
 @import '../../../abstracts/variables';
 
-.text-card1 {
+.text-card {
     p {
         font-family: Roboto;
         font-style: normal;
@@ -17,15 +17,17 @@
         overflow: hidden;
         height: 100%;
         @include media(lg) {
-        padding-top: 0rem;
-        padding-right: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 0rem;
+        padding: 0;
+       
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20%;
-        color: black;
+        font-size: 1.8rem;
+        line-height: 2rem;
+
+        
+     
             
     }
 }

@@ -19,16 +19,9 @@
   margin-left: 10%;
 }
 
-.logo-nav .imagen:hover {
-  transform: scale(0.5);
+@include media(lg){
+  .imagen {
+    width: 50%;
+   
+} 
 }
-
-/*@include media(md) {
-  .logo-nav {
-    display: flex;
-    justify-content: left;
-    margin-right: .2rem;
-    margin-left: 3%;
-  
-  }
-}*/
