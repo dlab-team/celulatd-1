@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../../../scss/components/user/body/_backgroundHeroUser.scss";
+import "../../../scss/components/user/_backgroundUser.css";
 import GoogleLoginButton from "./Button";
 
 
@@ -36,7 +36,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container">
+    <div className="container-user">
       <script src="https://apis.google.com/js/platform.js" async defer></script>
       <form onSubmit={handleSubmit}>
         <input
