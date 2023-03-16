@@ -23,10 +23,20 @@
     }
 }
 
-@include media(md) {
+@include media(lg){
     .titulos-nav{
-        color: white;
-        margin-left: -7.375rem;
-    
+    h1{
+       
+        font-size: 3.5rem;
+        line-height: 4.9375rem;
+        
     }
+
+    h2{
+        
+        font-size: 3.5rem;
+        
+     
+} 
+}
 }

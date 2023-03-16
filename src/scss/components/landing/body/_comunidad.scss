@@ -1,3 +1,5 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
 
 
 .comunidad{
@@ -53,3 +55,32 @@
     }
    
 }
+
+
+
+@include media(lg) {
+     
+   .comunidad{
+    .titulos{
+        h2{
+           font-size: 2.5rem;
+        line-height: 2rem; 
+        }
+        h3{
+            font-size: 2.5rem;
+            line-height: 2.4375rem;
+        }
+
+    }
+    .logo{
+       
+        width: 6.9875rem;
+        height: 6.9875rem;
+    }
+        
+
+   }
+
+    
+}
+

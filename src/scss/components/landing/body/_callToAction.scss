@@ -1,3 +1,5 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
 
 
 .call-to-action{
@@ -40,7 +42,14 @@
     }
 
 
-.llave1 img, .llave2 img {
+.llave1 img{
+    width: 9.375rem;
+    height: 6.875rem;
+    stroke-width: 1;
+    
+
+  }
+  .llave2 img {
     width: 9.375rem;
     height: 6.875rem;
     stroke-width: 1;
@@ -54,8 +63,53 @@
     margin-left: 1.25rem;
   }
 
+  
+
   .llave2 {
     display: flex;
     align-items: center;
     margin-right: 1.25rem;
   }
+
+
+  @include media(lg){
+    .call-to-action{
+      justify-content: space-around;
+      padding: 0 3%;
+
+      .texto{
+        h2{
+          font-size: 2.8rem;
+          line-height: 4rem;
+        }
+        p{
+          font-size: 1.8rem;
+        }
+      }
+      .llave1{
+        margin-left: 0;
+      }
+      .llave2{
+        margin-right: 0;
+      }
+      
+      .llave1 img{
+        width: 6rem;
+        height: 13rem;
+        
+        
+    
+      }
+      .llave2 img {
+        width: 9.375rem;
+        height: 13rem;
+        
+
+    }
+
+
+  }
+}
+
+
+  

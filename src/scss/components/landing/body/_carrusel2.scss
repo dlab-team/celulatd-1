@@ -66,7 +66,7 @@ h3, p{
   bottom: 0;
   width: 1px;
   margin: 15px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .title-date-container::before {
@@ -79,5 +79,10 @@ h3, p{
 
 .title-date-container.active {
   transform: scale(1.2);
+}
+
+.carousel-item {
+  
+  padding: 0 30px;
 }
 
