@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import "../../../scss/components/user/_backgroundUser.css";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -24,7 +26,8 @@ export default function Register() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+  <div className="container-user">
+      <form onSubmit={handleSubmit}>
       <input
         type="text"
         placeholder="Nombre de usuario"
@@ -44,8 +47,12 @@ export default function Register() {
         onChange={(e) => setPassword(e.target.value)}
       />
       {error && <p>{error}</p>}
-      <button type="submit">Registrarse</button>
+      <Link to="/*" className='Link'>
+      <button type="submit">Registrarse</button>  
+        </Link> 
+     
     </form>
+  </div>
   );
 }
 

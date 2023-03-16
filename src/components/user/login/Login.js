@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "../../../scss/components/user/_backgroundHeroUser.scss";
 import GoogleLoginButton from "./Button";
+import { Link } from "react-router-dom";
 
 
 export default function Login() {
@@ -68,9 +68,14 @@ export default function Login() {
           </label>
         </div>
         {error && <p>{error}</p>}
+        <Link to="/dashboard" className='Link'>
         <button type="submit">Iniciar sesión</button>
+        </Link> 
         <div className="register">
-          ¿Aún no tienes cuenta? <a href="#">Regístrate aquí</a>
+          ¿Aún no tienes cuenta? 
+          <Link to="/register" className='Link'>
+          <a href="#">Regístrate aquí</a>  
+        </Link>   
         </div>
         <div className="or">
           <hr />
