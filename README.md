@@ -1,3 +1,8 @@
+#Dependencias para corrrer react app
+npm install i
+npm install react-bootstrap bootstrap
+npm install react-responsive
+npm install -g sass
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
