@@ -1,5 +1,8 @@
 {
     "conventionalCommits.scopes": [
-        "accesos"
+        "accesos",
+        "Creacion de componente video",
+        "feat",
+        "Creacion componente "
     ]
 }
