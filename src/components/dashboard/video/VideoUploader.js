@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import NavbarComponent from "../NavbarComponent";
 
-const VideoUploader = () => {
+ const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -66,5 +66,6 @@ const VideoUploader = () => {
     </div>
   );
 };
+
 
 export default VideoUploader;
