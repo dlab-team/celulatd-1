@@ -10,7 +10,7 @@ import Inicio from './components/dashboard/Inicio';
 import Ajustes from './components/dashboard/Ajustes';
 import Perfil from './components/dashboard/Perfil';
 import VideoUploader from './components/dashboard/video/VideoUploader';
-import VideoList from './components/dashboard/video/VideoList';
+import ComponetVideo from './components/dashboard/video/ComponetVideo';
 import Notification from './components/dashboard/Notification';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     <Route path="/ajustes" element={<Ajustes/>} />
     <Route path="/perfil" element={<Perfil/>} />
     <Route path="/SubirVideo" element={<VideoUploader/>}/>
-		<Route path="/ListarrVideo" element={<VideoList/>}/>
+		<Route path="/ListarVideo" element={<ComponetVideo/>}/>
 		<Route path="/Notification" element={<Notification/>}/>
     <Route path="*" element="Error" />
   </Routes>
