@@ -1,12 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavbarComp from "./NavbarComponent";
-import VideoList from "./video/ComponetVideo";
+import NavbarComponent from "./NavbarComponent";
 
 const Dashboard = () => {
     return (
       <div className="container-responsive">
-     <VideoList/>
+     <NavbarComponent/>
      
       </div>
     );
