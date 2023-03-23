@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import NavbarComponent from "../NavbarComponent";
+import NavbarVideo from "./NavbarVideo.js";
 
  const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -49,7 +49,7 @@ import NavbarComponent from "../NavbarComponent";
 
   return (
     <div>
-      <NavbarComponent/>
+      <NavbarVideo/>
       <div className="Container">
         <label>Title:</label>
         <input type="text" value={title} onChange={handleTitleInputChange} />

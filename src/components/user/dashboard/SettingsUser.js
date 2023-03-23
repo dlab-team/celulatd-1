@@ -1,12 +1,12 @@
 import React, { useState} from "react";
 import axios from "axios";
+import NavbarUserComponent from "./NavbarUserComponet";
+import Perfil from "./Perfil";
 
-
-const Perfil = () => {
+const SettingsUser = () => {
   const [name, setName] = useState("");
   const [telefone, setTelefone] = useState("");
   const [email, setMail] = useState("");
-  const [image, setImage] = useState("");
   const [uploadStatus, setUploadStatus] = useState("");
   const [isEditing, setIsEditing] = useState(false);
 
@@ -22,16 +22,13 @@ const Perfil = () => {
     setMail(event.target.value);
   };
   
-  const handleImageInputChange = (event) => {
-    setImage(event.target.files[0]);
-  };
+
 
   const handleUploadPerfil = () => {
     const formData = new FormData();
     formData.append("name", name);
     formData.append("telefone", telefone);
     formData.append("email", email);
-    formData.append("image", image);
     axios
       .post("https://example.com/admin/edit", formData, {
         headers: {
@@ -57,10 +54,10 @@ const Perfil = () => {
 
   return (
     <div>
+      <NavbarUserComponent/>
       <div className="container-responsive">
         {!isEditing ? (
           <div>
-            <img src={image ? URL.createObjectURL(image) : ""} alt="profile" />
             <ul>
               <li>Name: {name}</li>
               <li>Telefone: {telefone}</li>
@@ -83,10 +80,6 @@ const Perfil = () => {
               <input type="text" value={email} onChange={handleEmailInputChange} />
             </div>
             <div>
-              <label>Image:</label>
-              <input type="file" onChange={handleImageInputChange} />
-            </div>
-            <div>
               <button onClick={handleUploadPerfil}>Save</button>
               <button onClick={() => setIsEditing(false)}>Cancel</button>
               <p>{uploadStatus}</p>
@@ -95,8 +88,9 @@ const Perfil = () => {
           </div>
         )}
       </div>
+      <Perfil/>
       </div>
     );
     };
 
-    export default Perfil;
+    export default SettingsUser;

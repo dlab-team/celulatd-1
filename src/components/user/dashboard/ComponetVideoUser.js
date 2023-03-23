@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import NavbarVideo from "./NavbarVideo.js";
+import NavbarUserComponent from "./NavbarUserComponet";
 
-const ComponetVideo = (props) => {
+const ComponetVideoUser = (props) => {
   const [isEditing, setIsEditing] = useState(false);
   const [video, setVideo] = useState(props.video);
   const [name, setName] = useState(props.name);
@@ -38,7 +38,7 @@ const ComponetVideo = (props) => {
     setDescription(props.description);
   };
 
-  const handleSave = () => {
+  const handleList = () => {
     const formData = new FormData();
     formData.append('video', video);
     formData.append('name', name);
@@ -57,40 +57,18 @@ const ComponetVideo = (props) => {
       });
   };
 
-  const handleDelete = () => {
-    axios.delete(`/videos/${props.id}`)
-      .then(() => {
-        props.onDelete();
-      })
-      .catch(error => {
-        console.log(error);
-      });
-  };
+
 
   return (
     <div className='container-responsive'>
-      <NavbarVideo />
-      {isEditing ?
-        <div className='container-responsive'>
-          <input type="file" name="video" onChange={handleVideoChange} />
-          <input type="text" name="name" value={name} onChange={handleNameChange} />
-          <input type="text" name="description" value={description} onChange={handleDescriptionChange} />
-          <button onClick={handleSave}>Guardar</button>
-          <button onClick={handleCancelEdit}>Cancelar</button>
-        </div>
-        :
+      <NavbarUserComponent />
         <div>
           <video src={video} controls />
           <p>{name}</p>
           <p>{description}</p>
-          <button onClick={handleEdit}>Editar</button>
-          <button onClick={handleDelete}>Eliminar</button>
-         
         </div>
-      }
-      <p>{uploadStatus}</p>
     </div>
   );
 };
 
-export default ComponetVideo;
+export default ComponetVideoUser;

@@ -21,7 +21,7 @@ const handleUploadClick = () => {
     formData.append("title", title);
     formData.append("description", description);
     axios
-      .post("https://example.com/upload-notification", formData, {
+      .post("https://example.com/post-notification", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

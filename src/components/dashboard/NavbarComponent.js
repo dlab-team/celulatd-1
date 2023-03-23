@@ -18,15 +18,24 @@ function NavbarComponent() {
 						<Link to="/Ajustes" className='Link'>
             <Nav.Link href="/Ajustes">ajustes</Nav.Link>
 						</Link>
-						<Link to="/Perfil" className='Link'>
-            <Nav.Link href="/Perfil">perfil</Nav.Link>
+      <Navbar bg="dark">
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src="/logo.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt=""
+            />
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+						<Link to="/NavbarVideo" className='Link'>
+            <Nav.Link href="/NavbarVideo">Video</Nav.Link>
 						</Link>
-            <Navbar.Brand href="#">Desafios Latam</Navbar.Brand>
-						<Link to="/SubirVideo" className='Link'>
-					  <Nav.Link href="/SubirVideo">subir video</Nav.Link>
-						</Link>
-						<Link to="/ListarVideo" className='Link'>
-            <Nav.Link href="/ListarVideo">videos publicados</Nav.Link>
+						<Link to="/Statistics" className='Link'>
+            <Nav.Link href="/Statistics">Estadisticas</Nav.Link>
 						</Link>
 						<Link to="/Notification" className='Link'>
             <Nav.Link href="/Notification">notificaciones</Nav.Link>
@@ -46,9 +55,8 @@ function NavbarComponent() {
   <Nav className="justify-content-end flex-grow-1 pe-">
   <Nav.Link href="/Inicio">inicio</Nav.Link>
             <Nav.Link href="/Ajustes">ajustes</Nav.Link>
-            <Nav.Link href="/Perfil">perfil</Nav.Link>
-            <Nav.Link href="/SubirVideo">subir video</Nav.Link>
-            <Nav.Link href="/ListarVideo">videos publicados</Nav.Link>
+            <Nav.Link href="/NavbarVideo">video</Nav.Link>
+            <Nav.Link href="/Statistics">Estadisticas</Nav.Link>
             <Nav.Link href="/Notification">notificaciones</Nav.Link>
   
   </Nav>

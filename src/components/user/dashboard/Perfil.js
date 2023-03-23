@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import axios from "axios";
-
+import NavbarUserComponent from "./NavbarUserComponet";
 
 const Perfil = () => {
   const [name, setName] = useState("");
