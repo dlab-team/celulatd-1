@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import axios from "axios";
 import NavbarComponent from "./NavbarComponent";
+import Perfil from "./Perfil";
 
 const Settings = () => {
   const [name, setName] = useState("");
@@ -57,6 +58,7 @@ const Settings = () => {
       <div className="container-responsive">
         {!isEditing ? (
           <div>
+            <li>Ajustes generales</li>
             <ul>
               <li>Name: {name}</li>
               <li>Telefone: {telefone}</li>
@@ -87,6 +89,7 @@ const Settings = () => {
           </div>
         )}
       </div>
+      <Perfil/>
       </div>
     );
     };
