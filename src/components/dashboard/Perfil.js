@@ -1,5 +1,7 @@
 import React, { useState} from "react";
 import axios from "axios";
+import NavbarComponent from "./NavbarComponent";
+import "../../scss/components/dashboard/Ajustes/Ajustes.scss";
 
 
 const Perfil = () => {
@@ -57,6 +59,8 @@ const Perfil = () => {
 
   return (
     <div>
+      <NavbarComponent/>
+      
       <div className="container-responsive">
         {!isEditing ? (
           <div>

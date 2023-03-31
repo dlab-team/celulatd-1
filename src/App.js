@@ -18,6 +18,7 @@ import Statistics from './components/dashboard/Statistics';
 import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/user/dashboard/Notification';
+import Perfil from './components/dashboard/Perfil';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
     <Route path="/dashboard" element={<Dashboard/>}/>
     <Route exact path="/Inicio" element={<Inicio/>} />
     <Route path="/ajustes" element={<Ajustes/>} />
+    <Route path="/perfil" element={<Perfil/>} />
     <Route path="/VideoUploader" element={<VideoUploader/>}/>
 		<Route path="/ComponetVideo" element={<ComponetVideo/>}/>
 		<Route path="/Notification" element={<Notification/>}/>

@@ -1,0 +1,61 @@
+@import '../../../abstracts/mixins';
+@import '../../../abstracts/variables';
+
+
+.videouploader_title{
+    background: #073B3A;
+    width: 120px;
+    margin-left: 3%;
+    
+    p{
+       color: white;
+       margin: 2% 5%;
+        
+    }
+    
+
+}
+
+
+
+
+.videouploader_input{
+
+    background: rgba(7, 59, 58, 0.15);
+    width: 95vw;
+    height: 40px;
+    margin-bottom: 15%;
+    margin-left: 3%;
+    border-radius: 0 15px 15px 15px;
+    p{
+        color:#073B3A;
+        margin: 2% 5%;
+         
+     }
+}
+
+.videouploader_input-height{
+            height: 200px;
+            overflow-y: scroll;
+}
+
+
+.imagen-uploader{
+    
+    button{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 6%;
+        img{
+            width: 30%;
+        }  
+    }
+
+    input[type="file"]{
+        margin-left: 4%;
+    }
+    
+}
+
+
+
