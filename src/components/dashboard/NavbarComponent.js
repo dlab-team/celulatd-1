@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import CasaSvg from "../../assets/img/CasaSvg.svg";
-import "../../scss/components/dashboard/Navbar/Navbar.scss";
+import "../../scssWeb/main.css";
 import AjusteWt from "../../assets/img/AjusteWt.svg";
 import SvgMensajeW from "../../assets/img/SvgMensajeW.svg";
 import SvgSubirVidW from "../../assets/img/SvgSubirVidW.svg";

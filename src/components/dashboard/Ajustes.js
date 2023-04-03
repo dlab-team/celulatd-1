@@ -2,7 +2,7 @@ import React, { useState} from "react";
 import axios from "axios";
 import NavbarComponent from "./NavbarComponent";
 import Perfil from "./Perfil";
-import "../../scss/components/dashboard/Ajustes/Ajustes.scss";
+import "../../scssWeb/main.css";
 
 
 const Settings = () => {

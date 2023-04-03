@@ -39,23 +39,12 @@
             overflow-y: scroll;
 }
 
-
 .imagen-uploader{
-    
-    button{
-        display: flex;
-        justify-content: center;
-        margin-bottom: 6%;
-        img{
-            width: 30%;
-        }  
-    }
-
-    input[type="file"]{
-        margin-left: 4%;
-    }
+    width: 80px;
     
 }
 
-
-
+.prueba{
+    background: #073B3A;
+    display: flex;
+}

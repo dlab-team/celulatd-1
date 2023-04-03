@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import axios from "axios";
 import NavbarComponent from "./NavbarComponent";
-import '../../scss/components/dashboard/VideoUploader/VideoUploader.scss'
+import "../../scssWeb/main.css";
 import Uploadbutton from '../../assets/img/Uploadbutton.svg'
 
  const Notification = () => {

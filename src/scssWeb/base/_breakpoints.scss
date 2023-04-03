@@ -1,0 +1,35 @@
+$breakpoints: (
+    sm:375px,
+    md:768px,
+    lg:1024px
+);
+
+@mixin media($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Breakpoint `#{$breakpoint}` no encontrado en `$breakpoints` map.";
+    }
+}
+
+$breakpoints: (
+    sm:375px,
+    md:768px,
+    lg:1024px
+);
+
+@mixin media($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Breakpoint `#{$breakpoint}` no encontrado en `$breakpoints` map.";
+    }
+}

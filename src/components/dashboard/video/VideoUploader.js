@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import NavbarComponent from "../NavbarComponent";
-import "../../../scss/components/dashboard/VideoUploader/VideoUploader.scss";
+import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 
 const VideoUploader = () => {
@@ -52,7 +52,7 @@ const VideoUploader = () => {
   return (
     <div>
       <NavbarComponent />
-      <div className="Container">
+      <div className="container_videouploader">
         <label className="videouploader_title">
           <p>Title:</p>
         </label>
@@ -63,7 +63,7 @@ const VideoUploader = () => {
           onChange={handleTitleInputChange}
         />
       </div>
-      <div>
+      <div className="container_videouploader">
         <label className="videouploader_title">
           <p>Description:</p>
         </label>

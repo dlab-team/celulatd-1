@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import GoogleLoginButton from "./Button";
 import { Link } from "react-router-dom";
+import "../../../scssWeb/main.css";
 
 
 export default function Login() {

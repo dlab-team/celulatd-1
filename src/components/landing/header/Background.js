@@ -1,7 +1,7 @@
 import React from 'react'
 
-import BkgdTransp from '../../../assets/img/BkgdTransp.jpg';
-import '../../../scss/components/landing/header/_backgroundHero.scss';
+
+import '../../../scssWeb/main.css';
 
 
 export default function Background() {
@@ -9,7 +9,7 @@ export default function Background() {
     
       <div className='container-bg'>
         <div className='bg'>
-          {/* <img src={BkgdTransp} /> */}
+          {}
         </div>
       </div>
   
