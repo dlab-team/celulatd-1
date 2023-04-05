@@ -8,6 +8,7 @@ const ComponetVideoUser = (props) => {
   const [name, setName] = useState(props.name);
   const [description, setDescription] = useState(props.description);
   const [uploadStatus, setUploadStatus] = useState("");
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
     setVideo(props.video);
@@ -38,37 +39,60 @@ const ComponetVideoUser = (props) => {
     setDescription(props.description);
   };
 
-  const handleList = () => {
-    const formData = new FormData();
-    formData.append('video', video);
-    formData.append('name', name);
-    formData.append('description', description);
-    axios.put(`/videos/${props.id}`, formData)
-      .then(response => {
-        setIsEditing(false);
-        setVideo(response.data.video);
-        setName(response.data.name);
-        setDescription(response.data.description);
-        setUploadStatus("Upload successful");
-      })
-      .catch(error => {
-        console.log(error);
-        setUploadStatus("Upload failed");
-      });
+  const fetchVideo = () => {
+    axios.get('https://www.googleapis.com/youtube/v3/search', {
+      params: {
+        key: 'AIzaSyDCtEVPUK8m7rLK9kchfGifpEdaGk8Zxk8',
+        q: name,
+        part: 'snippet',
+        maxResults: 1,
+      },
+    }).then(response => {
+      const videoId = response.data.items[0].id.videoId;
+      const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+      setVideo(videoUrl);
+      setUploadStatus("Upload successful");
+    }).catch(error => {
+      console.error(error);
+      setUploadStatus("Upload failed");
+    });
   };
 
-
+  const fetchRandomVideos = () => {
+    axios.get('https://www.googleapis.com/youtube/v3/search', {
+      params: {
+        key: 'AIzaSyDCtEVPUK8m7rLK9kchfGifpEdaGk8Zxk8',
+        q: 'videos',
+        part: 'snippet',
+        maxResults: 5,
+      },
+    }).then(response => {
+      setVideos(response.data.items);
+    }).catch(error => {
+      console.error(error);
+    });
+  };
 
   return (
     <div className='container-responsive'>
       <NavbarUserComponent />
-        <div>
-          <video src={video} controls />
-          <p>{name}</p>
-          <p>{description}</p>
-        </div>
+      <div>
+        <video src={video} controls />
+        <p>{name}</p>
+        <p>{description}</p>
+        <button onClick={fetchVideo}>Obtener video</button>
+        <button onClick={fetchRandomVideos}>Obtener videos aleatorios</button>
+        <ul>
+          {videos.map((item, index) => (
+            <li key={index}>
+              <spam href={`https://www.youtube.com/watch?v=${item.id.videoId}`}>{item.snippet.title}</spam>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
+
 };
 
 export default ComponetVideoUser;
