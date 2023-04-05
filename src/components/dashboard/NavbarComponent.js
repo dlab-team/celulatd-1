@@ -20,7 +20,7 @@ function NavbarComponent() {
 						</Link>
       <Navbar bg="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/Inicio">
             <img
               src="/logo.svg"
               width="30"
