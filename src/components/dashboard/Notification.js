@@ -1,6 +1,8 @@
 import React, { useState} from "react";
 import axios from "axios";
 import NavbarComponent from "./NavbarComponent";
+import "../../scssWeb/main.css";
+import Uploadbutton from '../../assets/img/Uploadbutton.svg'
 
  const Notification = () => {
 const [title, setTitle] = useState("");
@@ -21,7 +23,7 @@ const handleUploadClick = () => {
     formData.append("title", title);
     formData.append("description", description);
     axios
-      .post("https://example.com/post-notification", formData, {
+      .post("https://example.com/upload-notification", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -46,15 +48,15 @@ const handleUploadClick = () => {
     <div>
       <NavbarComponent/>
       <div className="container-responsive">
-        <label className="container__label__title">Title:</label>
-        <input className="container__title__input" type="text" value={title} onChange={handleTitleInputChange} />
+        <label className="container__label__title videouploader_title"><p>Title:</p></label>
+        <input className="container__title__input videouploader_input" type="text" value={title} onChange={handleTitleInputChange} />
       </div>
       <div  className="container__description" >
-        <label className="container__label__description">Description:</label>
-        <input className="container__imput_description" type="text" value={description} onChange={handleDescriptionInputChange} />
+        <label className="container__label__description videouploader_title"><p>Description:</p></label>
+        <input className="container__imput_description videouploader_input videouploader_input-height" type="text" value={description} onChange={handleDescriptionInputChange} />
       </div>
-      <div className="container__button_upload">
-        <button onClick={handleUploadClick}>Upload</button>
+      <div className="container__button_upload imagen-uploader">
+      <button onClick={handleUploadClick}><img src={Uploadbutton} alt=""></img></button>
       </div>
       <p>{uploadStatus}</p>
     </div>

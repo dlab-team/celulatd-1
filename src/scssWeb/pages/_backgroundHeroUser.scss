@@ -1,6 +1,9 @@
-.container-user {
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
 
-    background-image: url('../../../assets//img/BkgdTransp.jpg');
+.container-user {
+    //background-image: url("../../assets/img/background.jpg");
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -10,16 +13,11 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-
-
-}
-
-.container-user {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f2f2f2;
+    
 
     form {
         display: flex;
@@ -34,32 +32,32 @@
             padding: 10px;
             margin-bottom: 10px;
             width: 100%;
-            border: 1px solid #ccc;
+            border: 1px solid $userwinterwhite;
             border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.15);
+            background-color: $userwhite;
 
             &:focus {
                 outline: none;
-                border-color: blue;
+                border-color: $userblue;
             }
         }
 
         button {
             padding: 10px;
-            border:solid 2px #E2A30B;
+            border:solid 2px $useryellowdark;
             border-radius: 5px ;
-            background-color:#073B3A;
-            color: #fff;
+            background-color:$usergeendark;
+            color: $userwhite;
             cursor: pointer;
             border-radius: 4px;
 
             &:hover {
-                background-color: #E2A30B;
+                background-color:$useryellowligth;
             }
         }
 
         p {
-            color: red;
+            color: $userred;
             margin-top: 10px;
         }
     }
@@ -71,7 +69,7 @@
 
     a {
         text-decoration: underline;
-        color: #E2A30B;
+        color: $useryellowligth;
         cursor: pointer;
 
         &:hover {
@@ -96,13 +94,13 @@
 
 .register {
     margin-bottom: 10px;
-    color: #ECECEC;
+    color: $userwinterwhite;
     white-space: nowrap;
     display: inline-block;
 
     a {
 
-        color: #ECECEC;
+        color: $userwinterwhite;
         cursor: pointer;
 
         &:hover {
@@ -115,7 +113,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    color: #ECECEC;
+    color: $userwinterwhite;
 }
 
 hr {
@@ -133,7 +131,7 @@ hr {
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 14px;
-    color: #ECECEC;
+    color: $userwinterwhite;
     line-height: 1;
 }
 
@@ -144,7 +142,7 @@ hr {
     top: 0;
     height: 16px;
     width: 16px;
-    background-color: #eee;
+    background-color: $userwinterwhite;
     border-radius: 3px;
 }
 
@@ -159,7 +157,7 @@ input[type="checkbox"]:checked+.checkbox-custom:before {
     top: 2px;
     left: 4px;
     font-size: 12px;
-    color: #fff;
+    color: $userwhite;
 }
 
 input[type="checkbox"]:focus+.checkbox-custom {

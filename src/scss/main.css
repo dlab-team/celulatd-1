@@ -16,6 +16,11 @@
     grid-template-rows: 0.1fr 0.3fr 0.2fr 1fr 0.5fr 0.5fr 0.3fr 0.5fr 0.3fr 0.5fr 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
   }
 }
+@media screen and (min-width: 1024px) {
+  .container {
+    grid-template-rows: 0.1fr 0.3fr 0.2fr 1fr 0.5fr 0.5fr 0.01fr 0.5fr 0.01fr 0.5fr 0.01fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+  }
+}
 
 .header {
   grid-area: 1/1/4/4;
@@ -29,22 +34,47 @@
 .imput-hero {
   grid-area: 1/2/2/4;
 }
+@media screen and (min-width: 1024px) {
+  .imput-hero {
+    grid-area: 1/2 2/4;
+  }
+}
 
 .btn-hero {
   grid-area: 2/3/3/4;
+}
+@media screen and (min-width: 1024px) {
+  .btn-hero {
+    grid-area: 2/3 3/4;
+  }
 }
 
 .titles-hero {
   grid-area: 2/2/3/3;
 }
+@media screen and (min-width: 1024px) {
+  .titles-hero {
+    grid-area: 2/2 3/3;
+  }
+}
 
 .logo-hero {
   grid-area: 2/1/3/2;
+}
+@media screen and (min-width: 1024px) {
+  .logo-hero {
+    grid-area: 2/1 3/2;
+  }
 }
 
 .menu-nav {
   grid-area: 3/2/4/4;
   height: 1fr;
+}
+@media screen and (min-width: 1024px) {
+  .menu-nav {
+    grid-area: 3/2 4/4;
+  }
 }
 
 .body {
@@ -75,19 +105,15 @@
 
 .svg-card1 {
   grid-area: 6/1/7/2;
+  grid-area: 6/1/7/2;
 }
-@media screen and (min-width: 1024px) {
-  .svg-card1 {
-    grid-area: 6/1/8/1;
-  }
-}
-
 .img-card1 {
   grid-area: 6/2/7/3;
 }
 @media screen and (min-width: 1024px) {
   .img-card1 {
-    grid-area: 6/3/8/3;
+    display: grid;
+    grid-area: 6/3;
   }
 }
 
@@ -97,8 +123,7 @@
 }
 @media screen and (min-width: 1024px) {
   .text-card1 {
-    grid-area: 6/2/8/2;
-    height: 1fr;
+    grid-area: 6/2;
   }
 }
 
@@ -110,14 +135,30 @@
 .svg-card2 {
   grid-area: 8/1/9/2;
 }
+@media screen and (min-width: 1024px) {
+  .svg-card2 {
+    grid-area: 8/1 9/2;
+  }
+}
 
 .img-card2 {
   grid-area: 8/2/9/3;
+}
+@media screen and (min-width: 1024px) {
+  .img-card2 {
+    display: grid;
+    grid-area: 8/3;
+  }
 }
 
 .text-card2 {
   grid-area: 9/1/10/4;
   height: 1fr;
+}
+@media screen and (min-width: 1024px) {
+  .text-card2 {
+    grid-area: 8/2;
+  }
 }
 
 .bg-card3 {
@@ -128,10 +169,23 @@
 .img-card3 {
   grid-area: 10/2/11/3;
 }
+@media screen and (min-width: 1024px) {
+  .img-card3 {
+    display: grid;
+    grid-template-areas: "imagen";
+    grid-area: imagen;
+    grid-area: 10/1;
+  }
+}
 
 .text-card3 {
   grid-area: 11/1/12/4;
   height: 1fr;
+}
+@media screen and (min-width: 1024px) {
+  .text-card3 {
+    grid-area: 10/2/11/3;
+  }
 }
 
 .bg-experiencia {
@@ -174,22 +228,38 @@
 }
 
 .footer {
-  grid-area: 18/1/20/4;
+  grid-area: 18/1/19/4;
   height: 1fr;
 }
 
+/*.logo-and-title {
+
+    .logo-footer {
+      img {
+        @include media(lg) {
+          grid-area: 19/3;
+        }
+      }
+    }
+  }
+}
+
 .bg-footer {
-  grid-area: 18/1/20/4;
+  grid-area: 18 / 1 / 20 / 4;
   height: 1fr;
 }
 
 .footer-content {
-  grid-area: 18/1/20/4;
+  grid-area: 18 / 1 / 20 / 4;
   height: 1fr;
-}
-
+}*/
 .svg-card3 {
   grid-area: 10/3/11/4;
+}
+@media screen and (min-width: 1024px) {
+  .svg-card3 {
+    grid-area: 10/3/11/4;
+  }
 }
 
 /* Definimos las Custom properties */
@@ -237,11 +307,9 @@ img, picture, video, iframe, figure {
   width: 100%;
   display: block;
   /* (Opcional) */
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* (Opcional) */
-  -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 
 /* Reseteamos los enlaces para funcionar como cajas... */
@@ -283,10 +351,6 @@ blockquote:before, blockquote:after, q:before, q:after {
 }
 
 /* (Opcional) Configuramos el texto que seleccionamos */
-::-moz-selection {
-  background-color: var(--negro);
-  color: var(--blanco);
-}
 ::selection {
   background-color: var(--negro);
   color: var(--blanco);
@@ -296,15 +360,12 @@ blockquote:before, blockquote:after, q:before, q:after {
 form, input, textarea, select, button, label {
   font-family: inherit;
   font-size: inherit;
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   background-color: transparent;
   color: inherit;
   display: block;
   /* (Opcional) */
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 /* Reseteamos las tablas */
@@ -327,8 +388,7 @@ body {
   font-family: var(--tipo-principal);
   color: var(--negro);
   /* (Opcional) */
-  -webkit-hyphens: auto;
-          hyphens: auto;
+  hyphens: auto;
   /* (Opcional) */
   font-smooth: always;
   /* (Opcional) */

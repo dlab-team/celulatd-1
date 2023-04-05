@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
-import NavbarVideo from "./NavbarVideo.js";
+import NavbarComponent from "../NavbarComponent";
+import "../../../scssWeb/main.css";
+import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 
- const VideoUploader = () => {
+const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -49,23 +51,38 @@ import NavbarVideo from "./NavbarVideo.js";
 
   return (
     <div>
-      <NavbarVideo/>
-      <div className="Container">
-        <label>Title:</label>
-        <input type="text" value={title} onChange={handleTitleInputChange} />
+      <NavbarComponent />
+      <div className="container_videouploader">
+        <label className="videouploader_title">
+          <p>Title:</p>
+        </label>
+        <input
+          className="videouploader_input"
+          type="text"
+          value={title}
+          onChange={handleTitleInputChange}
+        />
       </div>
-      <div>
-        <label>Description:</label>
-        <input type="text" value={description} onChange={handleDescriptionInputChange} />
+      <div className="container_videouploader">
+        <label className="videouploader_title">
+          <p>Description:</p>
+        </label>
+        <input
+          className="videouploader_input videouploader_input-height"
+          type="text"
+          value={description}
+          onChange={handleDescriptionInputChange}
+        />
       </div>
-      <div>
+      <div className="imagen-uploader">
+        <button onClick={handleUploadClick}>
+          <img className="imagen-button"src={Uploadbutton} alt=""></img>
+        </button>
         <input type="file" onChange={handleFileInputChange} />
-        <button onClick={handleUploadClick}>Upload</button>
       </div>
       <p>{uploadStatus}</p>
     </div>
   );
 };
-
 
 export default VideoUploader;

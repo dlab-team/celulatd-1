@@ -1,10 +1,10 @@
-@import '../../../abstracts/mixins';
-@import '../../../abstracts/variables';
-
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
 
 .container-bg {
 
-    background-image: url('../../../../assets//img/BkgdTransp.jpg');
+    background-image: url('../../assets/img/background.jpg');
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -13,6 +13,7 @@
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
    
     
 

@@ -1,0 +1,445 @@
+@charset "UTF-8";
+/* Definimos las Custom properties */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  /* Colores */
+  --negro: #393939;
+  /* Tipografía */
+  --tipo-principal: Roboto, Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* (Opcional) Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+  }
+}
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* @media (prefers-contrast: high){
+    :root{}
+} */
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+*::before, *::after {
+  display: block;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Opcional) Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* (Opcional) Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* (Opcional) */
+  hyphens: auto;
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#navbar-user {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+@media screen and (min-width: 1024px) {
+  #navbar-user {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+  }
+}
+
+.navbar-admin-all {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+}
+
+.navbar-background {
+  background: #073B3A;
+}
+
+.svg-navbar {
+  width: 20%;
+}
+
+.container-user {
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  background-clip: padding-box;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container-user form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+.container-user form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  background-color: white;
+}
+.container-user form input:focus {
+  outline: none;
+  border-color: rgba(0, 158, 227, 0.831372549);
+}
+.container-user form button {
+  padding: 10px;
+  border: solid 2px #e2a30b;
+  border-radius: 5px;
+  background-color: #073B3A;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.container-user form button:hover {
+  background-color: rgba(226, 161, 11, 0.831372549);
+}
+.container-user form p {
+  color: #d71515;
+  margin-top: 10px;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.forgot-password a {
+  text-decoration: underline;
+  color: rgba(226, 161, 11, 0.831372549);
+  cursor: pointer;
+}
+.forgot-password a:hover {
+  text-decoration: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.remember-me input[type=checkbox] {
+  margin-right: 10px;
+}
+.remember-me label {
+  cursor: pointer;
+}
+
+.register {
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  white-space: nowrap;
+  display: inline-block;
+}
+.register a {
+  color: #f0f0f0;
+  cursor: pointer;
+}
+.register a:hover {
+  text-decoration: none;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+hr {
+  flex-grow: 1;
+  margin: 0 10px;
+  border: none;
+  border-top: 1px solid;
+}
+
+.checkbox-label {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f0f0f0;
+  line-height: 1;
+}
+
+.checkbox-custom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .checkbox-custom:before {
+  content: "✓";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+input[type=checkbox]:focus + .checkbox-custom {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=checkbox]:checked + .checkbox-custom {
+  background-color: #0f9d58;
+}
+
+.barra {
+  background: #e2a30b;
+  display: flex;
+  height: 60px;
+  margin-top: 80px;
+  position: fixed;
+  width: 100%;
+}
+.barra img {
+  width: 8%;
+  height: 8%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .barra img {
+    width: 2%;
+    margin-bottom: 0px;
+    height: 30px;
+    margin-top: 15px;
+  }
+}
+.barra p {
+  margin-left: 10px;
+  margin-bottom: 11px;
+  margin-top: 15px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 19px;
+  color: #073b3a;
+}
+@media screen and (min-width: 1024px) {
+  .barra p {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container_body {
+    display: flex;
+  }
+}
+.container_component_all {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #073B3A;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .container_component_all {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-top: 15%;
+  }
+}
+.container_component_all img {
+  width: 30%;
+  margin: auto;
+  padding-top: 15%;
+}
+.container_component_all button {
+  font-family: inter;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #073B3A;
+  margin: auto;
+  margin-top: 15%;
+  line-height: 1.5rem;
+}
+
+.container_component-background_resources {
+  background: rgba(7, 59, 58, 0.2509803922);
+}
+
+.container_component-background_video {
+  background: #e2a30b;
+}
+
+.container_component-background_notification {
+  background: rgba(0, 158, 227, 0.831372549);
+}
+
+.ajustes-ul {
+  background-color: red;
+}
+
+.container_videouploader label {
+  background: #073B3A;
+  width: 120px;
+  margin-left: 3%;
+}
+.container_videouploader label p {
+  color: white;
+  margin: 2% 5%;
+}
+.container_videouploader input {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 95vw;
+  margin-bottom: 15%;
+  margin-left: 3%;
+  border-radius: 0 15px 15px 15px;
+}
+.container_videouploader input p {
+  color: white;
+  margin: 2% 5%;
+}
+
+.videouploader_input {
+  height: 40px;
+}
+
+.videouploader_input-height {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.imagen-uploader button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+.imagen-uploader button img {
+  width: 30%;
+}
+.imagen-uploader input[type=file] {
+  margin-left: 4%;
+}/*# sourceMappingURL=main.css.map */

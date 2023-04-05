@@ -1,0 +1,93 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
+
+.barra {
+  background: $useryellowdark;
+  display: flex;
+  height: 60px;
+  margin-top: 80px;
+  position: fixed;
+  width: 100%;
+
+  img {
+    width: 8%;
+    height: 8%;
+    margin-left: 10px;
+    margin-top: 10px;
+  
+    @include media(lg) {
+      width: 2%;
+      margin-bottom: 0px;
+      height: 30px;
+      margin-top: 15px;
+    }
+  }
+  p {
+    margin-left: 10px;
+    margin-bottom: 11px;
+    margin-top: 15px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 19px;
+    color: #073b3a;
+  
+    @include media(lg) {
+      font-size: 28px;
+    }
+  }
+}
+
+@include media(lg) {
+  .container_body {
+    display: flex;
+  }
+}
+
+
+.container_component_all {
+  width: 150px;
+  height: 150px;
+  border: 2px solid $usergeendark;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+  @include media(lg) {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 0;
+    margin-top: 15%;
+  }
+  img {
+    width: 30%;
+    margin: auto;
+    padding-top: 15%;
+  }
+  
+  button {
+    font-family: inter;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: $usergeendark;
+    margin: auto;
+    margin-top: 15%;
+    line-height: 1.5rem;
+  }
+  
+}
+
+
+.container_component-background_resources {
+  background: $usergeenligth;
+}
+
+.container_component-background_video {
+  background: $useryellowdark;
+}
+
+.container_component-background_notification {
+  background: $userblue;
+}
+

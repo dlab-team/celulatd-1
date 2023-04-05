@@ -2,6 +2,8 @@ import React, { useState} from "react";
 import axios from "axios";
 import NavbarComponent from "./NavbarComponent";
 import Perfil from "./Perfil";
+import "../../scssWeb/main.css";
+
 
 const Settings = () => {
   const [name, setName] = useState("");
@@ -59,7 +61,7 @@ const Settings = () => {
         {!isEditing ? (
           <div>
             <li>Ajustes generales</li>
-            <ul>
+            <ul className="ajustes-ul">
               <li>Name: {name}</li>
               <li>Telefone: {telefone}</li>
               <li>Email: {email}</li>

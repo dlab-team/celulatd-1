@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../../../scss/components/user/_backgroundUser.css";
+import "../../../scssWeb/main.css";
 
 export default function Register() {
   const [username, setUsername] = useState("");
