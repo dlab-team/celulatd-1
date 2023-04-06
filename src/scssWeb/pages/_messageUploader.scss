@@ -1,1 +1,31 @@
+@import "../utils/mixins";
+@import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/typography";
+
+
+.container-responsive{
+    label {
+      background: $usergeendark;
+      width: 120px;
+      margin-left: 3%;
+  
+      p {
+        @include font-p;
+        color: $userwhite;
+        margin: 2% 5%;
+      }
+    }
+  
+    input {
+      background: $usergeenligth;
+      width: 95vw;
+      margin-bottom: 15%;
+      margin-left: 3%;
+      border-radius: 0 15px 15px 15px;
+      p {
+        color: $userwhite;
+        margin: 2% 5%;
+      }
+    }
+  }

@@ -5,7 +5,7 @@ import "../../scssWeb/main.css";
 import Uploadbutton from '../../assets/img/Uploadbutton.svg'
 
 
- const Notification = () => {
+const Notification = () => {
 const [title, setTitle] = useState("");
 const [description, setDescription] = useState("");
 const [uploadStatus, setUploadStatus] = useState("");
@@ -49,8 +49,8 @@ const handleUploadClick = () => {
     <div>
       <NavbarComponent/>
       <div className="container-responsive">
-        <label className="container__label__title videouploader_title"><p>Title:</p></label>
-        <input className="container__title__input videouploader_input" type="text" value={title} onChange={handleTitleInputChange} />
+        <label className="container__label__title prueba"><p>Title:</p></label>
+        <input className="container__title__input" type="text" value={title} onChange={handleTitleInputChange} />
       </div>
       <div  className="container__description" >
         <label className="container__label__description videouploader_title"><p>Description:</p></label>
