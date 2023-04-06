@@ -14,7 +14,7 @@ import Notification from './components/dashboard/Notification';
 import DashboardUser from './components/user/dashboard/DashboardUser';
 import ComponetVideoUser from './components/user/dashboard/ComponetVideoUser';
 import NavbarVideo from './components/dashboard/video/NavbarVideo.js';
-import Statistics from './components/dashboard/Statistics';
+import Statistics from './components/dashboard/statistics/Statistics';
 import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/user/dashboard/Notification';
