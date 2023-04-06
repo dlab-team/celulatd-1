@@ -4,6 +4,7 @@ import NavbarComponent from "./NavbarComponent";
 import "../../scssWeb/main.css";
 import Uploadbutton from '../../assets/img/Uploadbutton.svg'
 
+
  const Notification = () => {
 const [title, setTitle] = useState("");
 const [description, setDescription] = useState("");
