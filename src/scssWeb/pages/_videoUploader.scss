@@ -1,6 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/typography";
 
 .container_videouploader {
   label {
@@ -9,6 +10,7 @@
     margin-left: 3%;
 
     p {
+      @include font-p;
       color: $userwhite;
       margin: 2% 5%;
     }
