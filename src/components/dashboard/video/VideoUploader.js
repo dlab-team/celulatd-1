@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import NavbarComponent from "../NavbarComponent";
+import NavbarComp from "../NavbarComponent";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
+import Header from "../../common/header";
+import UploadSvg from "../../../assets/img/Uploadbutton.svg";
+
 
 const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -51,10 +54,16 @@ const VideoUploader = () => {
 
   return (
     <div>
-      <NavbarComponent />
-      <div className="container_videouploader">
+       <Header />
+        <NavbarComp />
+          <div className="barra">
+            <img className="svg-img-barra" src={UploadSvg}/>
+            <p>SUBIR VIDEOS</p>
+          </div>
+          <div className="container-body-all">
+      <div className="container-videouploader-info container-videouploader_body">
         <label className="videouploader_title">
-          <p>Title:</p>
+          <h2>Title:</h2>
         </label>
         <input
           className="videouploader_input"
@@ -63,9 +72,9 @@ const VideoUploader = () => {
           onChange={handleTitleInputChange}
         />
       </div>
-      <div className="container_videouploader">
+      <div className="container-videouploader-info container_videouploader">
         <label className="videouploader_title">
-          <p>Description:</p>
+          <h2>Description:</h2>
         </label>
         <input
           className="videouploader_input videouploader_input-height"
@@ -81,6 +90,7 @@ const VideoUploader = () => {
         <input type="file" onChange={handleFileInputChange} />
       </div>
       <p>{uploadStatus}</p>
+    </div>
     </div>
   );
 };

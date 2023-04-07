@@ -19,12 +19,13 @@
   display: flex;
   justify-content: space-around;
   margin-left: 5%;
+  img{
+    width: 20%;
+  }
 }
 
 .navbar-background {
   background: $usergeendark;
 }
 
-.svg-navbar {
-  width: 20%;
-}
+

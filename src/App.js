@@ -1,5 +1,5 @@
 import React from 'react';
-import './scss/main.scss';
+import './scssWeb/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Landing from './components/landing/Landing'

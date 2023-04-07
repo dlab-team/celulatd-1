@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import axios from "axios";
-import NavbarComponent from "./NavbarComponent";
-import "../../scssWeb/main.css";
+import NavbarComp from "./NavbarComponent";
+import "../../../src/scssWeb/main.css";
 import Uploadbutton from '../../assets/img/Uploadbutton.svg'
-
 import Header from "../../components/common/header";
+import MensajeSvg from '../../assets/img/SvgMensaje.svg';
+
+
+
 
 const Notification = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [uploadStatus, setUploadStatus] = useState("");
 
-const Notification = () => {
-const [title, setTitle] = useState("");
-const [description, setDescription] = useState("");
-const [uploadStatus, setUploadStatus] = useState("");
 
   const handleTitleInputChange = (event) => {
     setTitle(event.target.value);
@@ -53,20 +52,30 @@ const [uploadStatus, setUploadStatus] = useState("");
 
   return (
     <div>
-      <Header />
-      <NavbarComponent />
-      <div className="container-responsive">
-        <label className="container__label__title prueba"><p>Title:</p></label>
-        <input className="container__title__input" type="text" value={title} onChange={handleTitleInputChange} />
+       <Header />
+        <NavbarComp />     
+          <div className="barra">
+            <img className="svg-img-barra" src={MensajeSvg}/>
+            <p>NOTIFICACIONES</p>
+          </div>   
+      <div className="container-body-all container-message_body">
+        <div>
+        <label><p>Titulo:</p></label>
+        <input classname="container-message_title-height" type="text" value={title} onChange={handleTitleInputChange} />
       </div>
-      <div className="container__description" >
-        <label className="container__label__description videouploader_title"><p>Description:</p></label>
-        <input className="container__imput_description videouploader_input videouploader_input-height" type="text" value={description} onChange={handleDescriptionInputChange} />
+      <div>
+        <label ><p>Mensaje:</p></label>
+        <input className="container-message_description-height" type="text" value={description} onChange={handleDescriptionInputChange} />
       </div>
-      <div className="container__button_upload imagen-uploader">
-        <button onClick={handleUploadClick}><img src={Uploadbutton} alt=""></img></button>
+      <div className="container-message_button_upload">
+        <button onClick={handleUploadClick}>
+          <img src={Uploadbutton} alt="Enviar"></img>
+          <h2>Enviar</h2>
+          </button>
       </div>
       <p>{uploadStatus}</p>
+      </div>
+      
     </div>
   );
 }

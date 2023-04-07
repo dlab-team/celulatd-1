@@ -1,0 +1,18 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
+
+
+.navbarvideo{
+    background:$useryellowdark;
+    
+    a.nav-link{
+         background:$useryellowdark;
+         color: $usergeendark;
+         margin-left: 10px;
+        }
+    }
+
+
+
+

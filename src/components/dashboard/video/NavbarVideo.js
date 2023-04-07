@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavbarComponent from '../NavbarComponent';
+import '../../../scssWeb/main.css';
 
 
 
@@ -12,7 +13,7 @@ function NavbarVideo() {
     <>
  
   <NavbarComponent/>
-  <Navbar bg="light" variant="light">
+  <Navbar variant="light" className='mx-3 navbarvideo'>
         <Container>
         <Link to="/VideoUploader" className='Link'>
           <Nav.Link href="/VideoUploader">Subir video</Nav.Link>

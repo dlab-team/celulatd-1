@@ -1,1 +1,27 @@
+@import "../utils/mixins";
+@import "../utils/variables";
 @import "../base/breakpoints";
+
+.header-container{   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color:$usergeendark;
+    color: $userwhite;
+}
+
+.header-container-logo{
+    width: 30%;
+
+    img{
+        width: 80%;
+    }
+}
+
+.settings-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
