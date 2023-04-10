@@ -51,6 +51,8 @@
 .container-inicio_body{
 @include media(lg) {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   
   }
 }

@@ -643,6 +643,8 @@ body h2 {
 @media screen and (min-width: 1024px) {
   .container-inicio_body {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
