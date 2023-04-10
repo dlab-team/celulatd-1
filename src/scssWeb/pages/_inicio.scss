@@ -1,58 +1,73 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/base";
 
 .barra {
   background: $useryellowdark;
   display: flex;
   height: 60px;
-  margin-top: 80px;
   position: fixed;
   width: 100%;
-
-  img {
-    width: 8%;
-    height: 8%;
-    margin-left: 10px;
-    margin-top: 10px;
-  
-    @include media(lg) {
-      width: 2%;
-      margin-bottom: 0px;
-      height: 30px;
-      margin-top: 15px;
-    }
+  @include media(lg) {
+      top: 230px;
   }
-  p {
+
+  h2 {
     margin-left: 10px;
     margin-bottom: 11px;
     margin-top: 15px;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 19px;
     color: #073b3a;
   
-    @include media(lg) {
-      font-size: 28px;
+    
+  }
+}
+
+.svg-img-barra{
+  
+      width: 8%;
+      height: 8%;
+      margin-left: 10px;
+      margin-top: 10px;
+    
+      @include media(lg) {
+        width: 2%;
+        margin-bottom: 0px;
+        height: 30px;
+        margin-top: 15px; 
     }
-  }
+
 }
 
+.container-body-all{
+  margin-top: 100px;
+  @include media(lg) {
+    margin-top: 350px;
+    position: fixed;
+  
+  }
+
+}
+.container-inicio_body{
 @include media(lg) {
-  .container_body {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
   }
 }
 
 
-.container_component_all {
+
+
+.container-inicio_component_all {
   width: 150px;
   height: 150px;
   border: 2px solid $usergeendark;
   border-radius: 15px;
   margin: auto;
   margin-bottom: 15px;
-  margin-top: 15px;
+ 
 
   @include media(lg) {
     width: 200px;
@@ -79,15 +94,15 @@
 }
 
 
-.container_component-background_resources {
+.container-inicio_component-background_resources {
   background: $usergeenligth;
 }
 
-.container_component-background_video {
+.container-inicio_component-background_video {
   background: $useryellowdark;
 }
 
-.container_component-background_notification {
+.container-inicio_component-background_notification {
   background: $userblue;
 }
 

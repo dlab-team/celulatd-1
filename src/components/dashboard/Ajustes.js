@@ -1,9 +1,11 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import axios from "axios";
-import NavbarComponent from "./NavbarComponent";
+import NavbarComp from "./NavbarComponent";
 import Perfil from "./Perfil";
 import "../../scssWeb/main.css";
-
+import Header from "../../components/common/header";
+import AjustesSvg from "../../assets/img/AjusteWt.svg";
+import avatar from "../../assets/img/personatipo.png";
 
 const Settings = () => {
   const [name, setName] = useState("");
@@ -23,8 +25,6 @@ const Settings = () => {
   const handleEmailInputChange = (event) => {
     setMail(event.target.value);
   };
-  
-
 
   const handleUploadPerfil = () => {
     const formData = new FormData();
@@ -56,44 +56,68 @@ const Settings = () => {
 
   return (
     <div>
-      <NavbarComponent/>
-      <div className="container-responsive">
+      <Header />
+      <NavbarComp />
+        <div className="barra">
+          <img className="svg-img-barra" src={AjustesSvg} />
+          <h2>AJUSTES</h2>
+        </div>
+      <div className="container-body-all container-settings_body">
         {!isEditing ? (
+       <div className="container-settings_body-profile">   
           <div>
-            <li>Ajustes generales</li>
-            <ul className="ajustes-ul">
-              <li>Name: {name}</li>
-              <li>Telefone: {telefone}</li>
-              <li>Email: {email}</li>
-            </ul>
-            <button onClick={() => setIsEditing(true)}>Edit</button>
+          <img src={avatar} alt="profile" />
           </div>
+        <div>
+        <ul>
+          <li>NOMBRE: {name}</li>
+          <li>TELEFONO: {telefone}</li>
+          <li>EMAIL: {email}</li>
+        </ul>
+        </div>
+        <div>
+        <button className="body-button-all" onClick={() => setIsEditing(true)}>Editar</button>
+        </div>
+      </div>
+         
         ) : (
+        <div className="container-settings_body-edit">
           <div>
-            <div>
-              <label>Name:</label>
-              <input type="text" value={name} onChange={handleNameInputChange} />
-            </div>
-            <div>
-              <label>Telefone:</label>
-              <input type="text" value={telefone} onChange={handleTelefoneInputChange} />
-            </div>
-            <div>
-              <label>Email:</label>
-              <input type="text" value={email} onChange={handleEmailInputChange} />
-            </div>
-            <div>
+              <label>NOMBRE:</label>
+              <input
+                type="text"
+                value={name}
+                onChange={handleNameInputChange}
+              />
+          </div>
+          <div>
+              <label>TELEFONO:</label>
+              <input
+                type="text"
+                value={telefone}
+                onChange={handleTelefoneInputChange}
+              />
+          </div>
+          <div>
+              <label>EMAIL:</label>
+              <input
+                type="text"
+                value={email}
+                onChange={handleEmailInputChange}
+              />
+          </div>
+          <div className="body-button-edit-all">
               <button onClick={handleUploadPerfil}>Save</button>
               <button onClick={() => setIsEditing(false)}>Cancel</button>
               <p>{uploadStatus}</p>
-            </div>
-           
           </div>
+        </div>
         )}
-      </div>
-      <Perfil/>
-      </div>
-    );
-    };
+      
+    </div>
+    {/* <Perfil /> */}
+  </div>
+  );
+};
 
-    export default Settings;
+export default Settings;

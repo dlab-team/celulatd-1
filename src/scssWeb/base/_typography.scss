@@ -14,3 +14,14 @@
     }
  }
 
+ @mixin font-h2 ($color: white){
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: $color;
+    @include media (lg){
+        font-size: 1.2rem;
+        
+    }
+ }
+

@@ -1,3 +1,34 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/base";
+
+
+
+
+.barra-navbar-video{
+    justify-content: space-between;
+}
+
+.body-button-edit{
+    display: flex;
+    justify-content: space-around;
+    button{
+        height: 35px;
+        width: 80px;
+        background-color: $useryellowdark;
+    }
+        
+    }
+
+.container-component-video-info{
+    h2{
+        background-color: $usergeenligth;
+    }
+    p{
+        background-color:$usergeenligth;
+    }
+}
+    
+
+

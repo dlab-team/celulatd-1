@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M140 896q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302 340-223v-55L480 534 140 316v55l340 223Z"/></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="50">
+
+<g transform="matrix(0.052083336 0 0 0.052083336 -0 -5)">
+    <path d="M140 896C 124 896.00006 110 890.00006 98 878C 90 870 84 856 80 836L80 836L80 316C 80 300 86 286 98 274C 106 266 120 260 140 256L140 256L820 256C 836 256 850 262 862 274C 870 282 876 296 880 316L880 316L880 836C 880 852.00006 874 866.00006 862 878C 854 886 840 892 820 896L820 896L140 896zM480 594L820 371L820 316L480 534L140 316L140 371L480 594z" stroke="none" fill="#000000" fill-rule="nonzero" />
+</g>
+</svg>

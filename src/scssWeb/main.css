@@ -1,6 +1,11 @@
 @charset "UTF-8";
 /* Definimos las Custom properties */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   /* Colores */
   --negro: #393939;
@@ -135,6 +140,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
 #navbar-user {
   position: fixed;
   bottom: 0;
@@ -144,7 +199,7 @@ body {
 @media screen and (min-width: 1024px) {
   #navbar-user {
     position: fixed;
-    top: 0;
+    top: 150px;
     width: 100%;
     height: 80px;
   }
@@ -155,13 +210,218 @@ body {
   justify-content: space-around;
   margin-left: 5%;
 }
+@media screen and (min-width: 1024px) {
+  .navbar-admin-all {
+    justify-content: flex-end;
+  }
+}
+.navbar-admin-all img {
+  width: 20%;
+}
 
 .navbar-background {
   background: #073B3A;
 }
 
-.svg-navbar {
-  width: 20%;
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+  background-color: #073B3A;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .header-container {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.header-container-logo {
+  width: 30%;
+}
+.header-container-logo img {
+  width: 80%;
+}
+
+.user-container p {
+  margin-top: 12%;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.navbarvideo {
+  background: #e2a30b;
+}
+.navbarvideo a.nav-link {
+  background: #e2a30b;
+  color: #073B3A;
+  margin-left: 10px;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.container-recive-info label {
+  background: #073B3A;
+  width: 120px;
+  margin-left: 10px;
+}
+.container-recive-info label h2 {
+  margin: 2% 5%;
+}
+.container-recive-info input {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 95vw;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.container-recive-info input h2 {
+  margin: 2% 5%;
+}
+
+.recive_input {
+  height: 40px;
+}
+
+.recive_input-height {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.imagen-uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-uploader button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+  width: 30%;
+}
+.imagen-uploader button h2, .imagen-uploader button p {
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  .imagen-uploader button {
+    display: flex;
+    justify-content: center;
+  }
+  .imagen-uploader button img {
+    width: 10%;
+  }
+  .imagen-uploader button img {
+    width: 30%;
+  }
+}
+.imagen-uploader input[type=file] {
+  margin-left: 4%;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .container-user {
@@ -213,7 +473,6 @@ body {
 }
 .container-user form p {
   color: #d71515;
-  margin-top: 10px;
 }
 
 .forgot-password {
@@ -312,71 +571,105 @@ input[type=checkbox]:checked + .checkbox-custom {
   background-color: #0f9d58;
 }
 
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
 .barra {
   background: #e2a30b;
   display: flex;
   height: 60px;
-  margin-top: 80px;
   position: fixed;
   width: 100%;
 }
-.barra img {
+@media screen and (min-width: 1024px) {
+  .barra {
+    top: 230px;
+  }
+}
+.barra h2 {
+  margin-left: 10px;
+  margin-bottom: 11px;
+  margin-top: 15px;
+  color: #073b3a;
+}
+
+.svg-img-barra {
   width: 8%;
   height: 8%;
   margin-left: 10px;
   margin-top: 10px;
 }
 @media screen and (min-width: 1024px) {
-  .barra img {
+  .svg-img-barra {
     width: 2%;
     margin-bottom: 0px;
     height: 30px;
     margin-top: 15px;
   }
 }
-.barra p {
-  margin-left: 10px;
-  margin-bottom: 11px;
-  margin-top: 15px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 19px;
-  color: #073b3a;
+
+.container-body-all {
+  margin-top: 100px;
 }
 @media screen and (min-width: 1024px) {
-  .barra p {
-    font-size: 28px;
+  .container-body-all {
+    margin-top: 350px;
+    position: fixed;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .container_body {
+  .container-inicio_body {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
-.container_component_all {
+
+.container-inicio_component_all {
   width: 150px;
   height: 150px;
   border: 2px solid #073B3A;
   border-radius: 15px;
   margin: auto;
   margin-bottom: 15px;
-  margin-top: 15px;
 }
 @media screen and (min-width: 1024px) {
-  .container_component_all {
+  .container-inicio_component_all {
     width: 200px;
     height: 200px;
     margin-bottom: 0;
     margin-top: 15%;
   }
 }
-.container_component_all img {
+.container-inicio_component_all img {
   width: 30%;
   margin: auto;
   padding-top: 15%;
 }
-.container_component_all button {
+.container-inicio_component_all button {
   font-family: inter;
   font-weight: 700;
   font-size: 1.4rem;
@@ -386,60 +679,243 @@ input[type=checkbox]:checked + .checkbox-custom {
   line-height: 1.5rem;
 }
 
-.container_component-background_resources {
+.container-inicio_component-background_resources {
   background: rgba(7, 59, 58, 0.2509803922);
 }
 
-.container_component-background_video {
+.container-inicio_component-background_video {
   background: #e2a30b;
 }
 
-.container_component-background_notification {
+.container-inicio_component-background_notification {
   background: rgba(0, 158, 227, 0.831372549);
 }
 
-.ajustes-ul {
-  background-color: red;
-}
-
-.container_videouploader label {
-  background: #073B3A;
-  width: 120px;
-  margin-left: 3%;
-}
-.container_videouploader label p {
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
   color: white;
-  margin: 2% 5%;
 }
-.container_videouploader input {
-  background: rgba(7, 59, 58, 0.2509803922);
-  width: 95vw;
-  margin-bottom: 15%;
-  margin-left: 3%;
-  border-radius: 0 15px 15px 15px;
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
 }
-.container_videouploader input p {
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
   color: white;
-  margin: 2% 5%;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
-.videouploader_input {
-  height: 40px;
+.container-settings_body {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
-.videouploader_input-height {
-  height: 200px;
-  overflow-y: scroll;
-}
-
-.imagen-uploader button {
+.container-settings_body-profile {
   display: flex;
-  justify-content: center;
-  margin-bottom: 6%;
+  justify-content: space-between;
 }
-.imagen-uploader button img {
-  width: 30%;
+
+.body-button-all {
+  background-color: #e2a30b;
+  height: 35px;
+  width: 80px;
 }
-.imagen-uploader input[type=file] {
-  margin-left: 4%;
+
+.container-settings_body-edit input {
+  background-color: #f0f0f0;
+  border: 2px solid #073B3A;
+}
+
+.body-button-edit-all {
+  display: flex;
+  justify-content: end;
+}
+.body-button-edit-all button {
+  height: 35px;
+  width: 80px;
+  margin-top: 4%;
+  background-color: #e2a30b;
+  margin-right: 2%;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.barra-navbar-video {
+  justify-content: space-between;
+}
+
+.body-button-edit {
+  display: flex;
+  justify-content: space-around;
+}
+.body-button-edit button {
+  height: 35px;
+  width: 80px;
+  background-color: #e2a30b;
+}
+
+.container-component-video-info h2 {
+  background-color: rgba(7, 59, 58, 0.2509803922);
+}
+.container-component-video-info p {
+  background-color: rgba(7, 59, 58, 0.2509803922);
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

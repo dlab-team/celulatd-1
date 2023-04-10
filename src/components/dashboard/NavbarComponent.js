@@ -18,29 +18,29 @@ function NavbarComponent() {
         <Navbar key={expand} expand={expand} id= "navbar-user" className="navbar-background">
           <div className="navbar-admin-all">
             {" "}
-            <Link to="/Inicio" className="Link">
-              <img src={CasaSvg} className="svg-navbar" />
+            <Link to="/Inicio" >
+              <img src={CasaSvg}/>
               <Nav.Link href="/Inicio"></Nav.Link>
             </Link>
-            <Link to="/Ajustes" className="Link">
-              <img src={AjusteWt} className="svg-navbar" />
+            <Link to="/Ajustes" >
+              <img src={AjusteWt}/>
               <Nav.Link href="/Ajustes"></Nav.Link>
             </Link>
-             <Link to="/Statistics" className="Link">
-              <img src={Metricassvg} className="svg-navbar" />
+             <Link to="/Statistics" >
+              <img src={Metricassvg}/>
               <Nav.Link href="/Statistics"></Nav.Link>
             </Link> 
             <Navbar.Brand href="#"></Navbar.Brand>
-            <Link to="/VideoUploader" className="Link">
-              <img src={SvgSubirVidW} className="svg-navbar" />
+            <Link to="/VideoUploader" >
+              <img src={SvgSubirVidW}/>
               <Nav.Link href="/VideoUploader"></Nav.Link>
             </Link>
-            <Link to="/ComponetVideo" className="Link">
-              <img src={MiniRecursos} className="svg-navbar" />
+            <Link to="/ComponetVideo">
+              <img src={MiniRecursos}/>
               <Nav.Link href="/ComponetVideo"></Nav.Link>
             </Link>
-            <Link to="/Notification" className="Link">
-              <img src={SvgMensajeW} className="svg-navbar" />
+            <Link to="/Notification">
+              <img src={SvgMensajeW}/>
               <Nav.Link href="/Notification"></Nav.Link>
             </Link>
             

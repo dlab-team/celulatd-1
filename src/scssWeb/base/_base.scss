@@ -1,0 +1,8 @@
+body{
+    p{
+        @include font-p; 
+    }
+    h2{
+        @include font-h2;
+    }
+}

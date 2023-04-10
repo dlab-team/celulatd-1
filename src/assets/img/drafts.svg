@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="m480 136 371 222q17 9 23 24.5t6 30.5v463q0 24-18 42t-42 18H140q-24 0-42-18t-18-42V413q0-15 6.5-30.5T109 358l371-222Zm0 466 336-197-336-202-336 202 336 197Z"/></svg>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="50">
+
+<g transform="matrix(0.052083336 0 0 0.052083336 -0 -5)">
+    <path d="M480 136L851 358C 862.3334 364 870 372.1667 874 382.5C 876.66675 389.3889 878.66675 399.55554 880 413L880 413L880 876C 880 892 874 906 862 918C 854 926 840 932 820 936L820 936L140 936C 124 936 110 930 98 918C 90 910 84 896 80 876L80 876L80 413C 80 403 82.16667 392.83334 86.5 382.5C 89.388885 375.6111 96.888885 367.44446 109 358L109 358L480 136zM480 602L816 405L480 203L144 405L480 602z" stroke="none" fill="#000000" fill-rule="nonzero" />
+</g>
+</svg>

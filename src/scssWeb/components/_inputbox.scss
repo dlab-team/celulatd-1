@@ -1,0 +1,68 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
+@import "../base/base";
+
+.container-recive-info {
+    label {
+      background: $usergeendark;
+      width: 120px;
+      margin-left: 10px;
+  
+      h2 {
+        margin: 2% 5%;
+      }
+    }
+  
+    input {
+      background: $usergeenligth;
+      width: 95vw;
+      margin-left: 10px;
+      margin-bottom: 10px;
+  
+      h2 {
+        margin: 2% 5%;
+      }
+    }
+  }
+  
+  .recive_input {
+    height: 40px;
+  }
+  .recive_input-height {
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .imagen-uploader {
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 6%;
+      width: 30%;
+      h2, p{
+        color: $usergeendark;
+      }
+      @include media(lg) {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 10%;
+        }
+        
+        img {
+          width: 30%;
+        }
+      }
+    }
+    input[type="file"] {
+      margin-left: 4%;
+    }
+  }
+  

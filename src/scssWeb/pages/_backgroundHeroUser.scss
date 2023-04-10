@@ -1,6 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/base";
 
 .container-user {
     //background-image: url("../../assets/img/background.jpg");
@@ -58,7 +59,7 @@
 
         p {
             color: $userred;
-            margin-top: 10px;
+            
         }
     }
 }
