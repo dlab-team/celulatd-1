@@ -58,26 +58,27 @@ const VideoUploader = () => {
         <NavbarComp />
           <div className="barra">
             <img className="svg-img-barra" src={UploadSvg}/>
-            <p>SUBIR VIDEOS</p>
+            <h2>SUBIR VIDEOS</h2>
           </div>
           <div className="container-body-all">
-      <div className="container-videouploader-info container-videouploader_body">
-        <label className="videouploader_title">
+      <div className="container-recive-info container-recive_body">
+        <label className="recive_title">
           <h2>Title:</h2>
         </label>
         <input
-          className="videouploader_input"
+          className="recive_input"
           type="text"
           value={title}
           onChange={handleTitleInputChange}
         />
       </div>
-      <div className="container-videouploader-info container_videouploader">
-        <label className="videouploader_title">
+      <div className="container-recive-info container_recive">
+      {/* <div className="container-videouploader-info container_videouploader"> */}
+        <label className="recive_title">
           <h2>Description:</h2>
         </label>
         <input
-          className="videouploader_input videouploader_input-height"
+          className="recive_input recive_input-height"
           type="text"
           value={description}
           onChange={handleDescriptionInputChange}
@@ -86,6 +87,7 @@ const VideoUploader = () => {
       <div className="imagen-uploader">
         <button onClick={handleUploadClick}>
           <img className="imagen-button"src={Uploadbutton} alt=""></img>
+          <h2>Enviar</h2>
         </button>
         <input type="file" onChange={handleFileInputChange} />
       </div>

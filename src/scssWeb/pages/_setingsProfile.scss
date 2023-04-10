@@ -1,6 +1,8 @@
 @import '../utils/mixins';
 @import '../utils/variables';
 @import "../base/breakpoints";
+@import "../base/typography";
+@import "../base/base";
 
 
 
@@ -16,6 +18,8 @@
 
 .body-button-all{
     background-color: $useryellowdark;
+    height: 35px;
+    width: 80px;
 }
 
 .container-settings_body-edit{
@@ -32,6 +36,9 @@
     
 
     button{
+        height: 35px;
+        width: 80px;
+        margin-top: 4%;
         background-color: $useryellowdark;
         margin-right: 2%;
     }

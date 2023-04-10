@@ -1,9 +1,14 @@
-<svg width="989" height="1280" viewBox="0 0 989 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H860.719C931.381 0 988.664 57.2827 988.664 127.944V1279.44H0V0Z" fill="white"/>
-<path d="M688.187 1056.51L411.943 1216V897.017L688.187 1056.51Z" fill="#073B3A"/>
-<path d="M63.9724 193.857H946.016V252.014H63.9724V193.857Z" fill="#073B3A"/>
-<path d="M63.9724 300.475H946.016V358.631H63.9724V300.475Z" fill="#073B3A"/>
-<path d="M63.9724 513.718H946.016V571.875H63.9724V513.718Z" fill="#073B3A"/>
-<path d="M63.9724 407.097H946.016V465.253H63.9724V407.097Z" fill="#073B3A"/>
-<path d="M63.9724 620.336H946.016V678.492H63.9724V620.336Z" fill="#073B3A"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="65">
+
+<g transform="matrix(0.050556116 0 0 0.050556116 -0 0.14408371)">
+    <path d="M0 0L860.719 0C 931.381 0 988.664 57.2827 988.664 127.944L988.664 127.944L988.664 1279.44L0 1279.44L0 0z" stroke="none" fill="#FFFFFF" fill-rule="nonzero" />
+    <path d="M688.187 1056.51L411.943 1216L411.943 897.017L688.187 1056.51z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+    <path d="M63.9724 193.857L946.016 193.857L946.016 252.014L63.9724 252.014L63.9724 193.857z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+    <path d="M63.9724 300.475L946.016 300.475L946.016 358.631L63.9724 358.631L63.9724 300.475z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+    <path d="M63.9724 513.718L946.016 513.718L946.016 571.875L63.9724 571.875L63.9724 513.718z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+    <path d="M63.9724 407.097L946.016 407.097L946.016 465.253L63.9724 465.253L63.9724 407.097z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+    <path d="M63.9724 620.336L946.016 620.336L946.016 678.492L63.9724 678.492L63.9724 620.336z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+</g>
 </svg>

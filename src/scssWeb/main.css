@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   /* Colores */
   --negro: #393939;
@@ -137,6 +140,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
 #navbar-user {
   position: fixed;
   bottom: 0;
@@ -146,7 +199,7 @@ body {
 @media screen and (min-width: 1024px) {
   #navbar-user {
     position: fixed;
-    top: 0;
+    top: 150px;
     width: 100%;
     height: 80px;
   }
@@ -157,12 +210,42 @@ body {
   justify-content: space-around;
   margin-left: 5%;
 }
+@media screen and (min-width: 1024px) {
+  .navbar-admin-all {
+    justify-content: flex-end;
+  }
+}
 .navbar-admin-all img {
   width: 20%;
 }
 
 .navbar-background {
   background: #073B3A;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .header-container {
@@ -173,6 +256,12 @@ body {
   background-color: #073B3A;
   color: white;
 }
+@media screen and (min-width: 1024px) {
+  .header-container {
+    position: fixed;
+    top: 0;
+  }
+}
 
 .header-container-logo {
   width: 30%;
@@ -181,10 +270,39 @@ body {
   width: 80%;
 }
 
+.user-container p {
+  margin-top: 12%;
+}
+
 .settings-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .navbarvideo {
@@ -194,6 +312,116 @@ body {
   background: #e2a30b;
   color: #073B3A;
   margin-left: 10px;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+.container-recive-info label {
+  background: #073B3A;
+  width: 120px;
+  margin-left: 10px;
+}
+.container-recive-info label h2 {
+  margin: 2% 5%;
+}
+.container-recive-info input {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 95vw;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.container-recive-info input h2 {
+  margin: 2% 5%;
+}
+
+.recive_input {
+  height: 40px;
+}
+
+.recive_input-height {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.imagen-uploader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagen-uploader button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6%;
+  width: 30%;
+}
+.imagen-uploader button h2, .imagen-uploader button p {
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  .imagen-uploader button {
+    display: flex;
+    justify-content: center;
+  }
+  .imagen-uploader button img {
+    width: 10%;
+  }
+  .imagen-uploader button img {
+    width: 30%;
+  }
+}
+.imagen-uploader input[type=file] {
+  margin-left: 4%;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .container-user {
@@ -245,7 +473,6 @@ body {
 }
 .container-user form p {
   color: #d71515;
-  margin-top: 10px;
 }
 
 .forgot-password {
@@ -344,6 +571,31 @@ input[type=checkbox]:checked + .checkbox-custom {
   background-color: #0f9d58;
 }
 
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
 .barra {
   background: #e2a30b;
   display: flex;
@@ -351,19 +603,16 @@ input[type=checkbox]:checked + .checkbox-custom {
   position: fixed;
   width: 100%;
 }
-.barra p {
+@media screen and (min-width: 1024px) {
+  .barra {
+    top: 230px;
+  }
+}
+.barra h2 {
   margin-left: 10px;
   margin-bottom: 11px;
   margin-top: 15px;
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 19px;
   color: #073b3a;
-}
-@media screen and (min-width: 1024px) {
-  .barra p {
-    font-size: 28px;
-  }
 }
 
 .svg-img-barra {
@@ -383,6 +632,12 @@ input[type=checkbox]:checked + .checkbox-custom {
 
 .container-body-all {
   margin-top: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .container-body-all {
+    margin-top: 350px;
+    position: fixed;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -434,6 +689,31 @@ input[type=checkbox]:checked + .checkbox-custom {
   background: rgba(0, 158, 227, 0.831372549);
 }
 
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
 .container-settings_body {
   margin-left: 5%;
   margin-right: 5%;
@@ -446,6 +726,8 @@ input[type=checkbox]:checked + .checkbox-custom {
 
 .body-button-all {
   background-color: #e2a30b;
+  height: 35px;
+  width: 80px;
 }
 
 .container-settings_body-edit input {
@@ -458,58 +740,61 @@ input[type=checkbox]:checked + .checkbox-custom {
   justify-content: end;
 }
 .body-button-edit-all button {
+  height: 35px;
+  width: 80px;
+  margin-top: 4%;
   background-color: #e2a30b;
   margin-right: 2%;
 }
 
-.container-videouploader-info label {
-  background: #073B3A;
-  width: 120px;
-  margin-left: 10px;
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
 }
-.container-videouploader-info label h2 {
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
   color: white;
-  color: white;
-  margin: 2% 5%;
 }
 @media screen and (min-width: 1024px) {
-  .container-videouploader-info label h2 {
+  body h2 {
     font-size: 1.2rem;
   }
 }
-.container-videouploader-info input {
-  background: rgba(7, 59, 58, 0.2509803922);
-  width: 95vw;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-.container-videouploader-info input h2 {
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
   color: white;
-  margin: 2% 5%;
 }
-
-.videouploader_input {
-  height: 40px;
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
 }
-
-.videouploader_input-height {
-  height: 200px;
-  overflow-y: scroll;
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
 }
-
-.imagen-uploader button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 6%;
-}
-.imagen-uploader button img {
-  width: 30%;
-}
-.imagen-uploader input[type=file] {
-  margin-left: 4%;
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
 }
 
 .barra-navbar-video {
@@ -521,6 +806,8 @@ input[type=checkbox]:checked + .checkbox-custom {
   justify-content: space-around;
 }
 .body-button-edit button {
+  height: 35px;
+  width: 80px;
   background-color: #e2a30b;
 }
 
@@ -531,97 +818,102 @@ input[type=checkbox]:checked + .checkbox-custom {
   background-color: rgba(7, 59, 58, 0.2509803922);
 }
 
-.container-message_body label {
-  background: #073B3A;
-  width: 120px;
-  height: 20px;
-  margin-left: 3%;
-}
-.container-message_body label p {
+body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
   line-height: 0.3rem;
   color: white;
-  color: white;
-  margin: 5% 5%;
 }
 @media screen and (min-width: 1024px) {
-  .container-message_body label p {
+  body p {
     font-size: 1.2rem;
     line-height: 0.5rem;
   }
 }
-.container-message_body input {
-  background: rgba(7, 59, 58, 0.2509803922);
-  width: 95vw;
-  margin-bottom: 8%;
-  margin-left: 3%;
-  height: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .container-message_body input {
-    margin-bottom: 4%;
-  }
-}
-.container-message_body input p {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 0.3rem;
-  color: white;
-  color: white;
-  margin: 2% 5%;
-}
-@media screen and (min-width: 1024px) {
-  .container-message_body input p {
-    font-size: 1.2rem;
-    line-height: 0.5rem;
-  }
-}
-.container-message_body .container-message_description-height {
-  height: 200px;
-  overflow-y: scroll;
-}
-
-.container-message_button_upload {
-  display: flex;
-  justify-content: center;
-}
-.container-message_button_upload button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 6%;
-  width: 30%;
-}
-@media screen and (min-width: 1024px) {
-  .container-message_button_upload button {
-    display: flex;
-    justify-content: center;
-  }
-  .container-message_button_upload button img {
-    width: 10%;
-  }
-}
-.container-message_button_upload button h2 {
+body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: #073B3A;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
-  .container-message_button_upload button h2 {
+  body h2 {
     font-size: 1.2rem;
   }
 }
-.container-message_button_upload input[type=file] {
-  margin-left: 4%;
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
-  .container-message_button_upload button {
-    display: flex;
-    justify-content: center;
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
+  }
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.3rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.2rem;
+    line-height: 0.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=main.css.map */

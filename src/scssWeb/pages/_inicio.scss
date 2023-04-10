@@ -1,6 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/base";
 
 .barra {
   background: $useryellowdark;
@@ -8,35 +9,17 @@
   height: 60px;
   position: fixed;
   width: 100%;
+  @include media(lg) {
+      top: 230px;
+  }
 
-
-
-  // img {
-  //   width: 8%;
-  //   height: 8%;
-  //   margin-left: 10px;
-  //   margin-top: 10px;
-  
-  //   @include media(lg) {
-  //     width: 2%;
-  //     margin-bottom: 0px;
-  //     height: 30px;
-  //     margin-top: 15px;
-  //   }
-  // }
-  
-  p {
+  h2 {
     margin-left: 10px;
     margin-bottom: 11px;
     margin-top: 15px;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 19px;
     color: #073b3a;
   
-    @include media(lg) {
-      font-size: 28px;
-    }
+    
   }
 }
 
@@ -58,11 +41,17 @@
 
 .container-body-all{
   margin-top: 100px;
+  @include media(lg) {
+    margin-top: 350px;
+    position: fixed;
+  
+  }
 
 }
 .container-inicio_body{
 @include media(lg) {
     display: flex;
+  
   }
 }
 

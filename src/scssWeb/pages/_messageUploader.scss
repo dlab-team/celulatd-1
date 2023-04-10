@@ -2,76 +2,77 @@
 @import "../utils/variables";
 @import "../base/breakpoints";
 @import "../base/typography";
+@import "../base/base";
 
-.container-message_body {
-  label {
-    background: $usergeendark;
-    width: 120px;
-    height: 20px;
-    margin-left: 3%;
+// .container-message_body {
+//   label {
+//     background: $usergeendark;
+//     width: 120px;
+//     height: 20px;
+//     margin-left: 3%;
 
-    p {
-      @include font-p;
-      color: $userwhite;
-      margin: 5% 5%;
-    }
-  }
+//     h2{
+      
+//       color: $userwhite;
+//       margin: 5% 5%;
+//     }
+//   }
 
-  input {
-    background: $usergeenligth;
-    width: 95vw;
-    margin-bottom: 8%;
-    margin-left: 3%;
-    height: 30px;
-    @include media(lg) {
-      margin-bottom: 4%;
-    }
+//   input {
+//     background: $usergeenligth;
+//     width: 95vw;
+//     margin-bottom: 8%;
+//     margin-left: 3%;
+//     height: 30px;
+//     @include media(lg) {
+//       margin-bottom: 4%;
+//     }
 
-    p {
-      @include font-p;
-      color: $userwhite;
-      margin: 2% 5%;
-    }
-  }
-  .container-message_description-height {
-    height: 200px;
-    overflow-y: scroll;
-  }
-}
+//     p {
+      
+//       color: $userwhite;
+//       margin: 2% 5%;
+//     }
+//   }
+//   .container-message_description-height {
+//     height: 200px;
+//     overflow-y: scroll;
+//   }
+// }
 
-.container-message_button_upload{
-  display: flex;
-  justify-content: center;
-  button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 6%;
-  width: 30%;
-  @include media(lg) {
-    display: flex;
-    justify-content: center;
-    img {
-      width: 10%;
-    }
-  }
+// .container_input_button_upload{
+//   display: flex;
+//   justify-content: center;
+//   button {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 6%;
+//   width: 30%;
+//   @include media(lg) {
+//     display: flex;
+//     justify-content: center;
+//     img {
+//       width: 10%;
+//     }
+//   }
 
-  h2 {
-    @include font-h2($usergeendark);
-  }
-}
+//   h2 {
+//     color: $usergeendark;
+//   }
+// }
 
-input[type="file"] {
-  margin-left: 4%;
-}
+// input[type="file"] {
+//   margin-left: 4%;
+// }
 
-@include media(lg) {
-  button {
-    display: flex;
-    justify-content: center;
-  }
-}
+// @include media(lg) {
+//   button {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
 
-}
+// }

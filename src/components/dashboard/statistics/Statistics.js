@@ -21,7 +21,7 @@ const Statistics = () => {
 
   return (
     <div>
-      <h1>Statistics</h1>
+      <h2>Statistics</h2>
       <p>Total users: {stats.totalUsers}</p>
       <p>Active users: {stats.activeUsers}</p>
       <p>New users this week: {stats.newUsers}</p>

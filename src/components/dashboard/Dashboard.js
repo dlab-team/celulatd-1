@@ -12,7 +12,7 @@ const Dashboard = () => {
         <div className="container_componets">
           <div className="barra">
             <img className="svg-img-barra" src={AjustesSvg}/>
-            <p>DASHBOARD</p>
+            <h2>DASHBOARD</h2>
           </div>
           </div>
       </div>

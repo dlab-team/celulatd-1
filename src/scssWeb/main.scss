@@ -4,12 +4,13 @@
 @import './base/resets';
 @import './base/breakpoints';
 @import './base/typography';
+@import './base/base';
 
 @import './layout/navbar';
 @import './layout/header';
 @import './layout/navbarvideo';
 
-@import './components/buttons';
+@import './components/inputbox';
 
 @import './pages/backgroundHeroUser';
 @import './pages/inicio';

@@ -60,7 +60,7 @@ const Settings = () => {
       <NavbarComp />
         <div className="barra">
           <img className="svg-img-barra" src={AjustesSvg} />
-          <p>AJUSTES</p>
+          <h2>AJUSTES</h2>
         </div>
       <div className="container-body-all container-settings_body">
         {!isEditing ? (

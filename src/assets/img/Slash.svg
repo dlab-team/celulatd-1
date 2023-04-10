@@ -1,3 +1,8 @@
-<svg width="397" height="1109" viewBox="0 0 397 1109" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M396.695 0.334326L98.5048 1108.16H0.915392L299.105 0.334326H396.695Z" fill="#ECECEC"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="140">
+
+<g transform="matrix(0.12594458 0 0 0.12594458 -0 0.16372642)">
+    <path d="M396.695 0.334326L98.5048 1108.16L0.915392 1108.16L299.105 0.334326L396.695 0.334326z" stroke="none" fill="#ECECEC" fill-rule="nonzero" />
+</g>
 </svg>

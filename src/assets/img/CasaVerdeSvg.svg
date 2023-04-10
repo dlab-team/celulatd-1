@@ -1,3 +1,8 @@
-<svg width="1294" height="1325" viewBox="0 0 1294 1325" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 1324.43V441.477L646.856 0L1293.71 441.477V1324.43H808.571V809.374H485.142V1324.43H0Z" fill="#073B3A"/>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="51">
+
+<g transform="matrix(0.03849057 0 0 0.03849057 0.09660466 -0)">
+    <path d="M0 1324.43L0 441.477L646.856 0L1293.71 441.477L1293.71 1324.43L808.571 1324.43L808.571 809.374L485.142 809.374L485.142 1324.43L0 1324.43z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
+</g>
 </svg>

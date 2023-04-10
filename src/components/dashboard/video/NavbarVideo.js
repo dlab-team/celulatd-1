@@ -16,10 +16,10 @@ function NavbarVideo() {
   <Navbar variant="light" className='mx-3 navbarvideo'>
         <Container>
         <Link to="/VideoUploader" className='Link'>
-          <Nav.Link href="/VideoUploader">Subir video</Nav.Link>
+          <Nav.Link href="/VideoUploader"><h2>Subir video</h2></Nav.Link>
 						</Link>
 						<Link to="/ComponetVideo" className='Link'>
-            <Nav.Link href="/ComponetVideo">Editar Videos</Nav.Link>
+            <Nav.Link href="/ComponetVideo"><h2>Editar Videos</h2></Nav.Link>
 						</Link>
         </Container>
       </Navbar>

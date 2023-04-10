@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import NavbarComp from "./NavbarComponent";
 import "../../../src/scssWeb/main.css";
-import Uploadbutton from '../../assets/img/Uploadbutton.svg'
+import Uploadbutton from "../../assets/img/Uploadbutton.svg";
 import Header from "../../components/common/header";
-import MensajeSvg from '../../assets/img/SvgMensaje.svg';
-
-
-
+import MensajeSvg from "../../assets/img/SvgMensaje.svg";
 
 const Notification = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [uploadStatus, setUploadStatus] = useState("");
-
 
   const handleTitleInputChange = (event) => {
     setTitle(event.target.value);
@@ -22,7 +18,6 @@ const Notification = () => {
   const handleDescriptionInputChange = (event) => {
     setDescription(event.target.value);
   };
-
 
   const handleUploadClick = () => {
     const formData = new FormData();
@@ -52,32 +47,45 @@ const Notification = () => {
 
   return (
     <div>
-       <Header />
-        <NavbarComp />     
-          <div className="barra">
-            <img className="svg-img-barra" src={MensajeSvg}/>
-            <p>NOTIFICACIONES</p>
-          </div>   
-      <div className="container-body-all container-message_body">
-        <div>
-        <label><p>Titulo:</p></label>
-        <input classname="container-message_title-height" type="text" value={title} onChange={handleTitleInputChange} />
+      <Header />
+      <NavbarComp />
+      <div className="barra">
+        <img className="svg-img-barra" src={MensajeSvg} />
+        <h2>NOTIFICACIONES</h2>
       </div>
-      <div>
-        <label ><p>Mensaje:</p></label>
-        <input className="container-message_description-height" type="text" value={description} onChange={handleDescriptionInputChange} />
-      </div>
-      <div className="container-message_button_upload">
-        <button onClick={handleUploadClick}>
-          <img src={Uploadbutton} alt="Enviar"></img>
-          <h2>Enviar</h2>
+      <div className=" container-body-all">
+        <div className="container-recive-info container-recive_body">
+          <label className="recive_title">
+            <h2>Titulo:</h2>
+          </label>
+          <input
+            className="recive_input"
+            type="text"
+            value={title}
+            onChange={handleTitleInputChange}
+          />
+        </div>
+        <div className="container-recive-info container_recive">
+        <label className="recive_title">
+            <h2>Mensaje:</h2>
+          </label>
+          <input
+            className="recive_input recive_input-height"
+            type="text"
+            value={description}
+            onChange={handleDescriptionInputChange}
+          />
+        </div>
+        <div className="imagen-uploader">
+          <button onClick={handleUploadClick}>
+            <img src={Uploadbutton} alt="Enviar"></img>
+            <h2>Enviar</h2>
           </button>
+        </div>
+        <p>{uploadStatus}</p>
       </div>
-      <p>{uploadStatus}</p>
-      </div>
-      
     </div>
   );
-}
+};
 
 export default Notification;

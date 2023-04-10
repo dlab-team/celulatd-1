@@ -1,6 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 @import "../base/breakpoints";
+@import "../base/base";
 
 
 
@@ -13,6 +14,8 @@
     display: flex;
     justify-content: space-around;
     button{
+        height: 35px;
+        width: 80px;
         background-color: $useryellowdark;
     }
         

@@ -19,7 +19,7 @@ const Inicio = () => {
       <NavbarComp />
         <div className="barra">
           <img className="svg-img-barra" src={CasaVerdeSvg} />
-          <p>INICIO</p>
+          <h2>INICIO</h2>
         </div>
         <div className="container-body-all container-inicio_body">
           <div className="container-inicio_component_all container-inicio_component-background_resources">

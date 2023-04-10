@@ -2,56 +2,5 @@
 @import "../utils/variables";
 @import "../base/breakpoints";
 @import "../base/typography";
+@import "../base/base";
 
-.container-videouploader-info{
-  label {
-    background: $usergeendark;
-    width: 120px;
-    margin-left: 10px;
-
-    h2 {
-      @include font-h2;
-      color: $userwhite;
-      margin: 2% 5%;
-    }
-  }
-
-  input {
-    background: $usergeenligth;
-    width: 95vw;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    
-    h2 {
-      color: $userwhite;
-      margin: 2% 5%;
-    }
-  }
-}
-
-
-
-.videouploader_input {
-  height: 40px;
-  
-}
-.videouploader_input-height {
-  height: 200px;
-  overflow-y: scroll;
- 
-}
-
-.imagen-uploader {
-  button {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 6%;
-    img {
-      width: 30%;
-    }
-  }
-
-  input[type="file"] {
-    margin-left: 4%;
-  }
-}
