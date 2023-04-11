@@ -108,9 +108,9 @@ const ComponetVideo = (props) => {
             <h2>{name}</h2>
             <p>{description}</p>
             <div className="body-button-edit">
-            <button onClick={handleEdit}>Editar</button>
-            <button onClick={handleDelete}>Eliminar</button>
-          </div>
+              <button onClick={handleEdit}>Editar</button>
+              <button onClick={handleDelete}>Eliminar</button>
+            </div>
           </div>
         )}
         <p>{uploadStatus}</p>
