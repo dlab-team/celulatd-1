@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "../../../scssWeb/main.css";
 
 function VideoList() {
   const [videos, setVideos] = useState([]);
@@ -29,7 +30,7 @@ function VideoList() {
   };
 
   return (
-    <div>
+    <div className="container-componentvideo_body">
       {videos.map((video) => (
         <div key={video.id}>
           <video src={video.video_files[0].link} controls />
