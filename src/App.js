@@ -19,31 +19,34 @@ import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/user/dashboard/Notification';
 import Perfil from './components/dashboard/Perfil';
+import VideoList from './components/dashboard/video/VideoList';
 
 function App() {
   return (
- 
-    <Routes>
-    <Route exact path="/" element={<Landing/>} />
-    <Route path="/Login" element={<Login/>} />
-    <Route path="/register" element={<Register/>} />
-    <Route path="/dashboard" element={<Dashboard/>}/>
-    <Route exact path="/Inicio" element={<Inicio/>} />
-    <Route path="/ajustes" element={<Ajustes/>} />
-    <Route path="/perfil" element={<Perfil/>} />
-    <Route path="/VideoUploader" element={<VideoUploader/>}/>
-		<Route path="/ComponetVideo" element={<ComponetVideo/>}/>
-		<Route path="/Notification" element={<Notification/>}/>
-    <Route path="*" element="Error" />
-    <Route path="/DashboardUser" element={<DashboardUser/>}/>
-    <Route path='/ComponetVideoUser' element={<ComponetVideoUser/>} />
-    <Route path="/NavbarVideo" element={<NavbarVideo/>}/>
-    <Route path="/Statistics" element={<Statistics/>}/>
-    <Route path="/SettingsUser" element={<SettingsUser/>}/>
-    <Route path="/InicioUser" element={<InicioUser/>}/>
-    <Route path="/NotificationUser" element={<NotificationUser/>}/>
 
-  </Routes>
+    <Routes>
+      <Route exact path="/" element={<Landing />} />
+      <Route path="/Login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route exact path="/Inicio" element={<Inicio />} />
+      <Route path="/ajustes" element={<Ajustes />} />
+      <Route path="/perfil" element={<Perfil />} />
+      <Route path="/VideoUploader" element={<VideoUploader />} />
+      <Route path="/ComponetVideo" element={<ComponetVideo />} />
+      <Route path="/Notification" element={<Notification />} />
+      <Route path="*" element="Error" />
+      <Route path="/DashboardUser" element={<DashboardUser />} />
+      <Route path='/ComponetVideoUser' element={<ComponetVideoUser />} />
+      <Route path="/NavbarVideo" element={<NavbarVideo />} />
+      <Route path="/Statistics" element={<Statistics />} />
+      <Route path="/SettingsUser" element={<SettingsUser />} />
+      <Route path="/InicioUser" element={<InicioUser />} />
+      <Route path="/NotificationUser" element={<NotificationUser />} />
+      <Route path="/VideoList" element={<VideoList />} />
+     
+
+  </Routes >
   
   );
 }
