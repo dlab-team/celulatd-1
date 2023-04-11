@@ -1,14 +1,9 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="body_1" width="50" height="65">
-
-<g transform="matrix(0.050556116 0 0 0.050556116 -0 0.14408371)">
-    <path d="M0 0L860.719 0C 931.381 0 988.664 57.2827 988.664 127.944L988.664 127.944L988.664 1279.44L0 1279.44L0 0z" stroke="none" fill="#FFFFFF" fill-rule="nonzero" />
-    <path d="M688.187 1056.51L411.943 1216L411.943 897.017L688.187 1056.51z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-    <path d="M63.9724 193.857L946.016 193.857L946.016 252.014L63.9724 252.014L63.9724 193.857z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-    <path d="M63.9724 300.475L946.016 300.475L946.016 358.631L63.9724 358.631L63.9724 300.475z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-    <path d="M63.9724 513.718L946.016 513.718L946.016 571.875L63.9724 571.875L63.9724 513.718z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-    <path d="M63.9724 407.097L946.016 407.097L946.016 465.253L63.9724 465.253L63.9724 407.097z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-    <path d="M63.9724 620.336L946.016 620.336L946.016 678.492L63.9724 678.492L63.9724 620.336z" stroke="none" fill="#073B3A" fill-rule="nonzero" />
-</g>
+<svg width="386" height="500" viewBox="0 0 386 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H336.047C363.635 0 386 22.3646 386 49.9528V499.528H0V0Z" fill="white"/>
+<path d="M268.686 412.487L160.833 474.756V350.219L268.686 412.487Z" fill="#073B3A"/>
+<path d="M24.9765 75.6868H369.349V98.3927H24.9765V75.6868Z" fill="#073B3A"/>
+<path d="M24.9765 117.313H369.349V140.019H24.9765V117.313Z" fill="#073B3A"/>
+<path d="M24.9765 200.569H369.349V223.275H24.9765V200.569Z" fill="#073B3A"/>
+<path d="M24.9765 158.941H369.349V181.647H24.9765V158.941Z" fill="#073B3A"/>
+<path d="M24.9765 242.195H369.349V264.901H24.9765V242.195Z" fill="#073B3A"/>
 </svg>
