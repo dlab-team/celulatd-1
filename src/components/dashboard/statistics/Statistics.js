@@ -4,11 +4,6 @@ import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, Filler } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend, Filler);
 
-<<<<<<< Updated upstream
-
-const Statistics = () => {
-  const [stats, setStats] = useState(null);
-=======
 const options = {
   maintainAspectRatio: false,
   responsive: true,
@@ -21,15 +16,15 @@ const options = {
 };
 
 const labelsMonthly = ['Visualizacion de videos', 'Videos completados', 'Videos abandonados'];
-//const scoresMonthly = [10, 10, 10]; 
+/* const scoresMonthly = [10, 10, 10]; */
+
 const labelsWeekly = ['Visualizacion de videos', 'Videos completados', 'Videos abandonados'];
-//const scoresWeekly = [5, 7, 8];
+/* const scoresWeekly = [5, 7, 8]; */
 
 export default function PieCharts() {
 
   const [scoreValuesMonthly, setScoreValuesMonthly] = useState([]);
   const [scoreValuesWeekly, setScoreValuesWeekly] = useState([]);
->>>>>>> Stashed changes
 
   useEffect(() => {
     axios.get('https://...')
@@ -49,7 +44,8 @@ export default function PieCharts() {
         {
           label: "Estadisticas Mensuales",
           data: scoreValuesMonthly,
-          backgroundColor: ["#6c757d", "#073B3A", "rgba(7, 59, 58, 0.35)"]
+          backgroundColor: ["#6c757d", "#073B3A", "rgba(7, 59, 58, 0.35)"],
+          
         },
       ],
       labels: labelsMonthly
@@ -70,13 +66,6 @@ export default function PieCharts() {
   }, [scoreValuesWeekly]);
 
   return (
-<<<<<<< Updated upstream
-    <div>
-      <h2>Statistics</h2>
-      <p>Total users: {stats.totalUsers}</p>
-      <p>Active users: {stats.activeUsers}</p>
-      <p>New users this week: {stats.newUsers}</p>
-=======
     <div style={{ display: "flex", flexDirection: "column", marginTop: "10px" }}>
   <div>
   <h3>Estadísticas mensuales</h3>
@@ -84,11 +73,10 @@ export default function PieCharts() {
     <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
       {scoreValuesMonthly.map((score, index) => (
         <div key={index}>
-          <p>{score}</p>
-          <p>{labelsMonthly[index]}</p>
+          <p style={{color: "black"}}>{score}</p>
+          <p style={{color: "black"}}>{labelsMonthly[index]}</p>
         </div>
       ))}
->>>>>>> Stashed changes
     </div>
     <div style={{ width: "100%", marginTop: "20px" }}>
       <Pie data={dataMonthly} options={options} />
@@ -98,11 +86,11 @@ export default function PieCharts() {
   <div>
     <h3>Estadísticas semanales</h3>
     <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
+      <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%"  }}>
         {scoreValuesWeekly.map((score, index) => (
           <div key={index}>
-            <p>{score}</p>
-            <p>{labelsWeekly[index]}</p>
+            <p style={{color: "black"}}>{score}</p>
+            <p style={{color: "black"}}>{labelsWeekly[index]}</p>
           </div>
         ))}
       </div>
@@ -114,7 +102,3 @@ export default function PieCharts() {
 </div>
   )
 }
-
-
-
-
