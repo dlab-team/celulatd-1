@@ -30,7 +30,6 @@ function NavbarComponent() {
               <img src={Metricassvg}/>
               <Nav.Link href="/Statistics"></Nav.Link>
             </Link> 
-            <Navbar.Brand href="#"></Navbar.Brand>
             <Link to="/VideoUploader" >
               <img src={SvgSubirVidW}/>
               <Nav.Link href="/VideoUploader"></Nav.Link>

@@ -20,12 +20,21 @@
 .navbar-admin-all {
   display: flex;
   justify-content: space-around;
-  margin-left: 5%;
+  align-items: center;
+  width: 100%;
+
   @include media (lg){
     justify-content: flex-end;
+    
   }
   img{
-    width: 20%;
+    width: 40%;
+    margin: auto;
+    @include media (lg){
+      
+      
+    }
+
   }
 }
 
