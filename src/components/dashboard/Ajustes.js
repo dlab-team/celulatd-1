@@ -4,7 +4,7 @@ import NavbarComp from "./NavbarComponent";
 import Perfil from "./Perfil";
 import "../../scssWeb/main.css";
 import Header from "../../components/common/header";
-import AjustesSvg from "../../assets/img/AjusteWt.svg";
+import AjustesGSvg from "../../assets/img/settings_G.svg";
 import avatar from "../../assets/img/personatipo.png";
 
 const Settings = () => {
@@ -59,7 +59,7 @@ const Settings = () => {
       <Header />
       <NavbarComp />
         <div className="barra">
-          <img className="svg-img-barra" src={AjustesSvg} />
+          <img className="svg-img-barra" src={AjustesGSvg} />
           <h2>AJUSTES</h2>
         </div>
       <div className="container-body-all container-settings_body">
@@ -70,20 +70,20 @@ const Settings = () => {
           </div>
         <div>
         <ul>
-          <li>NOMBRE: {name}</li>
-          <li>TELEFONO: {telefone}</li>
-          <li>EMAIL: {email}</li>
+          <li><p>NOMBRE: {name}</p></li>
+          <li><p>TELEFONO: {telefone}</p></li>
+          <li><p>EMAIL: {email}</p></li>
         </ul>
         </div>
         <div>
-        <button className="body-button-all" onClick={() => setIsEditing(true)}>Editar</button>
+        <button className="body-button-all" onClick={() => setIsEditing(true)}><p>Editar</p></button>
         </div>
       </div>
          
         ) : (
         <div className="container-settings_body-edit">
           <div>
-              <label>NOMBRE:</label>
+              <label><p>NOMBRE:</p></label>
               <input
                 type="text"
                 value={name}
@@ -91,7 +91,7 @@ const Settings = () => {
               />
           </div>
           <div>
-              <label>TELEFONO:</label>
+              <label><p>TELEFONO:</p></label>
               <input
                 type="text"
                 value={telefone}
@@ -99,7 +99,7 @@ const Settings = () => {
               />
           </div>
           <div>
-              <label>EMAIL:</label>
+              <label><p>EMAIL:</p></label>
               <input
                 type="text"
                 value={email}
@@ -107,8 +107,8 @@ const Settings = () => {
               />
           </div>
           <div className="body-button-edit-all">
-              <button onClick={handleUploadPerfil}>Save</button>
-              <button onClick={() => setIsEditing(false)}>Cancel</button>
+              <button onClick={handleUploadPerfil}><p>Save</p></button>
+              <button onClick={() => setIsEditing(false)}><p>Cancel</p></button>
               <p>{uploadStatus}</p>
           </div>
         </div>

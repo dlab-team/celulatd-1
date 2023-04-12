@@ -1,45 +1,94 @@
-@import '../utils/mixins';
-@import '../utils/variables';
+@import "../utils/mixins";
+@import "../utils/variables";
 @import "../base/breakpoints";
 @import "../base/typography";
 @import "../base/base";
 
+.container-settings_body {
 
-
-.container-settings_body{
-    margin-left: 5%;
-    margin-right: 5%;
+  width: 93%;
+  margin-left: 4%;
+  @include media(lg) {
+  }
 }
 
-.container-settings_body-profile{
-    display: flex;
-    justify-content: space-between;
+.container-settings_body-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  @include media (lg){
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  img {
+    width: 100px;
+    margin-bottom: 30px;
+    @include media (lg){
+        width: 200px;
+    }
+  }
+  p {
+    color: black;
+    margin-bottom: 24px;
+  }
 }
 
-.body-button-all{
-    background-color: $useryellowdark;
-    height: 35px;
+.body-button-all {
+  background-color: $useryellowdark;
+  height: 40px;
     width: 80px;
+  p {
+    color: $usergeendark;
+    margin-top: 15px;
+    @include media(lg) {
+      margin-top: 13%;
+    }
+  }
+  @include media(lg) {
+    height: 50px;
+    width: 95px;
+  }
 }
 
-.container-settings_body-edit{
-    input{
-        background-color:$userwinterwhite;
-        border: 2px solid $usergeendark;
+.container-settings_body-edit {
+  input {
+    background-color: $userwinterwhite;
+    border: 2px solid $usergeendark;
+    @include media(lg) {
+      height: 60px;
+      width: 40%;
+      margin-bottom: 15px;
     }
+  }
 }
 
+.body-button-edit-all {
+  display: flex;
+  justify-content: end;
 
-.body-button-edit-all{
-    display: flex;
-    justify-content: end;
-    
+  p {
+    color: $usergeendark;
+  }
 
-    button{
-        height: 35px;
-        width: 80px;
-        margin-top: 4%;
-        background-color: $useryellowdark;
-        margin-right: 2%;
+  button {
+    height: 40px;
+    width: 80px;
+    margin-top: 4%;
+    background-color: $useryellowdark;
+    margin-right: 2%;
+    p {
+      color: $usergeendark;
+      margin-top: 10%;
+      @include media(lg) {
+        margin-top: 13%;
+      }
     }
+    @include media (lg){
+        height: 50px;
+    width: 95px;
+    }
+  }
 }

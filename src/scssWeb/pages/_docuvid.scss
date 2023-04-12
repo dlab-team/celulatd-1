@@ -10,6 +10,16 @@
     justify-content: space-between;
 }
 
+.container-componentvideo_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include media (lg){
+        flex-direction: row;
+    }
+    
+}
+
 .body-button-edit{
     display: flex;
     justify-content: space-around;
@@ -22,6 +32,10 @@
     }
 
 .container-component-video-info{
+   margin-bottom: 8%;
+    @include media (lg){
+        margin-left: 8%;
+    }
     h2{
         background-color: $usergeenligth;
     }

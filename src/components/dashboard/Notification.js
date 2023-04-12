@@ -4,7 +4,7 @@ import NavbarComp from "./NavbarComponent";
 import "../../../src/scssWeb/main.css";
 import Uploadbutton from "../../assets/img/Uploadbutton.svg";
 import Header from "../../components/common/header";
-import MensajeSvg from "../../assets/img/SvgMensaje.svg";
+import MensajeSvg from "../../assets/img/notifications_G.svg";
 
 const Notification = () => {
   const [title, setTitle] = useState("");

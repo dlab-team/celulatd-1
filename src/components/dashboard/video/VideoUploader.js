@@ -4,7 +4,7 @@ import NavbarComp from "../NavbarComponent";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
-import UploadSvg from "../../../assets/img/Uploadbutton.svg";
+import UploadSvg from "../../../assets/img/upload_G.svg";
 
 
 const VideoUploader = () => {
@@ -63,7 +63,7 @@ const VideoUploader = () => {
           <div className="container-body-all">
       <div className="container-recive-info container-recive_body">
         <label className="recive_title">
-          <h2>Title:</h2>
+          <h2>Titulo:</h2>
         </label>
         <input
           className="recive_input"

@@ -7,20 +7,30 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    z-index: 8;
+    position: fixed;
+    top: 0;
+    padding-top: 2%;
+    height: 190px;
     background-color:$usergeendark;
     color: $userwhite;
     @include media(lg) {
-        position: fixed;
+        
         top: 0;
+    }
+    p{
+        color: $userwhite
     }
 }
 
 .header-container-logo{
-    width: 30%;
+    width: 20%;
 
     img{
-        width: 80%;
+        width: 100%;
+        @include media (lg){
+            width: 80%;
+        }
     }
 }
 .user-container{

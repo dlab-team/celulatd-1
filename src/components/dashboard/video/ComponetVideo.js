@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NavbarComp from "../NavbarComponent";
 import NavbarVideo from "./NavbarVideo.js";
-import RecursosSvg from "../../../assets/img/MiniRecursos.svg";
+import RecursosSvg from "../../../assets/img/video_library_G.svg";
 import Header from "../../../components/common/header.js";
 import "../../../scssWeb/main.css";
 
@@ -82,38 +82,40 @@ const ComponetVideo = (props) => {
         <NavbarVideo />
       </div>
       <div className="container-body-all">
-        {isEditing ? (
-          <div className="container-componentvideo_body">
-            <input type="file" name="video" onChange={handleVideoChange} />
-            <input
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleNameChange}
-            />
-            <input
-              type="text"
-              name="description"
-              value={description}
-              onChange={handleDescriptionChange}
-            />
-            <div className="body-button-edit-all">
-              <button onClick={handleSave}>Guardar</button>
-              <button onClick={handleCancelEdit}>Cancelar</button>
+        <div className="container-componentvideo_flex">
+          {isEditing ? (
+            <div className="container-componentvideo_body">
+              <input type="file" name="video" onChange={handleVideoChange} />
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={handleNameChange}
+              />
+              <input
+                type="text"
+                name="description"
+                value={description}
+                onChange={handleDescriptionChange}
+              />
+              <div className="body-button-edit-all">
+                <button onClick={handleSave}>Guardar</button>
+                <button onClick={handleCancelEdit}>Cancelar</button>
+              </div>
             </div>
-          </div>
-        ) : (
-          <div className="container-component-video-info">
-            <video src={video} controls />
-            <h2>{name}</h2>
-            <p>{description}</p>
-            <div className="body-button-edit">
-              <button onClick={handleEdit}>Editar</button>
-              <button onClick={handleDelete}>Eliminar</button>
+          ) : (
+            <div className="container-component-video-info">
+              <video src={video} controls />
+              <h2>{name}</h2>
+              <p>{description}</p>
+              <div className="body-button-edit">
+                <button onClick={handleEdit}>Editar</button>
+                <button onClick={handleDelete}>Eliminar</button>
+              </div>
             </div>
-          </div>
-        )}
-        <p>{uploadStatus}</p>
+          )}
+          <p>{uploadStatus}</p>
+        </div>
       </div>
     </div>
   );

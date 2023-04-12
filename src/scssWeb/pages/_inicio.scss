@@ -6,17 +6,20 @@
 .barra {
   background: $useryellowdark;
   display: flex;
-  height: 60px;
+  z-index: 8;
   position: fixed;
+  margin-top: -70px;
+  height: 60px;
   width: 100%;
   @include media(lg) {
-      top: 230px;
+      top: 270px;
+      margin-top: 0px;
   }
 
   h2 {
-    margin-left: 10px;
+    margin-left: 4px;
     margin-bottom: 11px;
-    margin-top: 15px;
+    margin-top: 19px;
     color: #073b3a;
   
     
@@ -25,22 +28,22 @@
 
 .svg-img-barra{
   
-      width: 8%;
-      height: 8%;
-      margin-left: 10px;
-      margin-top: 10px;
+  width: 49px;
+    height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
     
       @include media(lg) {
-        width: 2%;
+        width: 35px;
         margin-bottom: 0px;
-        height: 30px;
-        margin-top: 15px; 
+        height: 35px;
+      
     }
 
 }
 
 .container-body-all{
-  margin-top: 100px;
+  margin-top: 260px;
   @include media(lg) {
     margin-top: 350px;
     position: fixed;
@@ -73,22 +76,21 @@
     width: 200px;
     height: 200px;
     margin-bottom: 0;
-    margin-top: 15%;
+    margin-top: 10%;
   }
   img {
-    width: 30%;
+    width: 50%;
     margin: auto;
     padding-top: 15%;
   }
   
   button {
-    font-family: inter;
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: $usergeendark;
     margin: auto;
     margin-top: 15%;
     line-height: 1.5rem;
+    p{
+      color: $usergeendark;
+    }
   }
   
 }
