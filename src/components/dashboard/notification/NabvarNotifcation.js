@@ -16,10 +16,10 @@ export default function NavbarNotification() {
       <Navbar variant="light" className='mx-3 navbarvideo'>
         <Container>
           <Link to="/ListNotifications" className='Link'>
-            <Nav.Link href="/ListNotifications"><h2>Notificaciones</h2></Nav.Link>
+            <Nav.Link href="/ListNotifications"><p>Mensajes</p></Nav.Link>
           </Link>
           <Link to="/Notification" className='Link'>
-            <Nav.Link href="/Notification"><h2>Subir Notificaciones</h2></Nav.Link>
+            <Nav.Link href="/Notification"><p>Subir Mensajes</p></Nav.Link>
           </Link>
         </Container>
       </Navbar>
