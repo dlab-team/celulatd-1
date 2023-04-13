@@ -40,7 +40,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container-user">
+    <div className="container-user background-register">
       {/* <img src={Bkgnd} className="background-register" /> */}
       <div className="container-user-logo">
         <img src={LogoSvg} className="register-logo" />

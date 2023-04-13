@@ -3,8 +3,9 @@
 @import "../base/breakpoints";
 @import "../base/base";
 
-.container-user {
-    // background-image: url('../../assets/img/VectorBkgdTransp.svg');
+
+.background-register{
+  // background:url('../../assets/login-registro/fondoaccesomobile.svg');
   background-color: $usergeendark;
   background-size: cover;
   background-position: center;
@@ -15,6 +16,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+}
+
+.container-user {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,10 +29,14 @@
   .container-user-logo {
     width: 60%;
     margin-bottom: 15%;
+    @include media (lg){
+      margin-bottom: 7%;
+    }
     img {
-      width: 100%;
+      width: 80%;
       @include media(lg) {
-        width: 80%;
+        width: 100%;
+        
       }
     }
   }

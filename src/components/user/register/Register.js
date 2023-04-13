@@ -28,7 +28,7 @@ export default function Register() {
   };
 
   return (
-  <div className="container-user">
+  <div className="container-user background-register">
     <div className="container-user-logo">
         <img src={LogoSvg} className="register-logo" />
         <img src={FraseSvg} className="register-logo" />
