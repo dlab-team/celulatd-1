@@ -45,7 +45,7 @@ export default function PieCharts() {
           label: "Estadisticas Mensuales",
           data: scoreValuesMonthly,
           backgroundColor: ["#6c757d", "#073B3A", "rgba(7, 59, 58, 0.35)"],
-          
+
         },
       ],
       labels: labelsMonthly
@@ -67,38 +67,38 @@ export default function PieCharts() {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", marginTop: "10px" }}>
-  <div>
-  <h3>Estadísticas mensuales</h3>
-  <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-    <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
-      {scoreValuesMonthly.map((score, index) => (
-        <div key={index}>
-          <p style={{color: "black"}}>{score}</p>
-          <p style={{color: "black"}}>{labelsMonthly[index]}</p>
-        </div>
-      ))}
-    </div>
-    <div style={{ width: "100%", marginTop: "20px" }}>
-      <Pie data={dataMonthly} options={options} />
-    </div>
-  </div>
-</div>
-  <div>
-    <h3>Estadísticas semanales</h3>
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%"  }}>
-        {scoreValuesWeekly.map((score, index) => (
-          <div key={index}>
-            <p style={{color: "black"}}>{score}</p>
-            <p style={{color: "black"}}>{labelsWeekly[index]}</p>
+      <div>
+        <h3>Estadísticas mensuales</h3>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
+            {scoreValuesMonthly.map((score, index) => (
+              <div key={index}>
+                <p style={{ color: "black" }}>{score}</p>
+                <p style={{ color: "black" }}>{labelsMonthly[index]}</p>
+              </div>
+            ))}
           </div>
-        ))}
+          <div style={{ width: "100%", marginTop: "20px" }}>
+            <Pie data={dataMonthly} options={options} />
+          </div>
+        </div>
       </div>
-      <div style={{ width: "100%", marginTop: "20px" }}>
-        <Pie data={dataWeekly} options={options} />
+      <div>
+        <h3>Estadísticas semanales</h3>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
+            {scoreValuesWeekly.map((score, index) => (
+              <div key={index}>
+                <p style={{ color: "black" }}>{score}</p>
+                <p style={{ color: "black" }}>{labelsWeekly[index]}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ width: "100%", marginTop: "20px" }}>
+            <Pie data={dataWeekly} options={options} />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   )
 }
