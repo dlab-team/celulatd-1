@@ -6,8 +6,8 @@ ChartJS.register(ArcElement, Tooltip, Legend, Filler);
 
 const options = {
   maintainAspectRatio: false,
-  responsive: true,
   color: 'black',
+  responsive: true,
   plugins: {
     legend: {
       position: 'bottom',
@@ -27,14 +27,14 @@ export default function PieCharts() {
   const [scoreValuesWeekly, setScoreValuesWeekly] = useState([]);
 
   useEffect(() => {
-    axios.get('https://...')
+    axios.get("/db.json")
       .then((response) => {
         // Aquí actualizamos los valores de los scores
         setScoreValuesMonthly(response.data.monthly);
         setScoreValuesWeekly(response.data.weekly);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error +" Error al cargar la api");
       });
   }, []);
 
@@ -45,7 +45,7 @@ export default function PieCharts() {
           label: "Estadisticas Mensuales",
           data: scoreValuesMonthly,
           backgroundColor: ["#6c757d", "#073B3A", "rgba(7, 59, 58, 0.35)"],
-          
+
         },
       ],
       labels: labelsMonthly
@@ -66,39 +66,39 @@ export default function PieCharts() {
   }, [scoreValuesWeekly]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", marginTop: "10px" }}>
-  <div>
-  <h3>Estadísticas mensuales</h3>
-  <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-    <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%" }}>
-      {scoreValuesMonthly.map((score, index) => (
-        <div key={index}>
-          <p style={{color: "black"}}>{score}</p>
-          <p style={{color: "black"}}>{labelsMonthly[index]}</p>
-        </div>
-      ))}
-    </div>
-    <div style={{ width: "100%", marginTop: "20px" }}>
-      <Pie data={dataMonthly} options={options} />
-    </div>
-  </div>
-</div>
-  <div>
-    <h3>Estadísticas semanales</h3>
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ display: "flex", justifyContent: "space-evenly", marginTop: "30px", width: "100%"  }}>
-        {scoreValuesWeekly.map((score, index) => (
-          <div key={index}>
-            <p style={{color: "black"}}>{score}</p>
-            <p style={{color: "black"}}>{labelsWeekly[index]}</p>
+    <div >
+      <div>
+        <h3>Estadísticas mensuales</h3>
+        <div >
+          <div >
+            {scoreValuesMonthly.map((score, index) => (
+              <div key={index}>
+                <p  style={{color:"black"}}>{score}</p>
+                <p style={{color:"black"}}>{labelsMonthly[index]}</p>
+              </div>
+            ))}
           </div>
-        ))}
+          <div >
+            <Pie data={dataMonthly} options={options} />
+          </div>
+        </div>
       </div>
-      <div style={{ width: "100%", marginTop: "20px" }}>
-        <Pie data={dataWeekly} options={options} />
+      <div>
+        <h3>Estadísticas semanales</h3>
+        <div >
+          <div >
+            {scoreValuesWeekly.map((score, index) => (
+              <div key={index}>
+                <p style={{color:"black"}}>{score}</p>
+                <p style={{color:"black"}}>{labelsWeekly[index]}</p>
+              </div>
+            ))}
+          </div>
+          <div >
+            <Pie data={dataWeekly} options={options} />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
   )
 }
