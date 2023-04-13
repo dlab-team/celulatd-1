@@ -20,6 +20,7 @@ import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/user/dashboard/Notification';
 import Perfil from './components/dashboard/Perfil';
 import VideoList from './components/dashboard/video/VideoList';
+import Error404 from './components/common/Error404';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
       <Route path="/VideoUploader" element={<VideoUploader />} />
       <Route path="/ComponetVideo" element={<ComponetVideo />} />
       <Route path="/Notification" element={<Notification />} />
-      <Route path="*" element="Error" />
+      <Route path="*" element={<Error404 />} />
       <Route path="/DashboardUser" element={<DashboardUser />} />
       <Route path='/ComponetVideoUser' element={<ComponetVideoUser />} />
       <Route path="/NavbarVideo" element={<NavbarVideo />} />

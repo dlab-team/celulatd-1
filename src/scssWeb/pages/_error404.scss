@@ -2,3 +2,12 @@
 @import '../utils/variables';
 @import "../base/breakpoints";
 @import "../base/base";
+
+
+.container-error-movil{
+    background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
