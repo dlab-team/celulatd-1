@@ -6,8 +6,8 @@ ChartJS.register(ArcElement, Tooltip, Legend, Filler);
 
 const options = {
   maintainAspectRatio: false,
-  responsive: true,
   color: 'black',
+  responsive: true,
   plugins: {
     legend: {
       position: 'bottom',
@@ -27,14 +27,14 @@ export default function PieCharts() {
   const [scoreValuesWeekly, setScoreValuesWeekly] = useState([]);
 
   useEffect(() => {
-    axios.get('https://...')
+    axios.get("/db.json")
       .then((response) => {
         // Aquí actualizamos los valores de los scores
         setScoreValuesMonthly(response.data.monthly);
         setScoreValuesWeekly(response.data.weekly);
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error +" Error al cargar la api");
       });
   }, []);
 
@@ -45,7 +45,7 @@ export default function PieCharts() {
           label: "Estadisticas Mensuales",
           data: scoreValuesMonthly,
           backgroundColor: ["#6c757d", "#073B3A", "rgba(7, 59, 58, 0.35)"],
-          
+
         },
       ],
       labels: labelsMonthly
