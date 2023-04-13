@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Header from "../../common/header";
 
 export default function News() {
   const [articles, setArticles] = useState([]);
@@ -22,9 +23,9 @@ export default function News() {
   return (
     <div className="Container">
       {articles.map((article) => (
-        <div key={article.title}>
-          <h2>{article.title}</h2>
-          <p>{article.description}</p>
+        <div key={article.name}>
+            <h1>{article.title}</h1>
+          <h4>{article.content}</h4>
         </div>
       ))}
     </div>

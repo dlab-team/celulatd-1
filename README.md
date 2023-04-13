@@ -2,6 +2,7 @@
 #### `npm install`
 #### `npm install react-bootstrap`
 #### `npm install react-responsive`
+#### `npm i react-chartjs-2 chart.js`
 
 #### `npm install -g sass`
 # Getting Started with Create React App
