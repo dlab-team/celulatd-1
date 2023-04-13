@@ -4,7 +4,7 @@ import NavbarComp from "../NavbarComponent";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
-import MensajeSvg from "../../assets/img/notifications_G.svg";
+import MensajeSvg from "../../../assets/img/notifications_G.svg";
 import NavbarNotification from "../notification/NabvarNotifcation";
 
 const Notification = () => {
