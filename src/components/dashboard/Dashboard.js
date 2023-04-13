@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComp from "./NavbarComponent";
 import Header from "../../components/common/header";
-import AjustesSvg from '../../assets/img/AjusteWt.svg';
+import AjustesSvg from '../../assets/img/settings_W.svg';
 // OJO!!!! DEFINIR QUE PAGINA ES DASHBOARD
 const Dashboard = () => {
     return (

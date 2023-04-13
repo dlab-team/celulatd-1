@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "../../../scssWeb/main.css";
+import LogoSvg from "../../../assets/img/LogoVector.svg";
+import FraseSvg from "../../../assets/img/Frase1Vector.svg";
 
 export default function Register() {
   const [username, setUsername] = useState("");
@@ -26,7 +28,11 @@ export default function Register() {
   };
 
   return (
-  <div className="container-user">
+  <div className="container-user background-register">
+    <div className="container-user-logo">
+        <img src={LogoSvg} className="register-logo" />
+        <img src={FraseSvg} className="register-logo" />
+      </div>
       <form onSubmit={handleSubmit}>
       <input
         type="text"

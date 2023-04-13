@@ -4,7 +4,7 @@ import NavbarComp from "../NavbarComponent";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
-import MensajeSvg from "../../../assets/img/SvgMensaje.svg";
+import MensajeSvg from "../../../assets/img/notifications_G.svg";
 import NavbarNotification from "../notification/NabvarNotifcation";
 
 const Notification = () => {
@@ -50,10 +50,9 @@ const Notification = () => {
     <div>
       <Header />
       <NavbarComp />
-      <NavbarNotification/>
       <div className="barra">
         <img className="svg-img-barra" src={MensajeSvg} />
-        <h2>NOTIFICACIONES</h2>
+        <NavbarNotification/>
       </div>
       <div className=" container-body-all">
         <div className="container-recive-info container-recive_body">

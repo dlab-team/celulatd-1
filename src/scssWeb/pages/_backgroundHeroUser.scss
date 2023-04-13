@@ -3,168 +3,190 @@
 @import "../base/breakpoints";
 @import "../base/base";
 
+
+.background-register{
+  // background:url('../../assets/login-registro/fondoaccesomobile.svg');
+  background-color: $usergeendark;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  background-clip: padding-box;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
 .container-user {
-    //background-image: url("../../assets/img/background.jpg");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    margin-bottom: 0.5rem;
-    background-clip: padding-box;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        border-radius: 20px;
-        max-width: 400px;
-        width: 100%;
-
-        input {
-            padding: 10px;
-            margin-bottom: 10px;
-            width: 100%;
-            border: 1px solid $userwinterwhite;
-            border-radius: 20px;
-            background-color: $userwhite;
-
-            &:focus {
-                outline: none;
-                border-color: $userblue;
-            }
-        }
-
-        button {
-            padding: 10px;
-            border:solid 2px $useryellowdark;
-            border-radius: 5px ;
-            background-color:$usergeendark;
-            color: $userwhite;
-            cursor: pointer;
-            border-radius: 4px;
-
-            &:hover {
-                background-color:$useryellowligth;
-            }
-        }
-
-        p {
-            color: $userred;
-            
-        }
+  .container-user-logo {
+    width: 60%;
+    margin-bottom: 15%;
+    @include media (lg){
+      margin-bottom: 7%;
     }
+    img {
+      width: 80%;
+      @include media(lg) {
+        width: 100%;
+        
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: -28px;
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      width: 100%;
+      border: 1px solid $userwinterwhite;
+      border-radius: 20px;
+      background-color: $userwhite;
+
+      &:focus {
+        outline: none;
+        border-color: $userblue;
+      }
+    }
+
+    button {
+      padding: 10px;
+      border: solid 2px $useryellowdark;
+      border-radius: 5px;
+      background-color: $usergeendark;
+      color: $userwhite;
+      cursor: pointer;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: $useryellowligth;
+      }
+    }
+
+    p {
+      color: $userred;
+    }
+  }
 }
 
 .forgot-password {
-    text-align: right;
-    margin-bottom: 10px;
+  text-align: right;
+  margin-bottom: 10px;
 
-    a {
-        text-decoration: underline;
-        color: $useryellowligth;
-        cursor: pointer;
+  a {
+    text-decoration: underline;
+    color: $useryellowligth;
+    cursor: pointer;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 }
 
 .remember-me {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 
-    input[type="checkbox"] {
-        margin-right: 10px;
-    }
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
 
-    label {
-        cursor: pointer;
-    }
+  label {
+    cursor: pointer;
+  }
 }
 
 .register {
-    margin-bottom: 10px;
+  margin-bottom: 3px;
+  color: $userwinterwhite;
+  white-space: nowrap;
+  display: inline-block;
+  margin-top: 9px;
+  text-align: center;
+
+  a {
     color: $userwinterwhite;
-    white-space: nowrap;
-    display: inline-block;
+    cursor: pointer;
 
-    a {
-
-        color: $userwinterwhite;
-        cursor: pointer;
-
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+      text-decoration: none;
     }
+  }
 }
 
 .or {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: $userwinterwhite;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: $userwinterwhite;
 }
 
 hr {
-    flex-grow: 1;
+  flex-grow: 1;
 
-    margin: 0 10px;
-    border: none;
-    border-top: 1px solid
+  margin: 0 10px;
+  border: none;
+  border-top: 1px solid;
 }
 
 .checkbox-label {
-    display: inline-block;
-    position: relative;
-    padding-left: 25px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    color: $userwinterwhite;
-    line-height: 1;
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: $userwinterwhite;
+  line-height: 1;
 }
 
 .checkbox-custom {
-    position: absolute;
+  position: absolute;
 
-    left: 0;
-    top: 0;
-    height: 16px;
-    width: 16px;
-    background-color: $userwinterwhite;
-    border-radius: 3px;
+  left: 0;
+  top: 0;
+  height: 16px;
+  width: 16px;
+  background-color: $userwinterwhite;
+  border-radius: 3px;
 }
 
 input[type="checkbox"] {
-    display: none;
+  display: none;
 }
 
-input[type="checkbox"]:checked+.checkbox-custom:before {
-    content: '\2713';
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 4px;
-    font-size: 12px;
-    color: $userwhite;
+input[type="checkbox"]:checked + .checkbox-custom:before {
+  content: "\2713";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 12px;
+  color: $userwhite;
 }
 
-input[type="checkbox"]:focus+.checkbox-custom {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+input[type="checkbox"]:focus + .checkbox-custom {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
-input[type="checkbox"]:checked+.checkbox-custom {
-    background-color: #0f9d58;
+input[type="checkbox"]:checked + .checkbox-custom {
+  background-color: #0f9d58;
 }

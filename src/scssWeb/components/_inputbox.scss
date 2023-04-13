@@ -6,22 +6,25 @@
 .container-recive-info {
     label {
       background: $usergeendark;
-      width: 120px;
-      margin-left: 10px;
+      width: 140px;
+      padding-left: 13px;
+      @include media (lg){
+        width: 190px;
+      }
   
       h2 {
-        margin: 2% 5%;
+        margin: 5% 5%;
       }
     }
   
     input {
       background: $usergeenligth;
-      width: 95vw;
-      margin-left: 10px;
+      width: 100vw;
+      padding-left: 13px;
       margin-bottom: 10px;
   
       h2 {
-        margin: 2% 5%;
+        margin: 5% 5%;
       }
     }
   }
@@ -45,7 +48,10 @@
       justify-content: center;
       align-items: center;
       margin-bottom: 6%;
-      width: 30%;
+      width: 20%;
+      @include media (lg){
+        width: 30%;
+      }
       h2, p{
         color: $usergeendark;
       }

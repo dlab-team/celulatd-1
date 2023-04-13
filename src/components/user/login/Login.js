@@ -3,6 +3,9 @@ import axios from "axios";
 import GoogleLoginButton from "./Button";
 import { Link } from "react-router-dom";
 import "../../../scssWeb/main.css";
+import LogoSvg from "../../../assets/img/LogoVector.svg";
+import FraseSvg from "../../../assets/img/Frase1Vector.svg";
+import Bkgnd from "../../../assets/img/VectorBkgdTransp.svg";
 
 
 export default function Login() {
@@ -37,7 +40,12 @@ export default function Login() {
   };
 
   return (
-    <div className="container-user">
+    <div className="container-user background-register">
+      {/* <img src={Bkgnd} className="background-register" /> */}
+      <div className="container-user-logo">
+        <img src={LogoSvg} className="register-logo" />
+        <img src={FraseSvg} className="register-logo" />
+      </div>
       <script src="https://apis.google.com/js/platform.js" async defer></script>
       <form onSubmit={handleSubmit}>
         <input
