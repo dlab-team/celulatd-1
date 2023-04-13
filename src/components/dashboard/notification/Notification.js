@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
-import NavbarComp from "./NavbarComponent";
-import "../../../src/scssWeb/main.css";
-import Uploadbutton from "../../assets/img/Uploadbutton.svg";
-import Header from "../../components/common/header";
+import NavbarComp from "../NavbarComponent";
+import "../../../scssWeb/main.css";
+import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
+import Header from "../../common/header";
 import MensajeSvg from "../../assets/img/notifications_G.svg";
+import NavbarNotification from "../notification/NabvarNotifcation";
 
 const Notification = () => {
   const [title, setTitle] = useState("");
@@ -49,6 +50,7 @@ const Notification = () => {
     <div>
       <Header />
       <NavbarComp />
+      <NavbarNotification/>
       <div className="barra">
         <img className="svg-img-barra" src={MensajeSvg} />
         <h2>NOTIFICACIONES</h2>

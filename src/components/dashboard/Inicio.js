@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComp from "./NavbarComponent";
 import VideoUpload from "./video/VideoUploader";
 import VideoList from "./video/ComponetVideo";
-import Notification from "./Notification";
+import Notification from "./notification/Notification";
 import { Link } from "react-router-dom";
 import "../../scssWeb/main.css";
 import VectorSubirVid from "../../assets/img/upload_G.svg";
