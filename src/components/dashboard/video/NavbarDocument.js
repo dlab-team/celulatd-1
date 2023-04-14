@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
+import NavbarComponent from '../NavbarComponent';
 import '../../../scssWeb/main.css';
 
 
 
-function NavbarVideo() {
+function NavbarVideoRead() {
 
   return (
     <>
@@ -12,12 +13,13 @@ function NavbarVideo() {
       <div className='navbarvideo'>
         <div className='container-video'>
           <div>
-          <Link to="/VideoUploader" className='Link'>
-            <Nav.Link href="/VideoUploader"><h2>VIDEOS</h2></Nav.Link>
+          <Link to="/ComponetVideo" className='Link'>
+            <Nav.Link href="/ComponetVideo"><h2>VIDEOS</h2></Nav.Link>
           </Link>
           </div>
           <div>
-          <Link to="/Inicio" className='Link'> 
+          <Link to="/Inicio" className='Link'>
+                      {/* redirigir a ver documentos */}
             <Nav.Link href="/Inicio"><h2>DOCUMENTOS</h2></Nav.Link>
           </Link>
           </div>
@@ -27,5 +29,5 @@ function NavbarVideo() {
   );
 }
 
-export default NavbarVideo;
+export default NavbarVideoRead;
 

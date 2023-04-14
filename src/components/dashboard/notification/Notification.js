@@ -52,9 +52,10 @@ const Notification = () => {
       <NavbarComp />
       <div className="barra">
         <img className="svg-img-barra" src={MensajeSvg} />
-        <NavbarNotification/>
+        <h2>INICIO</h2>
       </div>
       <div className=" container-body-all">
+        <NavbarNotification />
         <div className="container-recive-info container-recive_body">
           <label className="recive_title">
             <h2>Titulo:</h2>
@@ -67,7 +68,7 @@ const Notification = () => {
           />
         </div>
         <div className="container-recive-info container_recive">
-        <label className="recive_title">
+          <label className="recive_title">
             <h2>Mensaje:</h2>
           </label>
           <input

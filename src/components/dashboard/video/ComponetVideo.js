@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NavbarComp from "../NavbarComponent";
-import NavbarVideo from "./NavbarVideo.js";
+import NavbarVideoRead from "./NavbarDocument.js";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
 import Header from "../../../components/common/header.js";
 import "../../../scssWeb/main.css";
@@ -77,11 +77,12 @@ const ComponetVideo = (props) => {
     <div className="container-responsive">
       <Header />
       <NavbarComp />
-      <div className="barra barra-navbar-video">
+      <div className="barra">
         <img className="svg-img-barra" src={RecursosSvg} />
-        <NavbarVideo />
-      </div>
+        <h2>RECURSOS</h2>
+      </div>  
       <div className="container-body-all">
+      <NavbarVideoRead />
         <div className="container-componentvideo_flex">
           {isEditing ? (
             <div className="container-componentvideo_body">
