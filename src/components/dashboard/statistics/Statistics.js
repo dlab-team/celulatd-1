@@ -103,7 +103,7 @@ export default function PieCharts() {
           }}
         >
           <div>
-            <h3>Estadísticas mensuales</h3>
+            <h2>Estadísticas mensuales</h2>
             <div
               style={{
                 display: "flex",
@@ -131,8 +131,8 @@ export default function PieCharts() {
               </div>
             </div>
           </div>
-          <div>
-            <h3>Estadísticas semanales</h3>
+          <div className="container-statics_body-weekly">
+            <h2>Estadísticas semanales</h2>
             <div
               style={{
                 display: "flex",
@@ -144,7 +144,7 @@ export default function PieCharts() {
                 style={{
                   display: "flex",
                   justifyContent: "space-evenly",
-                  marginTop: "30px",
+                  marginTop: "20px",
                   width: "100%",
                 }}
               >

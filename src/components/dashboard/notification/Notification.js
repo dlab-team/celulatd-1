@@ -52,7 +52,7 @@ const Notification = () => {
       <NavbarComp />
       <div className="barra">
         <img className="svg-img-barra" src={MensajeSvg} />
-        <h2>INICIO</h2>
+        <h2>MENSAJES</h2>
       </div>
       <div className=" container-body-all">
         <NavbarNotification />

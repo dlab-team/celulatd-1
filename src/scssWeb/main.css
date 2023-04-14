@@ -157,7 +157,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -182,7 +182,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -249,7 +249,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -317,7 +317,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -357,7 +357,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -376,6 +376,7 @@ body h2 {
   }
 }
 .container-recive-info label h2 {
+  color: white;
   margin: 5% 5%;
 }
 .container-recive-info input {
@@ -452,7 +453,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -642,7 +643,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -763,7 +764,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -881,7 +882,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -906,7 +907,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -971,7 +972,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -996,12 +997,33 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
   }
+}
+
+.container-body-notification {
+  margin-top: 260px;
+}
+@media screen and (min-width: 1024px) {
+  .container-body-notification {
+    margin-top: 350px;
+  }
+}
+
+.notification-box {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 100vw;
+  height: min-content;
+  overflow: scroll;
+  padding-left: 13px;
+  margin-bottom: 10px;
+}
+.notification-box p {
+  line-height: 1.2rem;
 }
 
 body p {
@@ -1021,7 +1043,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -1031,6 +1053,15 @@ body h2 {
 
 .container-statics_body {
   width: 100%;
+  padding: 10px;
+}
+.container-statics_body p {
+  line-height: 1.2rem;
+  text-align: center;
+}
+
+.container-statics_body-weekly {
+  margin-top: 40px;
 }
 
 body p {
@@ -1050,7 +1081,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
