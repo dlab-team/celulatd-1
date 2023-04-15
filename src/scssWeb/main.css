@@ -1023,8 +1023,8 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   .notification-box {
-    margin-left: 40px;
-    width: 95vw;
+    margin-left: 23px;
+    width: 97vw;
   }
 }
 .notification-box h2 {
