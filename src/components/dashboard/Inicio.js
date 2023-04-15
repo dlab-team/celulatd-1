@@ -1,9 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavbarComp from "./NavbarComponent";
-import VideoUpload from "./video/VideoUploader";
-import VideoList from "./video/ComponetVideo";
-import Notification from "./notification/Notification";
+import VideoUploader from "./video/VideoUploader";
+// import VideoList from "./video/ComponetVideo";
+// import Notification from "./notification/Notification";
 import { Link } from "react-router-dom";
 import "../../scssWeb/main.css";
 import VectorSubirVid from "../../assets/img/upload_G.svg";
@@ -23,13 +23,13 @@ const Inicio = () => {
         </div>
         <div className="container-body-all container-inicio_body">
           <div className="container-inicio_component_all container-inicio_component-background_resources">
-            <Link to="/SubirVideo" className="Link">
+            <Link to="/VideoUploader" className="Link">
               <img src={VectorSubirVid} />
               <button><p>Subir  Recursos</p></button>
             </Link>
           </div>
           <div className="container-inicio_component_all container-inicio_component-background_video">
-            <Link to="/ListarVideo" className="Link">
+            <Link to="/ComponetVideo" className="Link">
               <img src={Recursos} />
               <button><p>Recursos</p></button>
             </Link>

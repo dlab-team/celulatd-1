@@ -77,7 +77,7 @@ export default function Login() {
           </label>
         </div>
         {error && <p>{error}</p>}
-        <Link to="/dashboard" className='Link'>
+        <Link to="/Inicio" className='Link'>
         <button type="submit">Iniciar sesión</button>
         </Link> 
         <div className="register">

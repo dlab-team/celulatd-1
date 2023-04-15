@@ -157,7 +157,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -182,7 +182,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -249,7 +249,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -317,7 +317,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -326,12 +326,18 @@ body h2 {
 }
 
 .navbarvideo {
-  background: #e2a30b;
+  background: white;
 }
-.navbarvideo a.nav-link {
-  background: #e2a30b;
+
+.container-video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-video a.Link h2 {
   color: #073B3A;
-  margin-left: 10px;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 
 body p {
@@ -351,7 +357,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -370,6 +376,7 @@ body h2 {
   }
 }
 .container-recive-info label h2 {
+  color: white;
   margin: 5% 5%;
 }
 .container-recive-info input {
@@ -446,7 +453,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -480,14 +487,7 @@ body h2 {
 @media screen and (min-width: 1024px) {
   .container-user .container-user-logo {
     margin-bottom: 7%;
-  }
-}
-.container-user .container-user-logo img {
-  width: 80%;
-}
-@media screen and (min-width: 1024px) {
-  .container-user .container-user-logo img {
-    width: 100%;
+    width: 50%;
   }
 }
 .container-user form {
@@ -643,7 +643,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -764,7 +764,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -882,7 +882,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -907,7 +907,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -972,7 +972,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -997,12 +997,42 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
   }
+}
+
+.container-body-notification {
+  margin-top: 260px;
+}
+@media screen and (min-width: 1024px) {
+  .container-body-notification {
+    margin-top: 350px;
+  }
+}
+
+.notification-box {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 100vw;
+  height: min-content;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .notification-box {
+    margin-left: 23px;
+    width: 97vw;
+  }
+}
+.notification-box h2 {
+  padding: 8px;
+}
+.notification-box p {
+  line-height: 1.2rem;
+  padding: 8px;
 }
 
 body p {
@@ -1022,12 +1052,26 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
   }
+}
+
+.container-statics_body {
+  width: 100%;
+  padding: 10px;
+}
+.container-statics_body p {
+  line-height: 1.2rem;
+  text-align: center;
+  padding: 6px;
+}
+
+.container-statics_body-weekly {
+  margin-top: 40px;
 }
 
 body p {
@@ -1047,7 +1091,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {

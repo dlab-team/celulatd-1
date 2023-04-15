@@ -1,31 +1,34 @@
 import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavbarComponent from '../NavbarComponent';
 import '../../../scssWeb/main.css';
 
 
 
-export default function NavbarNotification() {
+function NavbarNotification() {
 
   return (
     <>
 
-      <NavbarComponent />
-      <Navbar variant="light" className='mx-3 navbarvideo'>
-        <Container>
+      <div className='navbarvideo'>
+        <div className='container-video'>
+          <div>
           <Link to="/ListNotifications" className='Link'>
-            <Nav.Link href="/ListNotifications"><p>Mensajes</p></Nav.Link>
+            <Nav.Link href="/ListNotifications"><h2>MENSAJES</h2></Nav.Link>
           </Link>
+          </div>
+          <div>
           <Link to="/Notification" className='Link'>
-            <Nav.Link href="/Notification"><p>Subir Mensajes</p></Nav.Link>
+            <Nav.Link href="/Notification"><h2>SUBIR MENSAJES</h2></Nav.Link>
           </Link>
-        </Container>
-      </Navbar>
+          </div>
+        </div>
+      </div>
     </>
   );
+
 }
+
+export default NavbarNotification;
 
 
 
