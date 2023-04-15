@@ -1019,11 +1019,20 @@ body h2 {
   width: 100vw;
   height: min-content;
   overflow: scroll;
-  padding-left: 13px;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .notification-box {
+    margin-left: 40px;
+    width: 95vw;
+  }
+}
+.notification-box h2 {
+  padding: 8px;
 }
 .notification-box p {
   line-height: 1.2rem;
+  padding: 8px;
 }
 
 body p {
@@ -1058,6 +1067,7 @@ body h2 {
 .container-statics_body p {
   line-height: 1.2rem;
   text-align: center;
+  padding: 6px;
 }
 
 .container-statics_body-weekly {

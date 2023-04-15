@@ -11,7 +11,6 @@
     @include media(lg) {
       margin-top: 350px;
       
-    
     }
   
   }
@@ -21,11 +20,19 @@
       width: 100vw;
       height: min-content;
       overflow: scroll;
-      padding-left: 13px;
       margin-bottom: 10px;
+      @include media(lg) {
+        margin-left: 40px;
+        width: 95vw;
+      }  
+      h2{
+        padding: 8px;
+      }
       p{
         line-height: 1.2rem;
-      }
+        padding: 8px;
+      }  
       
-
 }
+
+

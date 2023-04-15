@@ -36,7 +36,7 @@ export default function News() {
       <img className="svg-img-barra" src={MensajeSvg} />
       <h2>MENSAJES</h2>
     </div>
-    <div className=" container-body-notification">
+    <div className="container-body-notification">
       <NavbarNotification />
     <div className="Container">
       {articles.map((article) => (
