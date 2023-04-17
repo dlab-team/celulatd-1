@@ -16,9 +16,33 @@
     justify-content: center;
     @include media (lg){
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
 }
+.container-componentvideo_body{
+    margin-top: 20px;
+    @include media (lg){
+        max-width: 30vw;
+        margin-left: 5px;
+        
+    }
+    input{
+        margin-bottom: 3px;
+    }
+    h2{
+        height: 40px;
+        margin-top: 3px;
+    }
+    p{
+        height: 80px;
+        line-height: 1rem;
+        @include media (lg){
+            line-height: 1.5rem;
+        }
+    }
+}
+
 
 .body-button-edit{
     display: flex;
