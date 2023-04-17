@@ -14,26 +14,26 @@ const ComponetVideo = (props) => {
   const [uploadStatus, setUploadStatus] = useState("");
   const [videos, setVideos] = useState([]);
 
-
   useEffect(() => {
     const API_KEY = "fpCsO7Yqx44FzOmNaNwHa64MqiGz6UCItjERAeDRLOfxH6nnt5OZja8K";
     const PER_PAGE = 10;
     const PAGE = 1;
     const QUERY = "programming";
 
-
     axios
-      .get(`https://api.pexels.com/videos/search?query=${QUERY}&per_page=${PER_PAGE}&page=${PAGE}`, {
-        headers: { Authorization: API_KEY }
-      })
-      .then(response => {
+      .get(
+        `https://api.pexels.com/videos/search?query=${QUERY}&per_page=${PER_PAGE}&page=${PAGE}`,
+        {
+          headers: { Authorization: API_KEY },
+        }
+      )
+      .then((response) => {
         setVideos(response.data.videos);
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
       });
   }, []);
-
 
   const handleVideoChange = (event) => {
     setVideo(event.target.files[0]);
@@ -97,7 +97,7 @@ const ComponetVideo = (props) => {
         <img className="svg-img-barra" src={RecursosSvg} />
         <h2>RECURSOS</h2>
       </div>
-      <div className="container-body-all">
+      <div className="container-body-all-video">
         <NavbarVideoRead />
         <div className="container-componentvideo_flex">
           {isEditing ? (
@@ -128,10 +128,14 @@ const ComponetVideo = (props) => {
                   <h2>{video.user.name}</h2>
                   <p>{video.url}</p>
                   <div className="body-button-edit-all">
-                  <button onClick={() => handleDelete(video.id)}>Eliminar</button>
-                  <button onClick={() => console.log(`Editando video ${video.id}`)}>
-                    Editar
-                  </button>
+                    <button onClick={() => handleDelete(video.id)}>
+                      Eliminar
+                    </button>
+                    <button
+                      onClick={() => console.log(`Editando video ${video.id}`)}
+                    >
+                      Editar
+                    </button>
                   </div>
                 </div>
               ))}
@@ -140,12 +144,11 @@ const ComponetVideo = (props) => {
                 <button onClick={handleCancelEdit}>Cancelar</button>
               </div>
             </div>
-
           )}
           <p>{uploadStatus}</p>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

@@ -21,6 +21,9 @@
     margin-bottom: 11px;
     margin-top: 19px;
     color: #073b3a;
+    @include media (lg){
+      margin-top: 15px;
+    }
   
     
   }
