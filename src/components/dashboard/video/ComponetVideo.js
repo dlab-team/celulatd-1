@@ -151,5 +151,3 @@ const ComponetVideo = (props) => {
 
 
 export default ComponetVideo;
-
-
