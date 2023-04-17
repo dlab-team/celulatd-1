@@ -303,4 +303,4 @@ export default ComponetVideo;
 
 
 
->>>>>>> 2e6428b42813f0e7354393aed335bd04eb60e0b0
+/* >>>>>>> 2e6428b42813f0e7354393aed335bd04eb60e0b0 */
