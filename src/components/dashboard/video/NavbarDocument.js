@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import "../../../scssWeb/main.css";
 
@@ -8,18 +8,18 @@ function NavbarVideoRead() {
       <div className="navbarvideo">
         <div className="container-video">
           <div>
-            <Link to="/ComponetVideo" className="Link">
+            <NavLink to="/ComponetVideo" className="Link" activeClassName="active">
               <Nav.Link href="/ComponetVideo">
                 <h2>VIDEOS</h2>
               </Nav.Link>
-            </Link>
+            </NavLink>
           </div>
           <div>
-            <Link to="/Inicio" className="Link">
+            <NavLink to="/Inicio" className="Link" activeClassName="active">
               <Nav.Link href="/Inicio">
                 <h2>DOCUMENTOS</h2>
               </Nav.Link>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
