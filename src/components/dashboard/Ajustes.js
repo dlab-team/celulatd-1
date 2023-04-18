@@ -62,7 +62,7 @@ const Settings = () => {
           <img className="svg-img-barra" src={AjustesGSvg} />
           <h2>AJUSTES</h2>
         </div>
-      <div className="container-body-all container-settings_body">
+      <div className="container-body-all container-settings_body container-body-all-position">
         {!isEditing ? (
        <div className="container-settings_body-profile">   
           <div>

@@ -21,7 +21,7 @@ const Inicio = () => {
           <img className="svg-img-barra" src={HomeGSvg} />
           <h2>INICIO</h2>
         </div>
-        <div className="container-body-all container-inicio_body">
+        <div className="container-body-all container-inicio_body container-body-all-position">
           <div className="container-inicio_component_all container-inicio_component-background_resources">
             <Link to="/VideoUploader" className="Link">
               <img src={VectorSubirVid} />
