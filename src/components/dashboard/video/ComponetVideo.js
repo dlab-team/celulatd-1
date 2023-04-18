@@ -7,11 +7,7 @@ import Header from "../../../components/common/header.js";
 import "../../../scssWeb/main.css";
 
 const ComponetVideo = (props) => {
-  const [isEditing, setIsEditing] = useState(false);
-  const [video, setVideo] = useState(props.video);
-  const [name, setName] = useState(props.name);
-  const [description, setDescription] = useState(props.description);
-  const [uploadStatus, setUploadStatus] = useState("");
+
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -35,48 +31,8 @@ const ComponetVideo = (props) => {
       });
   }, []);
 
-  const handleVideoChange = (event) => {
-    setVideo(event.target.files[0]);
-  };
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
 
-  const handleDescriptionChange = (event) => {
-    setDescription(event.target.value);
-  };
-
-  const handleEdit = () => {
-    setIsEditing(true);
-  };
-
-  const handleCancelEdit = () => {
-    setIsEditing(false);
-    setVideo(props.video);
-    setName(props.name);
-    setDescription(props.description);
-  };
-
-  const handleSave = () => {
-    const formData = new FormData();
-    formData.append("video", video);
-    formData.append("name", name);
-    formData.append("description", description);
-    axios
-      .put(`/videos/${props.id}`, formData)
-      .then((response) => {
-        setIsEditing(false);
-        setVideo(response.data.video);
-        setName(response.data.name);
-        setDescription(response.data.description);
-        setUploadStatus("Upload successful");
-      })
-      .catch((error) => {
-        console.log(error);
-        setUploadStatus("Upload failed");
-      });
-  };
 
   const handleDelete = () => {
     axios
@@ -93,60 +49,24 @@ const ComponetVideo = (props) => {
     <div className="container-responsive">
       <Header />
       <NavbarComp />
-      <div className="barra">
-        <img className="svg-img-barra" src={RecursosSvg} />
-        <h2>RECURSOS</h2>
-      </div>
-      <div className="container-body-all-video">
-        <NavbarVideoRead />
-        <div className="container-componentvideo_flex">
-          {isEditing ? (
-            <div className="container-componentvideo_body">
-              <input type="file" name="video" onChange={handleVideoChange} />
-              <input
-                type="text"
-                name="name"
-                value={name}
-                onChange={handleNameChange}
-              />
-              <input
-                type="text"
-                name="description"
-                value={description}
-                onChange={handleDescriptionChange}
-              />
-              <div className="body-button-edit-all">
-                <button onClick={handleSave}>Guardar</button>
-                <button onClick={handleCancelEdit}>Cancelar</button>
-              </div>
+      <div className="container-componentvideo_flex">
+        {videos.map((video) => (
+          <div className="container-componentvideo_body" key={video.id}>
+            <video src={video.video_files[0].link} controls />
+            <h2>{video.user.name}</h2>
+            <p>{video.url}</p>
+            <div className="body-button-edit-all">
+              <button onClick={() => handleDelete(video.id)}>
+                Eliminar
+              </button>
+              <button
+                onClick={() => console.log(`Editando video ${video.id}`)}
+              >
+                Editar
+              </button>
             </div>
-          ) : (
-            <div className="container-componentvideo_flex">
-              {videos.map((video) => (
-                <div className="container-componentvideo_body" key={video.id}>
-                  <video src={video.video_files[0].link} controls />
-                  <h2>{video.user.name}</h2>
-                  <p>{video.url}</p>
-                  <div className="body-button-edit-all">
-                    <button onClick={() => handleDelete(video.id)}>
-                      Eliminar
-                    </button>
-                    <button
-                      onClick={() => console.log(`Editando video ${video.id}`)}
-                    >
-                      Editar
-                    </button>
-                  </div>
-                </div>
-              ))}
-              <div className="body-button-edit-all">
-                <button onClick={handleSave}>Guardar</button>
-                <button onClick={handleCancelEdit}>Cancelar</button>
-              </div>
-            </div>
-          )}
-          <p>{uploadStatus}</p>
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );
