@@ -14,9 +14,7 @@ import Notification from './components/dashboard/notification/Notification';
 import DashboardUser from './components/user/dashboard/DashboardUser';
 import ComponetVideoUser from './components/user/dashboard/ComponetVideoUser';
 import NavbarVideo from './components/dashboard/video/NavbarVideo.js';
-
 import Statistics from './components/dashboard/statistics/Statistics';
-
 import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/dashboard/notification/Notification';
@@ -24,6 +22,7 @@ import Perfil from './components/dashboard/Perfil';
 import VideoList from './components/dashboard/video/VideoList';
 import Error404 from './components/common/Error404';
 import ListNotifications from './components/dashboard/notification/ListNotifications';
+import ListDocument from './components/dashboard/video/ListDocument';
 
 function App() {
   return (
@@ -49,9 +48,10 @@ function App() {
       <Route path="/NotificationUser" element={<NotificationUser />} />
       <Route path="/VideoList" element={<VideoList />} />
       <Route path="/ListNotifications" element={<ListNotifications />} />
+      <Route path="/ListDocument" element={<ListDocument />} />
 
-  </Routes >
-  
+    </Routes >
+
   );
 }
 

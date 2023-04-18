@@ -15,8 +15,8 @@ function NavbarVideoRead() {
             </NavLink>
           </div>
           <div>
-            <NavLink to="/Inicio" className="Link" activeClassName="active">
-              <Nav.Link href="/Inicio">
+            <NavLink to="/ListDocument" className="Link" activeClassName="active">
+              <Nav.Link href="/ListDocument">
                 <h2>DOCUMENTOS</h2>
               </Nav.Link>
             </NavLink>
