@@ -17,30 +17,30 @@ const Inicio = () => {
     <div className="container_inicio">
       <Header />
       <NavbarComp />
-        <div className="barra">
-          <img className="svg-img-barra" src={HomeGSvg} />
-          <h2>INICIO</h2>
+      <div className="barra">
+        <img className="svg-img-barra" src={HomeGSvg} />
+        <h2>INICIO</h2>
+      </div>
+      <div className="container-body-all container-inicio_body container-body-all-position">
+        <div className="container-inicio_component_all container-inicio_component-background_resources">
+          <Link to="/VideoUploader" className="Link">
+            <img src={VectorSubirVid} />
+            <button><p>Subir  Recursos</p></button>
+          </Link>
         </div>
-        <div className="container-body-all container-inicio_body container-body-all-position">
-          <div className="container-inicio_component_all container-inicio_component-background_resources">
-            <Link to="/VideoUploader" className="Link">
-              <img src={VectorSubirVid} />
-              <button><p>Subir  Recursos</p></button>
-            </Link>
-          </div>
-          <div className="container-inicio_component_all container-inicio_component-background_video">
-            <Link to="/ComponetVideo" className="Link">
-              <img src={Recursos} />
-              <button><p>Recursos</p></button>
-            </Link>
-          </div>
-          <div className="container-inicio_component_all container-inicio_component-background_notification">
-            <Link to="/Notification" className="Link">
-              <img src={SvgMensaje} />
-              <button><p>Mensajes</p></button>
-            </Link>
-          </div>
+        <div className="container-inicio_component_all container-inicio_component-background_video">
+          <Link to="/ComponetVideo" className="Link">
+            <img src={Recursos} />
+            <button><p>Recursos</p></button>
+          </Link>
         </div>
+        <div className="container-inicio_component_all container-inicio_component-background_notification">
+          <Link to="/Notification" className="Link">
+            <img src={SvgMensaje} />
+            <button><p>Mensajes</p></button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };
