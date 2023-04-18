@@ -8,6 +8,7 @@
   bottom: 0;
   width: 100%;
   height: 50px;
+  z-index: 10;
 
   @include media(lg) {
     position: fixed;
@@ -18,6 +19,7 @@
 }
 
 .navbar-admin-all {
+
   display: flex;
   justify-content: space-around;
   align-items: center;

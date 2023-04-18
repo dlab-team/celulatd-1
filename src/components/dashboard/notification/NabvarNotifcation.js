@@ -1,31 +1,35 @@
-import { Link } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavbarComponent from '../NavbarComponent';
-import '../../../scssWeb/main.css';
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import Nav from "react-bootstrap/Nav";
+import "../../../scssWeb/main.css";
 
 
-
-export default function NavbarNotification() {
+function NavbarNotification() {
 
   return (
     <>
-
-      <NavbarComponent />
-      <Navbar variant="light" className='mx-3 navbarvideo'>
-        <Container>
-          <Link to="/ListNotifications" className='Link'>
-            <Nav.Link href="/ListNotifications"><p>Mensajes</p></Nav.Link>
-          </Link>
-          <Link to="/Notification" className='Link'>
-            <Nav.Link href="/Notification"><p>Subir Mensajes</p></Nav.Link>
-          </Link>
-        </Container>
-      </Navbar>
+      <div className="navbarvideo">
+        <div className="container-video">
+          <div>
+            <NavLink
+              to="/ListNotifications"
+              className="Link" activeClassName="active">
+              <Nav.Link href="/ListNotifications">
+                <h2>MENSAJES</h2>
+              </Nav.Link>
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/Notification" className="Link" activeClassName="active">
+              <Nav.Link href="/Notification">
+                <h2>SUBIR MENSAJES</h2>
+              </Nav.Link>
+            </NavLink>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
 
-
-
+export default NavbarNotification;

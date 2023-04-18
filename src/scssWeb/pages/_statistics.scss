@@ -3,3 +3,17 @@
 @import "../base/breakpoints";
 @import "../base/typography";
 @import "../base/base";
+
+
+.container-statics_body{
+    width: 100%;
+    padding: 10px;
+    p{
+        line-height: 1.2rem;
+        text-align: center;
+        padding: 6px;
+      }
+}
+.container-statics_body-weekly{
+    margin-top: 40px;
+}

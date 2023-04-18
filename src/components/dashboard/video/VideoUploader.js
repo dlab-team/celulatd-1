@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import axios from "axios";
 import NavbarComp from "../NavbarComponent";
+import NavbarVideo from "./NavbarVideo.js";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
 import UploadSvg from "../../../assets/img/upload_G.svg";
-
 
 const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -54,45 +54,46 @@ const VideoUploader = () => {
 
   return (
     <div>
-       <Header />
-        <NavbarComp />
-          <div className="barra">
-            <img className="svg-img-barra" src={UploadSvg}/>
-            <h2>SUBIR VIDEOS</h2>
-          </div>
-          <div className="container-body-all">
-      <div className="container-recive-info container-recive_body">
-        <label className="recive_title">
-          <h2>Titulo:</h2>
-        </label>
-        <input
-          className="recive_input"
-          type="text"
-          value={title}
-          onChange={handleTitleInputChange}
-        />
+      <Header />
+      <NavbarComp />
+      <div className="barra">
+        <img className="svg-img-barra" src={UploadSvg} />
+        <h2>SUBIR RECURSOS</h2>
       </div>
-      <div className="container-recive-info container_recive">
-      {/* <div className="container-videouploader-info container_videouploader"> */}
-        <label className="recive_title">
-          <h2>Description:</h2>
-        </label>
-        <input
-          className="recive_input recive_input-height"
-          type="text"
-          value={description}
-          onChange={handleDescriptionInputChange}
-        />
+      <div className="container-body-all">
+        <NavbarVideo />
+        <div className="container-recive-info container-recive_body">
+          <label className="recive_title">
+            <h2>Titulo:</h2>
+          </label>
+          <input
+            className="recive_input"
+            type="text"
+            value={title}
+            onChange={handleTitleInputChange}
+          />
+        </div>
+        <div className="container-recive-info container_recive">
+          {/* <div className="container-videouploader-info container_videouploader"> */}
+          <label className="recive_title">
+            <h2>Description:</h2>
+          </label>
+          <input
+            className="recive_input recive_input-height"
+            type="text"
+            value={description}
+            onChange={handleDescriptionInputChange}
+          />
+        </div>
+        <div className="imagen-uploader">
+          <button onClick={handleUploadClick}>
+            <img className="imagen-button" src={Uploadbutton} alt=""></img>
+            <h2>Enviar</h2>
+          </button>
+          <input type="file" onChange={handleFileInputChange} />
+        </div>
+        <p>{uploadStatus}</p>
       </div>
-      <div className="imagen-uploader">
-        <button onClick={handleUploadClick}>
-          <img className="imagen-button"src={Uploadbutton} alt=""></img>
-          <h2>Enviar</h2>
-        </button>
-        <input type="file" onChange={handleFileInputChange} />
-      </div>
-      <p>{uploadStatus}</p>
-    </div>
     </div>
   );
 };

@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "../../common/header";
+import NavbarComp from "../NavbarComponent";
+import "../../../scssWeb/main.css";
+import MensajeSvg from "../../../assets/img/notifications_G.svg";
+import NavbarNotification from "../notification/NabvarNotifcation";
 
 export default function News() {
   const [articles, setArticles] = useState([]);
@@ -25,13 +29,24 @@ export default function News() {
   };
 
   return (
+    <div>
+    <Header />
+    <NavbarComp />
+    <div className="barra">
+      <img className="svg-img-barra" src={MensajeSvg} />
+      <h2>MENSAJES</h2>
+    </div>
+    <div className="container-body-notification">
+      <NavbarNotification />
     <div className="Container">
       {articles.map((article) => (
-        <div key={article.name}>
-          <h1>{article.title}</h1>
-          <h4>{article.content}</h4>
+        <div className="notification-box" key={article.name}>
+          <h2>{article.title}</h2>
+          <p>{article.content}</p>
         </div>
       ))}
+    </div>
+    </div>
     </div>
   );
 }

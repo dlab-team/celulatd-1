@@ -157,7 +157,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -182,7 +182,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -195,6 +195,7 @@ body h2 {
   bottom: 0;
   width: 100%;
   height: 50px;
+  z-index: 10;
 }
 @media screen and (min-width: 1024px) {
   #navbar-user {
@@ -249,7 +250,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -260,12 +261,11 @@ body h2 {
 .header-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  z-index: 8;
+  z-index: 5;
   position: fixed;
   top: 0;
-  padding-top: 2%;
-  height: 190px;
+  padding-top: 5%;
+  height: 250px;
   background-color: #073B3A;
   color: white;
 }
@@ -317,7 +317,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -326,12 +326,18 @@ body h2 {
 }
 
 .navbarvideo {
-  background: #e2a30b;
+  background: white;
 }
-.navbarvideo a.nav-link {
-  background: #e2a30b;
+
+.container-video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-video a.Link h2 {
   color: #073B3A;
-  margin-left: 10px;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 
 body p {
@@ -351,7 +357,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -370,6 +376,7 @@ body h2 {
   }
 }
 .container-recive-info label h2 {
+  color: white;
   margin: 5% 5%;
 }
 .container-recive-info input {
@@ -446,7 +453,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -480,14 +487,7 @@ body h2 {
 @media screen and (min-width: 1024px) {
   .container-user .container-user-logo {
     margin-bottom: 7%;
-  }
-}
-.container-user .container-user-logo img {
-  width: 80%;
-}
-@media screen and (min-width: 1024px) {
-  .container-user .container-user-logo img {
-    width: 100%;
+    width: 50%;
   }
 }
 .container-user form {
@@ -643,7 +643,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -672,6 +672,11 @@ body h2 {
   margin-top: 19px;
   color: #073b3a;
 }
+@media screen and (min-width: 1024px) {
+  .barra h2 {
+    margin-top: 15px;
+  }
+}
 
 .svg-img-barra {
   width: 49px;
@@ -689,10 +694,16 @@ body h2 {
 
 .container-body-all {
   margin-top: 260px;
+  max-width: 99vw;
 }
 @media screen and (min-width: 1024px) {
   .container-body-all {
     margin-top: 350px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-body-all-position {
     position: fixed;
   }
 }
@@ -764,7 +775,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -882,7 +893,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
@@ -907,11 +918,22 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
+  }
+}
+
+.container-body-all-video {
+  margin-top: 260px;
+  max-width: 99vw;
+  z-index: 1;
+}
+@media screen and (min-width: 1024px) {
+  .container-body-all-video {
+    margin-top: 350px;
   }
 }
 
@@ -927,6 +949,33 @@ body h2 {
 @media screen and (min-width: 1024px) {
   .container-componentvideo_flex {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.container-componentvideo_body {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .container-componentvideo_body {
+    max-width: 30vw;
+    margin-left: 5px;
+  }
+}
+.container-componentvideo_body input {
+  margin-bottom: 3px;
+}
+.container-componentvideo_body h2 {
+  height: 40px;
+  margin-top: 3px;
+}
+.container-componentvideo_body p {
+  height: 80px;
+  line-height: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .container-componentvideo_body p {
+    line-height: 1.5rem;
   }
 }
 
@@ -972,11 +1021,81 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
+  }
+}
+
+.link-2 h2 {
+  border-bottom: solid 7px;
+  margin-bottom: 3px;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.container-body-notification {
+  margin-top: 260px;
+}
+@media screen and (min-width: 1024px) {
+  .container-body-notification {
+    margin-top: 350px;
+  }
+}
+
+.active h2 {
+  border-bottom: solid 7px;
+  margin-bottom: 3px;
+}
+
+.notification-box {
+  background: rgba(7, 59, 58, 0.2509803922);
+  width: 100vw;
+  height: min-content;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .notification-box {
+    margin-left: 23px;
+    width: 97vw;
+  }
+}
+.notification-box h2 {
+  padding: 8px;
+}
+.notification-box p {
+  line-height: 1.2rem;
+  padding: 8px;
+}
+@media screen and (min-width: 1024px) {
+  .notification-box p {
+    line-height: 1.8rem;
   }
 }
 
@@ -997,12 +1116,26 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
+  color: black;
 }
 @media screen and (min-width: 1024px) {
   body h2 {
     font-size: 1.7rem;
   }
+}
+
+.container-statics_body {
+  width: 100%;
+  padding: 10px;
+}
+.container-statics_body p {
+  line-height: 1.2rem;
+  text-align: center;
+  padding: 6px;
+}
+
+.container-statics_body-weekly {
+  margin-top: 40px;
 }
 
 body p {
@@ -1022,32 +1155,7 @@ body h2 {
   font-family: Roboto;
   font-weight: 500;
   font-size: 1.2rem;
-  color: white;
-}
-@media screen and (min-width: 1024px) {
-  body h2 {
-    font-size: 1.7rem;
-  }
-}
-
-body p {
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 0.5rem;
   color: black;
-}
-@media screen and (min-width: 1024px) {
-  body p {
-    font-size: 1.5rem;
-    line-height: 1rem;
-  }
-}
-body h2 {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 1.2rem;
-  color: white;
 }
 @media screen and (min-width: 1024px) {
   body h2 {

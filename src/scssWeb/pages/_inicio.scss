@@ -21,6 +21,9 @@
     margin-bottom: 11px;
     margin-top: 19px;
     color: #073b3a;
+    @include media (lg){
+      margin-top: 15px;
+    }
   
     
   }
@@ -44,13 +47,19 @@
 
 .container-body-all{
   margin-top: 260px;
+  max-width: 99vw;
   @include media(lg) {
     margin-top: 350px;
-    position: fixed;
-  
+    
   }
 
 }
+.container-body-all-position{
+  @include media (lg){
+    position: fixed;
+  }
+}
+
 .container-inicio_body{
 @include media(lg) {
     display: flex;
