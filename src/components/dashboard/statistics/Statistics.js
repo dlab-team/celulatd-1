@@ -94,7 +94,7 @@ export default function PieCharts() {
         <img className="svg-img-barra" src={DataSvg} />
         <h2>ESTADÍSTICAS</h2>
       </div>
-      <div className="container-body-all container-statics_body">
+      <div className="container-body-all container-statics_body ">
         <div
           style={{
             display: "flex",
