@@ -8,8 +8,8 @@ function NavbarVideoRead() {
       <div className="navbarvideo">
         <div className="container-video">
           <div>
-            <NavLink to="/ComponetVideo" className="Link" activeClassName="active">
-              <Nav.Link href="/ComponetVideo">
+            <NavLink to="/ListVideo" className="Link" activeClassName="active">
+              <Nav.Link href="/ListVideo">
                 <h2>VIDEOS</h2>
               </Nav.Link>
             </NavLink>

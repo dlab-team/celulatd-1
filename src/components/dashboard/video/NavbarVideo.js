@@ -15,8 +15,8 @@ function NavbarVideo() {
             </NavLink>
           </div>
           <div>
-            <NavLink to="/Inicio" className="Link" activeClassName="active">
-              <Nav.Link href="/Inicio">
+            <NavLink to="/DocumentUploader" className="Link" activeClassName="active">
+              <Nav.Link href="/DocumentUploader">
                 <h2>DOCUMENTOS</h2>
               </Nav.Link>
             </NavLink>

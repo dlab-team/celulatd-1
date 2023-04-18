@@ -5,7 +5,7 @@ import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
 import UploadSvg from "../../../assets/img/upload_G.svg";
-
+import NavbarVideo from "./NavbarVideo.js";
 
 const VideoUploader = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -58,9 +58,10 @@ const VideoUploader = () => {
         <NavbarComp />
           <div className="barra">
             <img className="svg-img-barra" src={UploadSvg}/>
-            <h2>SUBIR VIDEOS</h2>
+            <h2>SUBIR DOCUMENTO</h2>
           </div>
           <div className="container-body-all">
+            <NavbarVideo />
       <div className="container-recive-info container-recive_body">
         <label className="recive_title">
           <h2>Titulo:</h2>

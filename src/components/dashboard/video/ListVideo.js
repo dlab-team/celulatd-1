@@ -3,10 +3,10 @@ import axios from "axios";
 import NavbarComp from "../NavbarComponent";
 import NavbarVideoRead from "./NavbarDocument.js";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
-import Header from "../../../components/common/header.js";
+import Header from "../../common/header.js";
 import "../../../scssWeb/main.css";
 
-const ComponetVideo = (props) => {
+const ListVideo = (props) => {
 
   const [videos, setVideos] = useState([]);
 
@@ -80,4 +80,4 @@ const ComponetVideo = (props) => {
 };
 
 
-export default ComponetVideo;
+export default ListVideo;

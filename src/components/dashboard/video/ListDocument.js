@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import  stardestacados from "../../../assets/img/stardestacados.svg";
+import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import stardestacados from "../../../assets/img/stardestacados.svg";
 import trash from "../../../assets/img/trash.svg";
+import NavbarComp from "../NavbarComponent";
+import NavbarVideoRead from "./NavbarDocument.js";
+import RecursosSvg from "../../../assets/img/video_library_G.svg";
+import Header from "../../common/header.js";
+import imagenpdf from "../../../assets/img/imagenpdf.jpeg";
 
 export default function ListDocument() {
   const [articles, setArticles] = useState([]);
@@ -48,22 +55,38 @@ export default function ListDocument() {
   };
 
   return (
-    <div className="Container">
-      {articles.map((article) => (
-        <div key={article.id}>
-          <div>aca va la imagen</div>
-          <h1>{article.title}</h1>
-          <h4>{article.content}</h4>
-            //destacados trash.svg
-          <button onClick={() => handleDestacar(article.id)}>
-          <img src={stardestacados}/>
-            {article.standout ? "Destacado" : "Destacar"}
-          </button>
-          <button>
-          <img src={trash}/>
-          </button>
+    <div className="container-responsive">
+      <Header />
+      <NavbarComp />
+      <div className="barra">
+        <img className="svg-img-barra" src={RecursosSvg} />
+        <h2>RECURSOS</h2>
+      </div>
+      <div className="container-body-all">
+        <NavbarVideoRead />
+
+        <div className="container-componentvideo_flex">
+          {articles.map((article) => (
+            <div className="container-componentvideo_body">
+              <div key={article.id}>
+                <Link to="/Inicio" >
+              <img src={imagenpdf}/>
+              <Nav.Link href="/#"></Nav.Link>
+            </Link>
+                <h2>{article.title}</h2>
+                <p>{article.content}</p>
+                <button onClick={() => handleDestacar(article.id)}>
+                  <img src={stardestacados} />
+                  {article.standout ? "Destacado" : "Destacar"}
+                </button>
+                <button>
+                  <img src={trash} />
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 }

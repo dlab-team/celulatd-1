@@ -9,7 +9,7 @@ import Register from './components/user/register/Register';
 import Inicio from './components/dashboard/Inicio';
 import Ajustes from './components/dashboard/Ajustes';
 import VideoUploader from './components/dashboard/video/VideoUploader';
-import ComponetVideo from './components/dashboard/video/ComponetVideo';
+import ListVideo from './components/dashboard/video/ListVideo';
 import Notification from './components/dashboard/notification/Notification';
 // import DashboardUser from './components/user/dashboard/DashboardUser';
 import ComponetVideoUser from './components/user/dashboard/ComponetVideoUser';
@@ -21,10 +21,10 @@ import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';
 import NotificationUser from './components/dashboard/notification/Notification';
 import Perfil from './components/dashboard/Perfil';
-import VideoList from './components/dashboard/video/VideoList';
 import Error404 from './components/common/Error404';
 import ListNotifications from './components/dashboard/notification/ListNotifications';
 import ListDocument from './components/dashboard/video/ListDocument';
+import DocumentUploader from './components/dashboard/video/DocumentUploader';
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
       <Route path="/ajustes" element={<Ajustes />} />
       <Route path="/perfil" element={<Perfil />} />
       <Route path="/VideoUploader" element={<VideoUploader />} />
-      <Route path="/ComponetVideo" element={<ComponetVideo />} />
+      <Route path="/ListVideo" element={<ListVideo />} />
       <Route path="/Notification" element={<Notification />} />
       <Route path="*" element={<Error404 />} />
       {/* <Route path="/DashboardUser" element={<DashboardUser />} /> */}
@@ -49,10 +49,9 @@ function App() {
       <Route path="/SettingsUser" element={<SettingsUser />} />
       <Route path="/InicioUser" element={<InicioUser />} />
       <Route path="/NotificationUser" element={<NotificationUser />} />
-      <Route path="/VideoList" element={<VideoList />} />
       <Route path="/ListNotifications" element={<ListNotifications />} />
       <Route path="/ListDocument" element={<ListDocument />} />
-
+      <Route path="/DocumentUploader" element={<DocumentUploader />} />
     </Routes >
 
   );

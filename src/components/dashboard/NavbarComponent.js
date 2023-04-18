@@ -34,9 +34,9 @@ function NavbarComponent() {
               <img src={SvgSubirVidW}/>
               <Nav.Link href="/VideoUploader"></Nav.Link>
             </Link>
-            <Link to="/ComponetVideo">
+            <Link to="/ListVideo">
               <img src={MiniRecursos}/>
-              <Nav.Link href="/ComponetVideo"></Nav.Link>
+              <Nav.Link href="/ListVideo"></Nav.Link>
             </Link>
             <Link to="/Notification">
               <img src={SvgMensajeW}/>
