@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
-import stardestacados from "../../../assets/img/stardestacados.svg";
-import trash from "../../../assets/img/trash.svg";
 import NavbarComp from "../NavbarComponent";
 import NavbarVideoRead from "./NavbarDocument.js";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
@@ -70,18 +68,11 @@ export default function ListDocument() {
             <div className="container-componentvideo_body">
               <div key={article.id}>
                 <Link to="/Inicio" >
-              <img src={imagenpdf}/>
-              <Nav.Link href="/#"></Nav.Link>
-            </Link>
+                  <img src={imagenpdf} />
+                  <Nav.Link href="/#"></Nav.Link>
+                </Link>
                 <h2>{article.title}</h2>
                 <p>{article.content}</p>
-                <button onClick={() => handleDestacar(article.id)}>
-                  <img src={stardestacados} />
-                  {article.standout ? "Destacado" : "Destacar"}
-                </button>
-                <button>
-                  <img src={trash} />
-                </button>
               </div>
             </div>
           ))}
