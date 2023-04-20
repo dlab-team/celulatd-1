@@ -50,19 +50,19 @@ export default function Landing() {
 
                 <div class="bg-hero"><Background /></div>
                 <div class="imput-hero"><InputHero /></div>
-                <div  class="btn-hero"><Button/>
+                <div class="btn-hero"><Button />
                 </div>
-                <div class="titles-hero"><Titles/></div>
-                <div class="logo-hero"><Logo/></div>
-                <div class="menu-nav"><MenuNav/></div>
-                
-                
-                
+                <div class="titles-hero"><Titles /></div>
+                <div class="logo-hero"><Logo /></div>
+                <div class="menu-nav"><MenuNav /></div>
+
+
+
                 <div class="body"></div>
-                <div class="bg-call-to-action"><BackgroundCallToAction/></div>
-                <div class="call-to-action"><CallToAction/></div>
-                <div class="bg-comunidad"><Bgcomunidad/></div>
-                <div class="comunidad"><Comunidad/></div>
+                <div class="bg-call-to-action"><BackgroundCallToAction /></div>
+                <div class="call-to-action"><CallToAction /></div>
+                <div class="bg-comunidad"><Bgcomunidad /></div>
+                <div class="comunidad"><Comunidad /></div>
                 <div class="bg-card1"><BgCard1 /></div>
                 <div class="svg-card1"><SvgCard1 /></div>
                 <div class="img-card1"><ImgCard1 /></div>
@@ -75,18 +75,15 @@ export default function Landing() {
                 <div class="svg-card3"><SvgCard3 /></div>
                 <div class="img-card3"><ImgCard3 /></div>
                 <div class="text-card3"><TextCard3 /></div>
-                <div class="bg-experiencia"><BgExperiencia/></div>
-                <div class="experiencia"><Experiencia/></div>
+                <div class="bg-experiencia"><BgExperiencia /></div>
+                <div class="experiencia"><Experiencia /></div>
                 <div class="bg-carousel1"></div>
-                <div class="carousel1"><CarruselStories/></div>
-                <div class="bg-agenda"><BgActividades/></div>
-                <div class="agenda"><Actividades/></div>
+                <div class="carousel1"><CarruselStories /></div>
+                <div class="bg-agenda"><BgActividades /></div>
+                <div class="agenda"><Actividades /></div>
                 <div class="bg-carousel2"></div>
-                <div class="carousel2"><CarruselCalendario/></div>
-                
-                
-                
-                <div class="footer"><Footer/></div>
+                <div class="carousel2"><CarruselCalendario /></div>
+                <div class="footer"><Footer /></div>
             </div>
 
 

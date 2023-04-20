@@ -1,5 +1,5 @@
 import React from "react";
-import InputHero from "../header/Input";
+import InputHero from "./ImputHero";
 
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ import logo3 from "../../../assets/img/logo3.svg";
 
 import "../../../scss/components/landing/footer/_footer.scss";
 
-export default function Footer() {
+export default function FooterLanding() {
   return (
     <div className="footer">
       <div className="izquierda">
@@ -16,8 +16,9 @@ export default function Footer() {
           <hr />
           <div className="logo-footer">
             <img src={logo3} />
-
+            
           </div>
+
           <section className="titles">
             <h2>DESAFIO</h2>
             <h3>latam_</h3>
@@ -58,6 +59,7 @@ export default function Footer() {
           <br />
           <br />
         </div>
+        
       </div>
     </div>
   );
