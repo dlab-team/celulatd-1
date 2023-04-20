@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import '../../../scss/components/landing/header/_input.scss';
+import '../../../scssWeb/main.css';
 
 import iconlupa from '../../../assets/img/iconlupa.svg';
 
@@ -19,7 +19,7 @@ export default function InputLading() {
             aria-describedby="basic-addon2"
           />
           <Button variant="outline-secondary" className="button-addon2">
-            <img src={iconlupa} />
+            <img src={iconlupa} alt=''/>
           </Button>
         </InputGroup>
 

@@ -6,7 +6,7 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import drafts from "../../../assets/img/draftsVerde.svg";
 import logo3 from "../../../assets/img/logo3.svg";
 
-import "../../../scss/components/landing/footer/_footer.scss";
+
 
 export default function FooterLanding() {
   return (

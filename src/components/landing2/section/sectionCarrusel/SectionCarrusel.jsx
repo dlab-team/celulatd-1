@@ -3,7 +3,7 @@ import HistoriaUsuarios from '../../../../utils/HistoriasUsuarios';
 import { Container, Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 
-import '../../../../scss/components/landing/body/_carrusel1.scss';
+
 
 export default function SectionCarrusel() {
 

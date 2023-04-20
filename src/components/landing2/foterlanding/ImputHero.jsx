@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import '../../../scss/components/landing/header/_input.scss';
+
 
 import iconlupa from '../../../assets/img/iconlupa.svg';
 

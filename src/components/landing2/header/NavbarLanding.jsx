@@ -5,6 +5,7 @@ import calendar from '../../../assets/img/calendar.svg';
 import drafts from '../../../assets/img/draftsBlanco.svg';
 import groups from '../../../assets/img/groups.svg';
 import communication from '../../../assets/img/communication.svg';
+import '../../../scssWeb/main.css'
 
 export default function NavbarLanding() {
     return (

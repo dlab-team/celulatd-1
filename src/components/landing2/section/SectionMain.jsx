@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../../../scss/components/landing/body/_callToAction.scss';
+
 import llave1 from '../../../assets/img/llave1.svg';
 import llave2 from '../../../assets/img/llave2.svg';
 

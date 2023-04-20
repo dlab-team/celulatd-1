@@ -2,20 +2,17 @@ import React from 'react';
 import './scssWeb/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
-import Landing from './components/landing/Landing'
+import Landing from './components/landing2/LandingDlatam'
 import Login from './components/user/login/Login';
 import Register from './components/user/register/Register';
-
 import Inicio from './components/dashboard/Inicio';
 import Ajustes from './components/dashboard/Ajustes';
 import VideoUploader from './components/dashboard/video/VideoUploader';
 import ListVideo from './components/dashboard/video/ListVideo';
 import Notification from './components/dashboard/notification/Notification';
-
 import ComponetVideoUser from './components/user/dashboard/ComponetVideoUser';
 import NavbarVideo from './components/dashboard/video/NavbarVideo.js';
 import NavbarVideoRead from './components/dashboard/video/NavbarDocument.js';
-
 import Statistics from './components/dashboard/statistics/Statistics';
 import SettingsUser from './components/user/dashboard/SettingsUser';
 import InicioUser from './components/user/dashboard/Inicio';

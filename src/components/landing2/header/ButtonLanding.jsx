@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../../../scss/components/landing/header/_button.scss';
+import '../../../scssWeb/main.css';
+
 
 export default function ButtonLanding() {
     return (
-        <div className='container-btn'>
-            <Link to="/login" className='Link'>
+        <div className='landing-container-btn'>
+            <Link to="/login" className='link'>
                 <button className='btn'>
-                    {'\{ENTRAR\}'}
+                    <p> {'ENTRAR'}</p>
                 </button>
             </Link>
         </div>

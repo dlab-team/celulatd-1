@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   /* Colores */
   --negro: #393939;
@@ -434,6 +435,76 @@ body h2 {
 }
 .imagen-uploader input[type=file] {
   margin-left: 4%;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.landing-header-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/img/fondoTransparente.jpg");
+  height: 35%;
+}
+
+.landing-header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 8% 5%;
+}
+
+.landing-logo-nav {
+  width: 37%;
+}
+
+.landing-container-btn {
+  background: #e2a30b;
+  border-radius: 3px;
+}
+.landing-container-btn p {
+  color: white;
+  padding-top: 20%;
+}
+
+.landing-header-navbar ul {
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 1024px) {
+  .landing-header-navbar ul li {
+    margin-right: 30px;
+  }
+}
+.landing-header-navbar ul li a {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-header-navbar ul li a {
+    width: 100%;
+  }
 }
 
 body p {

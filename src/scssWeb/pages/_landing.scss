@@ -1,0 +1,49 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/breakpoints";
+@import "../base/base";
+@import "../base/typography";
+
+
+.landing-header-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../assets/img/fondoTransparente.jpg');
+  height: 35%;
+}
+
+.landing-header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 8% 5%;
+}
+.landing-logo-nav {
+  width: 37%;
+}
+.landing-container-btn {
+  background: $useryellowdark;
+  border-radius: 3px;
+  p {
+    color: $userwhite;
+    padding-top: 20%;
+  }
+}
+.landing-header-navbar {
+  ul {
+    display: flex;
+    justify-content: end;
+
+    li {
+      @include media(lg) {
+        margin-right: 30px;
+      }
+      a {
+        width: 50%;
+              @include media(lg) {
+                width: 100%;
+      }
+      }
+    }
+  }
+}

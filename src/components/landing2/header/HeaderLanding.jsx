@@ -1,16 +1,22 @@
 import React from 'react';
-import InputLading from './ImputLanding';
-import LogoLandin from './LogoLanding';
+
+import LogoLanding from './LogoLanding';
 import ButtonLanding from './ButtonLanding';
 import NavbarLanding from './NavbarLanding';
+import '../../../scssWeb/main.css'
 
 export default function HeaderLanding() {
     return (
         <>
-            <LogoLandin />
-            <InputLading />
-            <ButtonLanding />
-            <NavbarLanding />
+            <div className="landing-header-container">
+                <div className="landing-header-middle">
+                    <LogoLanding />
+                    <ButtonLanding />
+                </div>
+                <div className="landing-header-navbar">
+                    <NavbarLanding />
+                </div>
+            </div>
         </>
     );
 }

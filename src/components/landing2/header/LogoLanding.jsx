@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo1 from '../../../assets/img/Logo1.svg';
+import logo3 from '../../../assets/img/LogoVector.svg';
+import '../../../scssWeb/main.css'
 
 export default function LogoLandin() {
     return (
-        <div className='logo-nav'> 
-        <p>este es el logo</p>
-            <img className='imagen' src={Logo1} />
+        <div className='landing-logo-nav'>
+            <img src={logo3} alt='logo' />
         </div>
     )
 }
