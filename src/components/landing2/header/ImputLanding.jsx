@@ -5,11 +5,10 @@ import '../../../scss/components/landing/header/_input.scss';
 
 import iconlupa from '../../../assets/img/iconlupa.svg';
 
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 
 
-function InputHero() {
+export default function InputLading() {
   return (
     <>
       <div className='input-nav' style={{ borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px' }}>
@@ -32,4 +31,3 @@ function InputHero() {
   );
 }
 
-export default InputHero;
