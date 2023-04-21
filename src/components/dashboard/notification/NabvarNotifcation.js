@@ -15,14 +15,21 @@ function NavbarNotification() {
               to="/ListNotifications"
               className="Link" activeClassName="active">
               <Nav.Link href="/ListNotifications">
-                <h2>MENSAJES</h2>
+                <p>MENSAJES</p>
               </Nav.Link>
             </NavLink>
           </div>
           <div>
             <NavLink to="/Notification" className="Link" activeClassName="active">
               <Nav.Link href="/Notification">
-                <h2>SUBIR MENSAJES</h2>
+                <p>SUBIR MENSAJES</p>
+              </Nav.Link>
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/Trash" className="Link" activeClassName="active">
+              <Nav.Link href="/Trash">
+                <p>PAPELERA</p>
               </Nav.Link>
             </NavLink>
           </div>

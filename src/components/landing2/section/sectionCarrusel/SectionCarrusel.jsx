@@ -3,6 +3,8 @@ import HistoriaUsuarios from '../../../../utils/HistoriasUsuarios';
 import { Container, Carousel } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 
+import '../../../../scssWeb/main.css'
+
 
 
 export default function SectionCarrusel() {
@@ -24,11 +26,11 @@ export default function SectionCarrusel() {
                     return groups;
                 }, []).map((group, index) => (
                     <Carousel.Item key={index}>
-                        <div className="d-flex justify-content-between w-100 testimonio">
+                        <div className="d-flex justify-content-between w-80 testimonio">
                             {group.map(usuario => (
                                 <div key={usuario.nombre} className="mx-3 title-date-container " style={{ flex: 1 }}>
+
                                     <h3>{usuario.nombre}</h3>
-                                    <p>Edad: {usuario.edad}</p>
                                     <p>{usuario.historia}</p>
                                 </div>
                             ))}

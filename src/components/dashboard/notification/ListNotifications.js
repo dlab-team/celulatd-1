@@ -35,21 +35,23 @@ export default function News() {
       <Header />
       <NavbarComp />
       <div className="barra">
-        <img className="svg-img-barra" src={MensajeSvg} />
+        <img className="svg-img-barra" src={MensajeSvg} alt='' />
         <h2>MENSAJES</h2>
       </div>
       <div className="container-body-notification">
         <NavbarNotification />
-        <div className="Container">
+        <div className="container-message">
           {articles.map((article) => (
             <div className="notification-box" key={article.name}>
-              <button onClick={() => handleDestacar(article.id)}>
-                <img src={stardestacados} />
-                {article.standout ? "Destacado" : "Destacar"}
-              </button>
-              <button>
-                <img src={trash} />
-              </button>
+              <div className="notification-icons">
+                <button onClick={() => handleDestacar(article.id)}>
+                  <img src={stardestacados} alt='' />
+                  {article.standout ? "Destacado" : "Destacar"}
+                </button>
+                <button>
+                  <img src={trash} alt='' />
+                </button>
+              </div>
               <h2>{article.title}</h2>
               <p>{article.content}</p>
             </div>

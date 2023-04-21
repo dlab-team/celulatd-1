@@ -1,6 +1,6 @@
 import React from 'react';
-import './scssWeb/main.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { Route, Routes } from 'react-router-dom';
 import Landing from './components/landing2/LandingDlatam'
 import Login from './components/user/login/Login';
@@ -20,9 +20,11 @@ import NotificationUser from './components/dashboard/notification/Notification';
 import Perfil from './components/dashboard/Perfil';
 import Error404 from './components/common/Error404';
 import ListNotifications from './components/dashboard/notification/ListNotifications';
+import Trash from './components/dashboard/notification/Trash';
 import ListDocument from './components/dashboard/video/ListDocument';
 import DocumentUploader from './components/dashboard/video/DocumentUploader';
 import LandingDlatam from './components/landing2/LandingDlatam';
+import './scssWeb/main.css';
 
 function App() {
   return (
@@ -48,6 +50,7 @@ function App() {
       <Route path="/InicioUser" element={<InicioUser />} />
       <Route path="/NotificationUser" element={<NotificationUser />} />
       <Route path="/ListNotifications" element={<ListNotifications />} />
+      <Route path="/Trash" element={<Trash />} />
       <Route path="/ListDocument" element={<ListDocument />} />
       <Route path="/DocumentUploader" element={<DocumentUploader />} />
       <Route path="/LandingDlatam" element={<LandingDlatam />} />

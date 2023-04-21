@@ -4,45 +4,50 @@
 @import "../base/base";
 @import "../base/typography";
 
-
-
-.container-body-notification{
-    margin-top: 260px;
-    @include media(lg) {
-      margin-top: 350px;
-      
-    }
-  
+.container-body-notification {
+  margin-top: 260px;
+  @include media(lg) {
+    margin-top: 370px;
   }
-  
-  .active{
-    h2{
-      border-bottom: solid 7px;
-    margin-bottom: 3px;
-    }  
+}
+a.Link {
+  text-decoration: none;
+}
+.active {
+  p {
+    font-weight: 500;
+    border-bottom: solid 4px;
+    margin-bottom: 14px;
   }
-  
-.notification-box{
-    background: $usergeenligth;
-      width: 100vw;
-      height: min-content;
-      overflow: scroll;
-      margin-bottom: 10px;
-      @include media(lg) {
-        margin-left: 23px;
-        width: 97vw;
-      }  
-      h2{
-        padding: 8px;
-      }
-      p{
-        line-height: 1.2rem;
-        padding: 8px;
-        @include media (lg){
-          line-height: 1.8rem;
-        }
-      }  
-      
 }
 
-
+.notification-box {
+  background: $usergeenligth;
+  width: 94vw;
+  height: min-content;
+  overflow: scroll;
+  margin-bottom: 10px;
+  @include media(lg) {
+    width: 100vw;
+  }
+  h2 {
+    padding: 8px;
+  }
+  p {
+    line-height: 1.2rem;
+    padding: 8px;
+    @include media(lg) {
+      line-height: 1.8rem;
+    }
+  }
+}
+.notification-icons {
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+  button {
+    width: 7%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+}

@@ -5,7 +5,6 @@
 
 
 .background-register{
-  // background:url('../../assets/login-registro/fondoaccesomobile.svg');
   background-color: $usergeendark;
   background-size: cover;
   background-position: center;
@@ -15,11 +14,9 @@
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
-.container-user {
-  
+.container-user { 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +30,6 @@
       margin-bottom: 7%;
       width: 50%;
     }
-    
   }
 
   form {

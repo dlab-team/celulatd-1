@@ -1,25 +1,22 @@
 import React from 'react'
+import llave1 from '../../../assets/img/landing_LlaveL.svg';
+import llave2 from '../../../assets/img/landing_LlaveR.svg';
+import '../../../scssWeb/main.css'
 
-
-import llave1 from '../../../assets/img/llave1.svg';
-import llave2 from '../../../assets/img/llave2.svg';
 
 export default function SectionMain() {
   return (
-    <div className='call-to-action'>
-      {/* <h2>{'\{¡Unete a nuestro equipo!\}'}</h2> */}
-      <div className='llave1'>
-        <img src={llave1} />
+    <div className='landing-call-to-action'>
+      <div className='llave'>
+        <img src={llave1} alt='' />
       </div>
-      <div className='texto'>
+      <div className='landing-texto'>
         <h2>¡ÚNETE A NUESTRO EQUIPO!</h2>
-        <p>Lorem ipsum dolor sit amet
-          consectetur. Adipiscing suscipit
-          sed elit cursus dui lorem
-          donec. Quis porta at adipiscin</p>
+        <p>Nuestra comunidad busca brindar herramientas del área tecnológica a nuestros alumnos y  así puedan  desarrollar sus capacidades y encontrar un mejor futuro laboral.
+          ¡Te invitamos a ser parte de nuestro desafío!</p>
       </div>
-      <div className='llave2'>
-      <img src={llave2}/>
+      <div className='llave'>
+      <img src={llave2} alt=''/>
       </div>
     </div>
   )

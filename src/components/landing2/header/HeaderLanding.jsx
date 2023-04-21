@@ -13,9 +13,9 @@ export default function HeaderLanding() {
                     <LogoLanding />
                     <ButtonLanding />
                 </div>
-                <div className="landing-header-navbar">
+                
                     <NavbarLanding />
-                </div>
+            
             </div>
         </>
     );

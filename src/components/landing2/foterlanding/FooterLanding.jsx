@@ -1,36 +1,29 @@
 import React from "react";
 import InputHero from "./ImputHero";
-
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-
 import drafts from "../../../assets/img/draftsVerde.svg";
-import logo3 from "../../../assets/img/logo3.svg";
-
-
+import logo3 from '../../../assets/img/Logo.svg';
+import facebook from '../../../assets/img/landing_Facebook_W.svg'; 
+import twitter from '../../../assets/img/landing_Twitter_W.svg';
+import instagram from '../../../assets/img/landing_Instagram_W.svg';
+import '../../../scssWeb/main.css'
 
 export default function FooterLanding() {
   return (
-    <div className="footer">
+    <div className="landing-footer">
       <div className="izquierda">
         <div className="logo-and-title">
           <hr />
           <div className="logo-footer">
-            <img src={logo3} />
-            
+            <img src={logo3} alt='' />
           </div>
-
-          <section className="titles">
-            <h2>DESAFIO</h2>
-            <h3>latam_</h3>
-          </section>
         </div>
         <div className="redes">
-          NUESTRAS REDES SOCIALES
+          <h2>NUESTRAS REDES SOCIALES</h2>
           <br />
           <div className="icon-redes">
-            <FaInstagram />
-            <FaFacebookF />
-            <FaTwitter />
+            <img src={facebook} alt='' />
+            <img src={twitter} alt='' />
+            <img src={instagram} alt='' />
           </div>
         </div>
       </div>
@@ -38,28 +31,24 @@ export default function FooterLanding() {
         <h2>SUSCRÍBETE Y RECIBE NUESTRO BOLETÍN QUINCENAL </h2>
         <div className="ico-imput">
           <button className="caja-icono">
-            <img className="iconofotter" src={drafts} />
+            <img className="iconofotter" src={drafts} alt='' />
           </button>
           <InputHero />
         </div>
       </div>
       <div className="derecha">
         <div className="contactos">
-          NUESTROS CONTACTOS
+          <h2>NUESTROS CONTACTOS</h2>
           <br />
+          <p>Dudas y consultas</p>
           <br />
-          Dudas y consultas
+          <p>sos@desafiolatam.com</p>
           <br />
-          sos@desafiolatam.com
+          <p>Ayuda técnica</p>
           <br />
-          <br />
-          Ayuda técnica
-          <br />
-          ayuda@desafiolatam.com
-          <br />
+          <p>ayuda@desafiolatam.com</p>
           <br />
         </div>
-        
       </div>
     </div>
   );

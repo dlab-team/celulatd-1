@@ -1,15 +1,16 @@
 import React from 'react';
 import IconLanding from './IconLanding';
-import mail1 from '../../../assets/img/mail1.svg';
-import calendar from '../../../assets/img/calendar.svg';
-import drafts from '../../../assets/img/draftsBlanco.svg';
-import groups from '../../../assets/img/groups.svg';
-import communication from '../../../assets/img/communication.svg';
+import mail1 from '../../../assets/img/landing_mail_W.svg';
+import calendar from '../../../assets/img/landing_calendar_W.svg';
+import drafts from '../../../assets/img//landing_experience_W.svg';
+import groups from '../../../assets/img/landing_groups_W.svg';
+import communication from '../../../assets/img/landing_feed_W.svg';
 import '../../../scssWeb/main.css'
 
 export default function NavbarLanding() {
     return (
         <>
+            <div className="landing-header-navbar">
             <ul>
                 <IconLanding
                     refLanding='#refenrenciaLanding'
@@ -31,7 +32,8 @@ export default function NavbarLanding() {
                     refLanding='#refenrenciaLanding'
                     imgIcon={communication}
                 />
-            </ul>
+                </ul>
+            </div>
         </>
     );
 }

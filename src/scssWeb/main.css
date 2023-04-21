@@ -145,13 +145,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -165,18 +165,29 @@ body h2 {
     font-size: 1.7rem;
   }
 }
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
+    font-size: 1.7rem;
+  }
+}
 
 body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -187,6 +198,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -201,7 +223,7 @@ body h2 {
 @media screen and (min-width: 1024px) {
   #navbar-user {
     position: fixed;
-    top: 190px;
+    top: 210px;
     width: 100%;
     height: 80px;
   }
@@ -238,13 +260,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -255,6 +277,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -272,6 +305,8 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   .header-container {
+    padding-top: 11px;
+    height: 270px;
     top: 0;
   }
 }
@@ -281,6 +316,11 @@ body h2 {
 
 .header-container-logo {
   width: 20%;
+}
+@media screen and (min-width: 1024px) {
+  .header-container-logo {
+    width: 18%;
+  }
 }
 .header-container-logo img {
   width: 100%;
@@ -294,6 +334,11 @@ body h2 {
 .user-container p {
   margin-top: 12%;
 }
+@media screen and (min-width: 1024px) {
+  .user-container p {
+    margin-top: 12%;
+  }
+}
 
 .settings-container {
   display: flex;
@@ -305,13 +350,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -322,6 +367,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -345,13 +401,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -362,6 +418,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -441,13 +508,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -458,6 +525,312 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
+    font-size: 1.7rem;
+  }
+}
+
+.landing-header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../assets/img/BkgdTransp.jpg");
+  height: 30vh;
+}
+
+.landing-header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 8% 5%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-header-middle {
+    margin: 0% 8%;
+  }
+}
+
+.landing-logo-nav {
+  width: 50%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-logo-nav {
+    width: 20%;
+  }
+}
+
+.landing-container-btn {
+  background: #e2a30b;
+  border-radius: 3px;
+}
+.landing-container-btn p {
+  color: white;
+  padding-top: 20%;
+}
+
+.landing-header-navbar {
+  display: flex;
+  justify-content: end;
+}
+.landing-header-navbar ul {
+  display: flex;
+  padding: 0;
+}
+.landing-header-navbar ul li {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+@media screen and (min-width: 1024px) {
+  .landing-header-navbar ul li {
+    margin-right: 30px;
+  }
+}
+.landing-call-to-action {
+  background-image: url("../assets/img/backmain.jpeg");
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  padding: 3% 7%;
+  margin-top: 5%;
+}
+.landing-call-to-action p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .landing-call-to-action p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+.landing-call-to-action h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .landing-call-to-action h2 {
+    font-size: 1.7rem;
+  }
+}
+
+.llave {
+  width: 81%;
+}
+@media screen and (min-width: 1024px) {
+  .llave {
+    width: 20%;
+  }
+}
+
+.landing-texto {
+  padding: 0 5%;
+  text-align: center;
+}
+
+.text {
+  width: 30%;
+}
+
+.landing-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+.landing-logo-container {
+  width: 30%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-logo-container {
+    width: 12%;
+  }
+}
+
+.landing-card {
+  padding: 3% 7%;
+  margin-bottom: 5%;
+  text-align: center;
+  height: 50vh;
+}
+@media screen and (min-width: 1024px) {
+  .landing-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.landing-card img {
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-card img {
+    width: 100%;
+  }
+}
+
+.landing-card-img {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .landing-card-text {
+    width: 70%;
+    padding: 3%;
+  }
+}
+
+.landing-text {
+  text-align: center;
+}
+.landing-text h2 {
+  border-bottom: solid #073B3A;
+  color: #073B3A;
+  margin-bottom: 2%;
+}
+
+.landing-card1-bg {
+  background: rgba(7, 59, 58, 0.2509803922);
+}
+
+.landing-card2-bg {
+  background: rgba(226, 161, 11, 0.831372549);
+}
+
+.landing-card3-bg {
+  background: rgba(0, 158, 227, 0.831372549);
+}
+.landing-card3-bg .landing-card-img img {
+  flex-direction: row-reverse;
+}
+
+.carousel1 {
+  width: 80% !important;
+}
+
+.carousel-item {
+  text-align: center;
+  height: 30vh;
+}
+
+.landing-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #073B3A;
+  text-align: center;
+  padding: 3% 7%;
+}
+@media screen and (min-width: 1024px) {
+  .landing-footer {
+    display: flex;
+    align-items: center;
+  }
+}
+.landing-footer p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .landing-footer p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+.landing-footer h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .landing-footer h2 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .izquierda {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .centro {
+    width: 40%;
+    padding: 0 3%;
+  }
+}
+
+.logo-footer {
+  width: 70%;
+  margin: 5% 17%;
+}
+
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7% 0;
+}
+
+.icon-redes img {
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+body p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+body h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: black;
+}
+@media screen and (min-width: 1024px) {
+  body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -701,13 +1074,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -718,6 +1091,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -733,7 +1117,7 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   .barra {
-    top: 270px;
+    top: 290px;
     margin-top: 0px;
   }
 }
@@ -769,7 +1153,7 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   .container-body-all {
-    margin-top: 350px;
+    margin-top: 380px;
   }
 }
 
@@ -833,13 +1217,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -850,6 +1234,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -951,13 +1346,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -971,18 +1366,29 @@ body h2 {
     font-size: 1.7rem;
   }
 }
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
+    font-size: 1.7rem;
+  }
+}
 
 body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -993,6 +1399,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -1075,17 +1492,47 @@ body h2 {
   background-color: rgba(7, 59, 58, 0.2509803922);
 }
 
+.document-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.img-doc {
+  width: 50px;
+}
+
+.document-text {
+  text-align: center;
+}
+.document-text h2 {
+  height: 100px;
+}
+.document-text p {
+  height: 170px;
+}
+@media screen and (min-width: 1024px) {
+  .document-text h2 {
+    height: 150px;
+  }
+  .document-text p {
+    height: 300px;
+  }
+}
+
 body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -1096,6 +1543,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -1109,13 +1567,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -1129,32 +1587,47 @@ body h2 {
     font-size: 1.7rem;
   }
 }
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
+    font-size: 1.7rem;
+  }
+}
 
 .container-body-notification {
   margin-top: 260px;
 }
 @media screen and (min-width: 1024px) {
   .container-body-notification {
-    margin-top: 350px;
+    margin-top: 370px;
   }
 }
 
-.active h2 {
-  border-bottom: solid 7px;
-  margin-bottom: 3px;
+a.Link {
+  text-decoration: none;
+}
+
+.active p {
+  font-weight: 500;
+  border-bottom: solid 4px;
+  margin-bottom: 14px;
 }
 
 .notification-box {
   background: rgba(7, 59, 58, 0.2509803922);
-  width: 100vw;
+  width: 94vw;
   height: min-content;
   overflow: scroll;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1024px) {
   .notification-box {
-    margin-left: 23px;
-    width: 97vw;
+    width: 100vw;
   }
 }
 .notification-box h2 {
@@ -1170,17 +1643,28 @@ body h2 {
   }
 }
 
+.notification-icons {
+  display: flex;
+  justify-content: end;
+  margin-right: 5%;
+}
+.notification-icons button {
+  width: 7%;
+  margin-right: 5%;
+  margin-top: 3%;
+}
+
 body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -1191,6 +1675,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }
@@ -1213,13 +1708,13 @@ body p {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 0.5rem;
+  line-height: 1rem;
   color: black;
 }
 @media screen and (min-width: 1024px) {
   body p {
     font-size: 1.5rem;
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
 }
 body h2 {
@@ -1230,6 +1725,17 @@ body h2 {
 }
 @media screen and (min-width: 1024px) {
   body h2 {
+    font-size: 1.7rem;
+  }
+}
+body h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #073B3A;
+}
+@media screen and (min-width: 1024px) {
+  body h3 {
     font-size: 1.7rem;
   }
 }

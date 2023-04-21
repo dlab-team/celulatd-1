@@ -4,12 +4,15 @@
 @import "../base/base";
 @import "../base/typography";
 
+// .landing-all {
 
+// }
 .landing-header-container {
   display: flex;
   flex-direction: column;
-  background-image: url('../assets/img/fondoTransparente.jpg');
-  height: 35%;
+  justify-content: space-around;
+  background-image: url("../assets/img/BkgdTransp.jpg");
+  height: 30vh;
 }
 
 .landing-header-middle {
@@ -17,9 +20,15 @@
   justify-content: space-between;
   align-items: center;
   margin: 5% 8% 5%;
+  @include media(lg) {
+    margin: 0% 8%;
+  }
 }
 .landing-logo-nav {
-  width: 37%;
+  width: 50%;
+  @include media(lg) {
+    width: 20%;
+  }
 }
 .landing-container-btn {
   background: $useryellowdark;
@@ -30,20 +39,170 @@
   }
 }
 .landing-header-navbar {
+  display: flex;
+  justify-content: end;
   ul {
     display: flex;
-    justify-content: end;
+
+    padding: 0;
 
     li {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
       @include media(lg) {
         margin-right: 30px;
       }
       a {
-        width: 50%;
-              @include media(lg) {
-                width: 100%;
-      }
+        @include media(lg) {
+        }
       }
     }
+  }
+}
+
+.landing-call-to-action {
+  background-image: url("../assets/img/backmain.jpeg");
+  display: flex;
+  align-items: center;
+  height: 50vh;
+  padding: 3% 7%;
+  margin-top: 5%;
+  p {
+    @include font-p($color: $userwhite);
+  }
+  h2 {
+    @include font-h2($color: $userwhite);
+  }
+}
+.llave {
+  width: 81%;
+  @include media(lg) {
+    width: 20%;
+  }
+}
+.landing-texto {
+  padding: 0 5%;
+  text-align: center;
+}
+.text {
+  width: 30%;
+}
+
+.landing-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+.landing-logo-container {
+  width: 30%;
+  @include media(lg) {
+    width: 12%;
+  }
+}
+
+.landing-card {
+  padding: 3% 7%;
+  margin-bottom: 5%;
+  text-align: center;
+  height: 50vh;
+  @include media(lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 90%;
+    @include media(lg) {
+      width: 100%;
+    }
+  }
+}
+.landing-card-img {
+  display: flex;
+ 
+  align-items: center;
+}
+.landing-card-text {
+  @include media(lg) {
+    width: 70%;
+    padding: 3%;
+  }
+}
+.landing-text {
+  text-align: center;
+  h2 {
+    border-bottom: solid $usergeendark;
+    color: $usergeendark;
+    margin-bottom: 2%;
+  }
+}
+.landing-card1-bg {
+  background: $usergeenligth;
+}
+.landing-card2-bg {
+  background: $useryellowligth;
+}
+.landing-card3-bg {
+  background: $userblue;
+
+  .landing-card-img{ 
+     img{ 
+      flex-direction: row-reverse;
+    }
+  }
+}
+.carousel1 {
+  width: 80% !important;
+}
+.carousel-item {
+  text-align: center;
+  height: 30vh;
+}
+.landing-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $usergeendark;
+  text-align: center;
+  padding: 3% 7%;
+  @include media(lg) {
+    display: flex;
+  align-items: center;
+  }
+  p {
+    @include font-p($color: $userwhite);
+  }
+  h2 {
+    @include font-h2($color: $userwhite);
+  }
+}
+.izquierda {
+   @include media(lg) {
+  width: 35%;
+   }
+}
+.centro{
+   @include media(lg) {
+   width: 40%;
+   padding: 0 3%;
+   }
+}
+.logo-footer {
+  width: 70%;
+  margin: 5% 17%;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7% 0;
+}
+.icon-redes {
+  img {
+    width: 20px;
+    margin-bottom: 10px;
   }
 }

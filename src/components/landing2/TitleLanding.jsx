@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../../scssWeb/main.css';
 
 export default function TitleLanding(props) {
 
@@ -6,12 +7,14 @@ export default function TitleLanding(props) {
 
     return (
         <>
-            <div className='titulos'>
+            <div className="landing-title">
+                <div className='landing-text'>
                 <h2>{titleabove}</h2>
                 <h3>{titlebelow}</h3>
             </div>
-            <div className='logo-container'>
-                <img src={titleimg} />
+            <div className='landing-logo-container'>
+                <img src={titleimg} alt='' />
+                </div>
             </div>
         </>
     )
