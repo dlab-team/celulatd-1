@@ -29,7 +29,7 @@ const Inicio = () => {
           </Link>
         </div>
         <div className="container-inicio_component_all container-inicio_component-background_video">
-          <Link to="/ComponetVideo" className="Link">
+          <Link to="/ListVideo" className="Link">
             <img src={Recursos} />
             <button><p>Recursos</p></button>
           </Link>

@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
-import stardestacados from "../../../assets/img/stardestacados.svg";
-import trash from "../../../assets/img/trash.svg";
 import NavbarComp from "../NavbarComponent";
 import NavbarVideoRead from "./NavbarDocument.js";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
@@ -59,7 +57,7 @@ export default function ListDocument() {
       <Header />
       <NavbarComp />
       <div className="barra">
-        <img className="svg-img-barra" src={RecursosSvg} />
+        <img className="svg-img-barra" src={RecursosSvg} alt='' />
         <h2>RECURSOS</h2>
       </div>
       <div className="container-body-all">
@@ -68,20 +66,16 @@ export default function ListDocument() {
         <div className="container-componentvideo_flex">
           {articles.map((article) => (
             <div className="container-componentvideo_body">
-              <div key={article.id}>
+              <div className="document-flex" key={article.id}>
                 <Link to="/Inicio" >
-              <img src={imagenpdf}/>
-              <Nav.Link href="/#"></Nav.Link>
-            </Link>
-                <h2>{article.title}</h2>
-                <p>{article.content}</p>
-                <button onClick={() => handleDestacar(article.id)}>
-                  <img src={stardestacados} />
-                  {article.standout ? "Destacado" : "Destacar"}
-                </button>
-                <button>
-                  <img src={trash} />
-                </button>
+                  <img className="img-doc" src={imagenpdf} alt='' />
+                  <Nav.Link href="/#"></Nav.Link>
+                </Link>
+                <div className="document-text">
+                  <h2>{article.title}</h2>
+                  <p>{article.content}</p>
+                </div>
+                
               </div>
             </div>
           ))}
