@@ -10,14 +10,14 @@ function NavbarVideo() {
           <div>
             <NavLink to="/VideoUploader" className="Link" activeClassName="active">
               <Nav.Link href="/VideoUploader">
-                <h2>VIDEOS</h2>
+                <p>VIDEOS</p>
               </Nav.Link>
             </NavLink>
           </div>
           <div>
             <NavLink to="/DocumentUploader" className="Link" activeClassName="active">
               <Nav.Link href="/DocumentUploader">
-                <h2>DOCUMENTOS</h2>
+                <p>DOCUMENTOS</p>
               </Nav.Link>
             </NavLink>
           </div>

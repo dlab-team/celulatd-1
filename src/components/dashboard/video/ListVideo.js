@@ -57,7 +57,7 @@ const ListVideo = (props) => {
         <NavbarVideoRead />
         <div className="container-componentvideo_flex">
           {videos.map((video) => (
-            <div className="container-componentvideo_body" key={video.id}>
+            <div className="container-componentvideo_body document-flex" key={video.id}>
               <video src={video.video_files[0].link} controls />
               <h2>{video.user.name}</h2>
               <p>{video.url}</p>

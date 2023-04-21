@@ -10,14 +10,14 @@ function NavbarVideoRead() {
           <div>
             <NavLink to="/ListVideo" className="Link" activeClassName="active">
               <Nav.Link href="/ListVideo">
-                <h2>VIDEOS</h2>
+                <p>VIDEOS</p>
               </Nav.Link>
             </NavLink>
           </div>
           <div>
             <NavLink to="/ListDocument" className="Link" activeClassName="active">
               <Nav.Link href="/ListDocument">
-                <h2>DOCUMENTOS</h2>
+                <p>DOCUMENTOS</p>
               </Nav.Link>
             </NavLink>
           </div>

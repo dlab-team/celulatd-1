@@ -57,7 +57,7 @@ export default function ListDocument() {
       <Header />
       <NavbarComp />
       <div className="barra">
-        <img className="svg-img-barra" src={RecursosSvg} />
+        <img className="svg-img-barra" src={RecursosSvg} alt='' />
         <h2>RECURSOS</h2>
       </div>
       <div className="container-body-all">
@@ -66,13 +66,16 @@ export default function ListDocument() {
         <div className="container-componentvideo_flex">
           {articles.map((article) => (
             <div className="container-componentvideo_body">
-              <div key={article.id}>
+              <div className="document-flex" key={article.id}>
                 <Link to="/Inicio" >
-                  <img src={imagenpdf} />
+                  <img className="img-doc" src={imagenpdf} alt='' />
                   <Nav.Link href="/#"></Nav.Link>
                 </Link>
-                <h2>{article.title}</h2>
-                <p>{article.content}</p>
+                <div className="document-text">
+                  <h2>{article.title}</h2>
+                  <p>{article.content}</p>
+                </div>
+                
               </div>
             </div>
           ))}

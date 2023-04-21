@@ -3,43 +3,48 @@
 @import "../base/breakpoints";
 @import "../base/base";
 
-.header-container{   
-    display: flex;
-    justify-content: space-around;
-    z-index: 5;
-    position: fixed;
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  padding-top: 5%;
+  height: 250px;
+  background-color: $usergeendark;
+  color: $userwhite;
+  @include media(lg) {
+    padding-top: 11px;
+ height: 270px;
     top: 0;
-    padding-top: 5%;
-    height: 250px;
-    background-color:$usergeendark;
+  }
+  p {
     color: $userwhite;
+  }
+}
+
+.header-container-logo {
+  width: 20%;
+  @include media(lg) {
+    width: 18%;
+  }
+  img {
+    width: 100%;
     @include media(lg) {
-        
-        top: 0;
+      width: 80%;
     }
-    p{
-        color: $userwhite
+  }
+}
+.user-container {
+  p {
+    margin-top: 12%;
+    @include media(lg) {
+      margin-top: 12%;
     }
+  }
 }
-
-.header-container-logo{
-    width: 20%;
-
-    img{
-        width: 100%;
-        @include media (lg){
-            width: 80%;
-        }
-    }
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-.user-container{
-    p{
-        margin-top: 12%;
-    }
-}
-.settings-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
