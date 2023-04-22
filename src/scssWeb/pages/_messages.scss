@@ -4,7 +4,7 @@
 @import "../base/base";
 @import "../base/typography";
 
-.container-body-notification {
+.container-body-message {
   margin-top: 260px;
   @include media(lg) {
     margin-top: 370px;
@@ -21,7 +21,7 @@ a.Link {
   }
 }
 
-.notification-box {
+.message-box {
   background: $usergeenligth;
   width: 94vw;
   height: min-content;
@@ -41,7 +41,7 @@ a.Link {
     }
   }
 }
-.notification-icons {
+.message-icons {
   display: flex;
   justify-content: end;
   margin-right: 5%;

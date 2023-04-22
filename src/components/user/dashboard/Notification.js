@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NavbarUserComponent from "./NavbarUserComponet";
 
-const NotificationUser = () => {
+const MessageUser = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const NotificationUser = () => {
   );
 };
 
-export default NotificationUser;
+export default MessageUser;

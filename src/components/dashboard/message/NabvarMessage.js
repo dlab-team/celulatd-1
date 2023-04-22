@@ -3,32 +3,34 @@ import { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import "../../../scssWeb/main.css";
 
-
-function NavbarNotification() {
-
+function NavbarMessage() {
   return (
     <>
       <div className="navbarvideo">
         <div className="container-video">
           <div>
             <NavLink
-              to="/ListNotifications"
-              className="Link" activeClassName="active">
-              <Nav.Link href="/ListNotifications">
+              to="/ListMessages"
+              className="Link"
+              activeClassName="active">
+              <Nav.Link href="/ListMessages">
                 <p>MENSAJES</p>
               </Nav.Link>
             </NavLink>
           </div>
           <div>
-            <NavLink to="/Notification" className="Link" activeClassName="active">
-              <Nav.Link href="/Notification">
+            <NavLink to="/Message" className="Link" activeClassName="active">
+              <Nav.Link href="/Message">
                 <p>SUBIR MENSAJES</p>
               </Nav.Link>
             </NavLink>
           </div>
           <div>
-            <NavLink to="/Trash" className="Link" activeClassName="active">
-              <Nav.Link href="/Trash">
+            <NavLink
+              to="/TrashMessage"
+              className="Link"
+              activeClassName="active">
+              <Nav.Link href="/TrashMessage">
                 <p>PAPELERA</p>
               </Nav.Link>
             </NavLink>
@@ -39,4 +41,4 @@ function NavbarNotification() {
   );
 }
 
-export default NavbarNotification;
+export default NavbarMessage;

@@ -1209,7 +1209,7 @@ body h3 {
   background: #e2a30b;
 }
 
-.container-inicio_component-background_notification {
+.container-inicio_component-background_message {
   background: rgba(0, 158, 227, 0.831372549);
 }
 
@@ -1599,11 +1599,11 @@ body h3 {
   }
 }
 
-.container-body-notification {
+.container-body-message {
   margin-top: 260px;
 }
 @media screen and (min-width: 1024px) {
-  .container-body-notification {
+  .container-body-message {
     margin-top: 370px;
   }
 }
@@ -1618,7 +1618,7 @@ a.Link {
   margin-bottom: 14px;
 }
 
-.notification-box {
+.message-box {
   background: rgba(7, 59, 58, 0.2509803922);
   width: 94vw;
   height: min-content;
@@ -1626,29 +1626,29 @@ a.Link {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1024px) {
-  .notification-box {
+  .message-box {
     width: 100vw;
   }
 }
-.notification-box h2 {
+.message-box h2 {
   padding: 8px;
 }
-.notification-box p {
+.message-box p {
   line-height: 1.2rem;
   padding: 8px;
 }
 @media screen and (min-width: 1024px) {
-  .notification-box p {
+  .message-box p {
     line-height: 1.8rem;
   }
 }
 
-.notification-icons {
+.message-icons {
   display: flex;
   justify-content: end;
   margin-right: 5%;
 }
-.notification-icons button {
+.message-icons button {
   width: 7%;
   margin-right: 5%;
   margin-top: 3%;

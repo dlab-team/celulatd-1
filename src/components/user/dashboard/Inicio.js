@@ -1,8 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import NavbarUserComponent from "./NavbarUserComponet";
-
 
 function InicioUser() {
   return (
@@ -10,12 +9,12 @@ function InicioUser() {
       <NavbarUserComponent />
       <div className="container__componets">
         <div className="container__component__video">
-          <Link to="/ComponetVideoUser" className='Link'>
+          <Link to="/ComponetVideoUser" className="Link">
             <button>Lista video</button>
           </Link>
         </div>
-        <div className="container__component__notification">
-          <Link to="/NotificationUser" className='Link'>
+        <div className="container__component__message">
+          <Link to="/MessageUser" className="Link">
             <button>Notificaciones</button>
           </Link>
         </div>
@@ -23,5 +22,5 @@ function InicioUser() {
     </div>
   );
 }
-  
-  export default InicioUser;
+
+export default InicioUser;
