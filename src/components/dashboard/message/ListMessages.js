@@ -66,7 +66,7 @@ export default function ListMessage() {
           {articles.map((article) => (
             <div
               className={`message-box ${article.highlighd ? "highlight" : ""}`}
-              key={article.name}>
+              key={article.id}>
               <div className="message-icons">
                 <button
                   className={`${article.highlighd ? "button-highlighd" : ""}`}

@@ -50,7 +50,7 @@ export default function TrashMessageMessage() {
         <NavbarMessage />
         <div className="container-message">
           {articles.map((article) => (
-            <div className="message-box" key={article.name}>
+            <div className="message-box" key={article.id}>
               <div className="message-icons">
                 <button
                   //el classname= "button-destacado"  es para que cambie el color del boton segun el estado del articulo.trash
