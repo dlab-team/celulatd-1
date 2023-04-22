@@ -26,30 +26,50 @@ export default function ListMessage() {
       });
   }, []);
 
-  const handleHighlight = (id) => {
-    setArticles((prevArticles) => {
-      const updatedArticles = prevArticles.map((article) => {
-        if (article.id === id) {
-          return { ...article, highlighd: true };
-        }
-        return article;
+  const handleHighlight = (articleId) => {
+    const url = "http://localhost:3000/api/v1//message/highlight";
+    const data = { standout: articleId.target.value };
+
+    axios
+      .patch(url, data)
+      .then((response) => {
+        setArticles((prevArticles) => {
+          const updatedArticles = prevArticles.map((article) => {
+            if (article.id === articleId) {
+              return { ...article, highlighd: true };
+            }
+            return article;
+          });
+          console.log(updatedArticles);
+          return updatedArticles;
+        });
+      })
+      .catch((error) => {
+        console.log(error);
       });
-      console.log(updatedArticles);
-      return updatedArticles;
-    });
   };
 
-  const handleTrashMessage = (id) => {
-    setArticles((prevArticles) => {
-      const updatedArticles = prevArticles.map((article) => {
-        if (article.id === id) {
-          return { ...article, trash: true };
-        }
-        return article;
+  const handleTrashMessage = (articleId) => {
+    const url = "http://localhost:3000/api/v1//message/highlight";
+    const data = { standout: articleId.target.value };
+
+    axios
+      .patch(url, data)
+      .then((response) => {
+        setArticles((prevArticles) => {
+          const updatedArticles = prevArticles.map((article) => {
+            if (article.id === articleId) {
+              return { ...article, trash: true };
+            }
+            return article;
+          });
+          console.log(updatedArticles);
+          return updatedArticles;
+        });
+      })
+      .catch((error) => {
+        console.log(error);
       });
-      console.log(updatedArticles);
-      return updatedArticles;
-    });
   };
 
   return (

@@ -10,8 +10,6 @@ import imagenpdf from "../../../assets/img/imagenpdf.jpeg";
 
 export default function ListDocument() {
   const [articles, setArticles] = useState([]);
-  const [standout, setStandout] = useState([false]);
-
 
   useEffect(() => {
     const API_KEY = "d44d107da20a4f07877b9111ead536c3";
@@ -28,28 +26,27 @@ export default function ListDocument() {
       });
   }, []);
 
-  const handleDestacar = (articleId) => {
-    setStandout(articleId.target.value);
-    const url = 'http://localhost:3000/api/v1/standout';
-    const data = { standout: standout };
+  const handleDelete = (articleId) => {
+    const url = `http://localhost:3000/api/v1//document/delete${articleId}`;
+    const data = { trash: articleId.target.value };
 
     axios
       .patch(url, data)
       .then((response) => {
-        console.log(response.data);
-        const updatedArticles = articles.map((article) => {
-          if (article.id === articleId) {
-            return { ...article, standout: !standout };
-          } else {
+        setArticles((prevArticles) => {
+          const updatedArticles = prevArticles.map((article) => {
+            if (article.id === articleId) {
+              return { ...article, trash: true };
+            }
             return article;
-          }
+          });
+          console.log(updatedArticles);
+          return updatedArticles;
         });
-        setArticles(updatedArticles);
       })
       .catch((error) => {
         console.log(error);
       });
-
   };
 
   return (
@@ -57,7 +54,7 @@ export default function ListDocument() {
       <Header />
       <NavbarComp />
       <div className="barra">
-        <img className="svg-img-barra" src={RecursosSvg} alt='' />
+        <img className="svg-img-barra" src={RecursosSvg} alt="" />
         <h2>RECURSOS</h2>
       </div>
       <div className="container-body-all">
@@ -67,15 +64,25 @@ export default function ListDocument() {
           {articles.map((article) => (
             <div className="container-componentvideo_body">
               <div className="document-flex" key={article.id}>
-                <Link to="/Inicio" >
-                  <img className="img-doc" src={imagenpdf} alt='' />
+                <Link to="/Inicio">
+                  <img className="img-doc" src={imagenpdf} alt="" />
                   <Nav.Link href="/#"></Nav.Link>
                 </Link>
                 <div className="document-text">
                   <h2>{article.title}</h2>
                   <p>{article.content}</p>
+                  <div className="body-button-edit-all">
+                    <button onClick={() => handleDelete(article.id)}>
+                      Eliminar
+                    </button>
+                    <button
+                      onClick={() =>
+                        console.log(`Editando video ${article.id}`)
+                      }>
+                      Editar
+                    </button>
+                  </div>
                 </div>
-                
               </div>
             </div>
           ))}

@@ -12,7 +12,7 @@ import ListVideo from "./components/dashboard/video/ListVideo";
 import Message from "./components/dashboard/message/Message";
 import ComponetVideoUser from "./components/user/dashboard/ComponetVideoUser";
 import NavbarVideo from "./components/dashboard/video/NavbarVideo.js";
-import NavbarVideoRead from "./components/dashboard/video/NavbarDocument.js";
+import NavbarDocument from "./components/dashboard/document/NavbarDocument.js";
 import Statistics from "./components/dashboard/statistics/Statistics";
 import SettingsUser from "./components/user/dashboard/SettingsUser";
 import InicioUser from "./components/user/dashboard/Inicio";
@@ -21,8 +21,8 @@ import Perfil from "./components/dashboard/Perfil";
 import Error404 from "./components/common/Error404";
 import ListMessages from "./components/dashboard/message/ListMessages";
 import TrashMessage from "./components/dashboard/message/TrashMessage";
-import ListDocument from "./components/dashboard/video/ListDocument";
-import DocumentUploader from "./components/dashboard/video/DocumentUploader";
+import ListDocument from "./components/dashboard/document/ListDocument";
+import DocumentUploader from "./components/dashboard/document/DocumentUploader";
 import LandingDlatam from "./components/landing2/LandingDlatam";
 import "./scssWeb/main.css";
 
@@ -43,7 +43,7 @@ function App() {
       {/* <Route path="/DashboardUser" element={<DashboardUser />} /> */}
       <Route path="/ComponetVideoUser" element={<ComponetVideoUser />} />
       <Route path="/NavbarVideo" element={<NavbarVideo />} />
-      <Route path="/NavbarVideoRead" element={<NavbarVideoRead />} />
+      <Route path="/NavbarDocument" element={<NavbarDocument />} />
       <Route path="/Statistics" element={<Statistics />} />
       <Route path="/SettingsUser" element={<SettingsUser />} />
       <Route path="/InicioUser" element={<InicioUser />} />

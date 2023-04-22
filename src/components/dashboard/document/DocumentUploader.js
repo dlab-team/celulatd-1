@@ -4,27 +4,51 @@ import NavbarComp from "../NavbarComponent";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
-import MensajeSvg from "../../../assets/img/messages_G.svg";
-import NavbarMessage from "./NabvarMessage";
+import UploadSvg from "../../../assets/img/upload_G.svg";
+import NavbarVideo from "../video/NavbarVideo.js";
 
-export default function Message() {
-  const [formData, setFormData] = useState({ title: "", description: "" });
+export default function VideoUploader() {
+  const [formData, setFormData] = useState({
+    title: "",
+    description: "",
+  });
   const [uploadStatus, setUploadStatus] = useState("");
 
-  const handleTitleInputChange = (event) => {
+  const handleFileInputChange = (event) => {
+    setFormData(event.target.files[0]);
+  };
+
+  const handleTitleInputChange2 = (event) => {
     setFormData({ ...formData, title: event.target.value });
   };
 
-  const handleDescriptionInputChange = (event) => {
+  const handleDescriptionInputChange2 = (event) => {
     setFormData({ ...formData, description: event.target.value });
   };
 
-  const handleUploadClick = () => {
-    const uploadFormData = new FormData();
-    uploadFormData.append("title", formData.title);
-    uploadFormData.append("description", formData.description);
+  const handleTitleInputChange = (event) => {
+    setFormData(event.target.value);
+  };
+
+  const handleDescriptionInputChange = (event) => {
+    setFormData(event.target.value);
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value, files } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: files ? files[0] : value,
+    }));
+  };
+
+  const handleUpload = () => {
+    const {title, description } = formData;
+    const formDataUpload = new FormData();
+    formDataUpload.append("title", title);
+    formDataUpload.append("description", description);
     axios
-      .post("https://example.com/upload-message", uploadFormData, {
+      .post("https://example.com/upload-video", formDataUpload, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -50,11 +74,11 @@ export default function Message() {
       <Header />
       <NavbarComp />
       <div className="barra">
-        <img className="svg-img-barra" src={MensajeSvg} />
-        <h2>MENSAJES</h2>
+        <img className="svg-img-barra" src={UploadSvg} />
+        <h2>SUBIR DOCUMENTO</h2>
       </div>
-      <div className=" container-body-all">
-        <NavbarMessage />
+      <div className="container-body-all">
+        <NavbarVideo />
         <div className="container-recive-info container-recive_body">
           <label className="recive_title">
             <h2>Titulo:</h2>
@@ -67,26 +91,27 @@ export default function Message() {
           />
         </div>
         <div className="container-recive-info container_recive">
+          {/* <div className="container-videouploader-info container_videouploader"> */}
           <label className="recive_title">
-            <h2>Mensaje:</h2>
+            <h2>Description:</h2>
           </label>
-          <div class="input-group">
-            <textarea //estilos se desborda y falta el color de fondo ,la clase quedo recive_input-height --favor borrar comentario cuando se corrija.
-              class=" form-control recive_input-height"
-              aria-label="With textarea"
-              type="text"
-              value={formData.description}
-              onChange={handleDescriptionInputChange}></textarea>
-          </div>
+          <input
+            className="recive_input recive_input-height"
+            type="text"
+            value={formData.description}
+            onChange={handleDescriptionInputChange}
+          />
         </div>
         <div className="imagen-uploader">
-          <button onClick={handleUploadClick}>
-            <img src={Uploadbutton} alt="Enviar"></img>
+          <button onClick={handleUpload}>
+            <img className="imagen-button" src={Uploadbutton} alt=""></img>
             <h2>Enviar</h2>
           </button>
+          <input type="file" onChange={handleFileInputChange} />
         </div>
         <p>{uploadStatus}</p>
       </div>
     </div>
   );
 }
+
