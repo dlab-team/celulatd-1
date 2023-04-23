@@ -1,54 +1,37 @@
 import React, { useState } from "react";
 import axios from "axios";
 import NavbarComp from "../NavbarComponent";
+import NavbarVideo from "./NavbarVideo.jsx";
 import "../../../scssWeb/main.css";
 import Uploadbutton from "../../../assets/img/Uploadbutton.svg";
 import Header from "../../common/header";
 import UploadSvg from "../../../assets/img/upload_G.svg";
-import NavbarVideo from "../video/NavbarVideo.js";
 
-export default function VideoUploader() {
-  const [formData, setFormData] = useState({
-    title: "",
-    description: "",
-  });
+const VideoUploader = () => {
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
   const [uploadStatus, setUploadStatus] = useState("");
 
   const handleFileInputChange = (event) => {
-    setFormData(event.target.files[0]);
-  };
-
-  const handleTitleInputChange2 = (event) => {
-    setFormData({ ...formData, title: event.target.value });
-  };
-
-  const handleDescriptionInputChange2 = (event) => {
-    setFormData({ ...formData, description: event.target.value });
+    setSelectedFile(event.target.files[0]);
   };
 
   const handleTitleInputChange = (event) => {
-    setFormData(event.target.value);
+    setTitle(event.target.value);
   };
 
   const handleDescriptionInputChange = (event) => {
-    setFormData(event.target.value);
+    setDescription(event.target.value);
   };
 
-  const handleInputChange = (event) => {
-    const { name, value, files } = event.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: files ? files[0] : value,
-    }));
-  };
-
-  const handleUpload = () => {
-    const {title, description } = formData;
-    const formDataUpload = new FormData();
-    formDataUpload.append("title", title);
-    formDataUpload.append("description", description);
+  const handleUploadClick = () => {
+    const formData = new FormData();
+    formData.append("video", selectedFile);
+    formData.append("title", title);
+    formData.append("description", description);
     axios
-      .post("https://example.com/upload-video", formDataUpload, {
+      .post("https://example.com/upload-video", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -75,7 +58,7 @@ export default function VideoUploader() {
       <NavbarComp />
       <div className="barra">
         <img className="svg-img-barra" src={UploadSvg} />
-        <h2>SUBIR DOCUMENTO</h2>
+        <h2>SUBIR RECURSOS</h2>
       </div>
       <div className="container-body-all">
         <NavbarVideo />
@@ -86,7 +69,7 @@ export default function VideoUploader() {
           <input
             className="recive_input"
             type="text"
-            value={formData.title}
+            value={title}
             onChange={handleTitleInputChange}
           />
         </div>
@@ -98,12 +81,12 @@ export default function VideoUploader() {
           <input
             className="recive_input recive_input-height"
             type="text"
-            value={formData.description}
+            value={description}
             onChange={handleDescriptionInputChange}
           />
         </div>
         <div className="imagen-uploader">
-          <button onClick={handleUpload}>
+          <button onClick={handleUploadClick}>
             <img className="imagen-button" src={Uploadbutton} alt=""></img>
             <h2>Enviar</h2>
           </button>
@@ -113,5 +96,6 @@ export default function VideoUploader() {
       </div>
     </div>
   );
-}
+};
 
+export default VideoUploader;

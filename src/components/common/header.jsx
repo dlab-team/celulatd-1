@@ -1,5 +1,5 @@
 import React from "react";
-import '../../scssWeb/main.css';
+import "../../scssWeb/main.css";
 import LogoSvg from "../../assets/img/LogoVector.svg";
 import FraseSvg from "../../assets/img/Frase1Vector.svg";
 
@@ -14,11 +14,7 @@ const Header = ({ userName }) => {
         <img src={FraseSvg} className="header-logo" />
       </div>
       <div className="user-container">
-        <img
-          src={avatar}
-          alt="Profile"
-          className="profile-pic"
-        />
+        <img src={avatar} alt="Profile" className="profile-pic" />
         <p className="welcome-message">Bienvenido,</p>
         <p className="user-name">{userName}</p>
       </div>

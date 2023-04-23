@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import NavbarComp from "../NavbarComponent";
-import NavbarVideoRead from "../document/NavbarDocument.js";
+import NavbarVideoRead from "../document/NavbarDocument";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
-import Header from "../../common/header.js";
+import Header from "../../common/header";
 import "../../../scssWeb/main.css";
 
 const ListVideo = (props) => {

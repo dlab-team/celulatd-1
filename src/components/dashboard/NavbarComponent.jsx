@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import HomeWSvg from "../../assets/img/home_W.svg";
 import "../../scssWeb/main.css";
 import AjusteWt from "../../assets/img/settings_W.svg";

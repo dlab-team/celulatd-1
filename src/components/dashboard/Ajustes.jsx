@@ -3,7 +3,7 @@ import axios from "axios";
 import NavbarComp from "./NavbarComponent";
 import Perfil from "./Perfil";
 import "../../scssWeb/main.css";
-import Header from "../../components/common/header";
+import Header from "../common/header";
 import AjustesGSvg from "../../assets/img/settings_G.svg";
 import avatar from "../../assets/img/personatipo.png";
 

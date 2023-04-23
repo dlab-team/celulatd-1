@@ -3,9 +3,9 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import NavbarComp from "../NavbarComponent";
-import NavbarVideoRead from "./NavbarDocument.js";
+import NavbarDocument from "./NavbarDocument";
 import RecursosSvg from "../../../assets/img/video_library_G.svg";
-import Header from "../../common/header.js";
+import Header from "../../common/header";
 import imagenpdf from "../../../assets/img/imagenpdf.jpeg";
 
 export default function ListDocument() {
@@ -58,7 +58,7 @@ export default function ListDocument() {
         <h2>RECURSOS</h2>
       </div>
       <div className="container-body-all">
-        <NavbarVideoRead />
+        <NavbarDocument/>
 
         <div className="container-componentvideo_flex">
           {articles.map((article) => (

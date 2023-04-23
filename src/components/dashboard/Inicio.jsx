@@ -10,7 +10,7 @@ import VectorSubirVid from "../../assets/img/upload_G.svg";
 import Recursos from "../../assets/img/video_library_G.svg";
 import SvgMensaje from "../../assets/img/messages_G.svg";
 import HomeGSvg from "../../assets/img/home_G.svg";
-import Header from "../../components/common/header";
+import Header from "../common/header";
 
 const Inicio = () => {
   return (
